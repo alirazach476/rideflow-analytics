@@ -1,0 +1,11 @@
+city_id,city_name,country,latitude,longitude,timezone,population_tier,is_active
+1,Lahore,PK,31.5204,74.3587,Asia/Karachi,Tier3,True
+2,Karachi,PK,24.8607,67.0011,Asia/Karachi,Tier2,True
+3,Islamabad,PK,33.6844,73.0479,Asia/Karachi,Tier3,True
+4,Rawalpindi,PK,33.5651,73.0169,Asia/Karachi,Tier2,True
+5,Faisalabad,PK,31.4504,73.135,Asia/Karachi,Tier1,True
+6,Multan,PK,30.1575,71.5249,Asia/Karachi,Tier3,True
+7,Peshawar,PK,34.0151,71.5249,Asia/Karachi,Tier3,True
+8,Gujranwala,PK,32.1877,74.1945,Asia/Karachi,Tier3,True
+9,Sialkot,PK,32.4945,74.5229,Asia/Karachi,Tier1,True
+10,Quetta,PK,30.1798,66.975,Asia/Karachi,Tier2,True

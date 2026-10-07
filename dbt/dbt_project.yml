@@ -1,0 +1,37 @@
+name: rideflow
+version: 1.0.0
+config-version: 2
+profile: rideflow
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: target
+clean-targets:
+  - target
+  - dbt_packages
+
+models:
+  rideflow:
+    staging:
+      +schema: staging
+      +materialized: view
+    intermediate:
+      +schema: staging
+      +materialized: view
+    warehouse:
+      +schema: warehouse
+      +materialized: table
+    analytics:
+      +schema: analytics
+      +materialized: table
+      # Exclude anomaly mart from default build; rebuild after monitoring.ride_anomalies is populated
+      mart_anomaly_monitoring:
+        +enabled: true
+
+vars:
+  fare_tolerance: 0.05

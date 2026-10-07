@@ -1,0 +1,9 @@
+{
+  "name": "rideflow-analytics",
+  "private": true,
+  "version": "1.0.0",
+  "description": "RideFlow ride-hailing analytics — static BI dashboard for Vercel",
+  "scripts": {
+    "build": "node -e \"const fs=require('fs');const p=require('path');const src='public';const dst='.vercel-out';fs.rmSync(dst,{recursive:true,force:true});fs.cpSync(src,dst,{recursive:true});console.log('Built static site to',dst);\""
+  }
+}

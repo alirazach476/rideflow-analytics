@@ -1,0 +1,65 @@
+# Environment
+.env
+.venv/
+venv/
+env/
+
+# Vercel
+.vercel/
+.vercel-out/
+node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.log
+
+# Data (keep samples, ignore large generated sets)
+data/source/**/*.csv
+data/raw/**/*.csv
+data/processed/**/*
+!data/source/.gitkeep
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/samples/**
+!data/**/.gitkeep
+
+# dbt
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+dbt/.user.yml
+
+# Airflow
+airflow/logs/
+airflow/plugins/
+airflow/*.cfg
+airflow/airflow.db
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Docker volumes / local pgserver
+postgres_data/
+.pgdata/
+
+# Power BI local binary caches
+*.pbix.tmp
+dashboards/powerbi/*.pbix
+
+# Jupyter
+.ipynb_checkpoints/

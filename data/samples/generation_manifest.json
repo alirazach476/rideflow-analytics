@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-10-07T13:05:22.161533Z",
+  "sample": true,
+  "counts": {
+    "cities": 10,
+    "zones": 50,
+    "users": 501,
+    "drivers": 100,
+    "vehicles": 110,
+    "rides": 2002,
+    "driver_sessions": 500,
+    "payments": 1425,
+    "ratings": 1775,
+    "promotions": 10
+  },
+  "seed": 42,
+  "date_range": [
+    "2024-01-01",
+    "2025-12-31"
+  ]
+}

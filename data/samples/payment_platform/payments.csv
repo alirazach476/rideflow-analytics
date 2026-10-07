@@ -1,0 +1,1426 @@
+payment_id,ride_id,user_id,payment_timestamp,payment_method,amount,payment_status,transaction_type
+1,1,144,2025-05-16 08:59:51,Debit Card,314.57,Completed,Ride Payment
+2,2,17,2024-07-25 21:42:20,Cash,1457.25,Completed,Ride Payment
+3,3,218,2025-05-31 07:29:36,Cash,1060.96,Completed,Ride Payment
+4,5,422,2024-07-05 06:40:03,Mobile Wallet,304.15,Completed,Ride Payment
+5,6,401,2025-01-20 14:57:21,Credit Card,384.13,Completed,Ride Payment
+6,8,239,2024-11-23 21:19:45,Cash,291.81,Completed,Ride Payment
+7,10,161,2024-04-04 16:12:06,Cash,1058.72,Completed,Ride Payment
+8,11,324,2025-03-11 12:09:24,Cash,128.93,Completed,Ride Payment
+9,12,356,2025-09-14 17:36:43,Credit Card,234.64,Completed,Ride Payment
+10,14,234,2025-10-23 17:11:03,Cash,299.32,Failed,Ride Payment
+11,15,187,2024-11-18 09:12:09,Mobile Wallet,240.28,Completed,Ride Payment
+12,16,145,2025-10-27 06:56:47,Cash,158.87,Completed,Ride Payment
+13,17,261,2025-03-27 01:50:21,Mobile Wallet,471.23,Completed,Ride Payment
+14,18,48,2025-06-04 11:45:46,Cash,452.56,Completed,Ride Payment
+15,19,445,2024-10-08 15:53:11,Cash,337.95,Completed,Ride Payment
+16,20,391,2024-10-12 11:09:10,Cash,275.01,Completed,Ride Payment
+17,21,144,2024-08-19 10:54:14,Mobile Wallet,358.0,Completed,Ride Payment
+18,23,238,2024-10-28 04:26:25,Cash,397.54,Completed,Ride Payment
+19,24,96,2025-01-28 01:34:44,Debit Card,287.27,Completed,Ride Payment
+20,27,424,2025-12-14 16:37:30,Bank Transfer,507.84,Completed,Ride Payment
+21,31,31,2025-03-07 05:22:00,Cash,52.43,Completed,Ride Payment
+22,32,252,2024-06-19 03:43:02,Cash,341.87,Completed,Ride Payment
+23,33,414,2025-11-19 07:23:49,Debit Card,582.82,Completed,Ride Payment
+24,34,376,2025-10-03 06:22:01,Mobile Wallet,743.36,Completed,Ride Payment
+25,35,366,2024-03-27 09:07:29,Mobile Wallet,407.42,Completed,Ride Payment
+26,36,416,2025-01-02 03:36:10,Cash,390.51,Completed,Ride Payment
+27,37,9,2025-07-19 07:43:25,Mobile Wallet,569.25,Completed,Ride Payment
+28,38,92,2024-06-24 10:45:19,Debit Card,254.87,Completed,Ride Payment
+29,39,161,2025-05-08 18:56:33,Credit Card,214.03,Completed,Ride Payment
+30,40,211,2024-09-18 22:04:04,Debit Card,731.33,Completed,Ride Payment
+31,42,253,2025-09-13 16:05:38,Credit Card,121.19,Completed,Ride Payment
+32,43,164,2025-03-06 14:46:33,Mobile Wallet,872.66,Completed,Ride Payment
+33,44,122,2025-02-06 14:47:45,Cash,245.64,Pending,Ride Payment
+34,45,131,2024-12-03 12:34:56,Bank Transfer,140.89,Completed,Ride Payment
+35,49,202,2024-09-04 15:13:31,Cash,941.67,Completed,Ride Payment
+36,50,111,2025-11-17 03:30:11,Cash,249.74,Completed,Ride Payment
+37,51,89,2024-06-10 12:24:48,Cash,639.32,Completed,Ride Payment
+38,52,56,2024-11-25 12:01:27,Cash,519.5,Completed,Ride Payment
+39,55,381,2025-12-17 13:46:24,Mobile Wallet,279.71,Completed,Ride Payment
+40,56,244,2024-11-01 19:43:02,Cash,276.77,Completed,Ride Payment
+41,57,338,2024-04-05 22:02:41,Credit Card,184.36,Completed,Ride Payment
+42,58,497,2024-02-17 16:45:11,Debit Card,479.26,Completed,Ride Payment
+43,60,488,2025-09-26 12:56:00,Credit Card,113.68,Completed,Ride Payment
+44,61,20,2024-12-04 04:43:13,Cash,300.02,Completed,Ride Payment
+45,62,356,2024-12-11 23:32:30,Mobile Wallet,730.75,Completed,Ride Payment
+46,63,213,2024-07-19 23:35:46,Cash,124.6,Failed,Ride Payment
+47,64,242,2024-07-26 20:07:09,Debit Card,268.17,Completed,Ride Payment
+48,65,292,2024-09-05 18:31:01,Cash,247.14,Completed,Ride Payment
+49,66,240,2024-07-29 21:38:10,Mobile Wallet,339.94,Completed,Ride Payment
+50,67,331,2025-11-03 20:35:44,Mobile Wallet,724.95,Completed,Ride Payment
+51,68,78,2024-09-22 23:25:44,Debit Card,645.73,Completed,Ride Payment
+52,69,117,2024-11-12 03:30:43,Debit Card,128.68,Completed,Ride Payment
+53,72,86,2025-12-29 15:19:27,Credit Card,338.13,Completed,Ride Payment
+54,73,102,2025-09-18 09:29:22,Cash,279.94,Completed,Ride Payment
+55,74,20,2024-08-13 20:49:17,Bank Transfer,630.34,Completed,Ride Payment
+56,75,116,2024-12-23 11:02:12,Cash,962.36,Failed,Ride Payment
+57,79,410,2025-09-22 00:32:16,Debit Card,580.28,Completed,Ride Payment
+58,80,294,2025-07-14 12:15:46,Bank Transfer,608.26,Completed,Ride Payment
+59,81,240,2024-06-20 06:20:30,Mobile Wallet,985.15,Completed,Ride Payment
+60,82,30,2024-11-03 01:56:14,Mobile Wallet,224.6,Completed,Ride Payment
+61,83,413,2025-06-27 08:00:43,Cash,225.09,Completed,Ride Payment
+62,85,134,2024-05-05 20:26:46,Credit Card,234.09,Completed,Ride Payment
+63,86,53,2025-02-14 00:07:21,Mobile Wallet,223.21,Completed,Ride Payment
+64,87,71,2024-08-02 09:46:11,Mobile Wallet,368.87,Completed,Ride Payment
+65,88,211,2024-11-07 21:10:13,Bank Transfer,501.39,Completed,Ride Payment
+66,89,195,2025-07-06 23:41:44,Debit Card,103.18,Completed,Ride Payment
+67,90,332,2025-07-11 07:45:33,Cash,173.7,Completed,Ride Payment
+68,91,313,2024-04-08 00:24:36,Mobile Wallet,124.92,Completed,Ride Payment
+69,92,127,2024-10-22 20:21:26,Cash,739.93,Completed,Ride Payment
+70,95,161,2024-12-24 08:03:21,Mobile Wallet,551.35,Completed,Ride Payment
+71,96,225,2024-06-04 13:15:06,Cash,298.34,Completed,Ride Payment
+72,99,294,2024-09-18 05:01:28,Mobile Wallet,361.45,Refunded,Ride Payment
+73,100,221,2025-01-10 12:28:27,Mobile Wallet,738.01,Completed,Ride Payment
+74,101,30,2025-07-28 20:42:36,Mobile Wallet,237.08,Completed,Ride Payment
+75,102,160,2025-10-09 08:17:06,Mobile Wallet,616.37,Completed,Ride Payment
+76,103,288,2024-03-14 23:21:20,Credit Card,804.6,Completed,Ride Payment
+77,104,480,2025-08-15 12:42:51,Credit Card,89.08,Completed,Ride Payment
+78,105,304,2024-11-28 11:14:30,Credit Card,178.91,Completed,Ride Payment
+79,106,78,2024-05-21 21:40:06,Debit Card,181.68,Completed,Ride Payment
+80,107,479,2024-02-20 18:16:21,Debit Card,830.25,Completed,Ride Payment
+81,108,460,2024-02-12 02:56:01,Debit Card,588.25,Completed,Ride Payment
+82,110,62,2025-05-03 20:32:02,Cash,680.95,Completed,Ride Payment
+83,113,281,2024-10-08 05:35:32,Credit Card,290.11,Completed,Ride Payment
+84,119,16,2024-10-06 13:58:27,Credit Card,201.46,Completed,Ride Payment
+85,120,395,2025-09-07 09:40:00,Mobile Wallet,580.45,Completed,Ride Payment
+86,121,403,2025-12-31 01:31:25,Debit Card,109.23,Completed,Ride Payment
+87,122,352,2024-09-25 13:25:55,Credit Card,100.89,Completed,Ride Payment
+88,123,88,2024-12-28 16:51:53,Credit Card,1032.08,Completed,Ride Payment
+89,124,276,2024-12-03 22:26:39,Debit Card,117.37,Completed,Ride Payment
+90,125,15,2025-04-17 06:04:52,Cash,456.84,Completed,Ride Payment
+91,127,135,2025-06-26 03:56:03,Cash,496.21,Completed,Ride Payment
+92,128,229,2025-02-12 11:20:32,Mobile Wallet,250.26,Completed,Ride Payment
+93,131,16,2024-05-02 19:32:18,Cash,746.01,Completed,Ride Payment
+94,132,126,2024-04-10 11:15:35,Debit Card,420.81,Completed,Ride Payment
+95,133,187,2024-10-22 01:19:22,Mobile Wallet,394.61,Completed,Ride Payment
+96,136,68,2025-10-04 02:48:40,Mobile Wallet,351.8,Completed,Ride Payment
+97,137,383,2025-12-29 14:00:53,Cash,230.56,Completed,Ride Payment
+98,139,465,2024-01-10 10:12:35,Mobile Wallet,539.93,Completed,Ride Payment
+99,140,31,2024-04-06 23:06:39,Credit Card,178.11,Refunded,Ride Payment
+100,141,294,2025-01-12 07:07:51,Debit Card,546.75,Completed,Ride Payment
+101,142,259,2024-08-31 11:26:27,Debit Card,139.08,Completed,Ride Payment
+102,143,362,2024-07-30 08:32:02,Mobile Wallet,169.32,Completed,Ride Payment
+103,144,495,2024-11-06 12:35:26,Debit Card,638.39,Completed,Ride Payment
+104,145,136,2025-03-31 08:02:18,Credit Card,192.55,Completed,Ride Payment
+105,147,99,2024-06-06 21:57:38,Cash,261.45,Completed,Ride Payment
+106,148,413,2025-02-17 17:44:43,Credit Card,794.12,Completed,Ride Payment
+107,149,323,2025-11-25 00:45:23,Cash,153.71,Completed,Ride Payment
+108,153,79,2024-01-31 07:09:30,Cash,272.59,Completed,Ride Payment
+109,154,204,2024-11-25 06:57:04,Mobile Wallet,247.32,Completed,Ride Payment
+110,156,166,2024-03-16 02:07:55,Mobile Wallet,915.04,Completed,Ride Payment
+111,157,146,2024-09-21 18:56:40,Cash,224.8,Refunded,Ride Payment
+112,158,163,2025-03-15 10:48:16,Bank Transfer,269.98,Completed,Ride Payment
+113,159,216,2025-11-23 03:16:12,Cash,638.2,Completed,Ride Payment
+114,160,221,2025-03-09 17:53:34,Cash,194.81,Completed,Ride Payment
+115,164,229,2025-06-21 05:48:36,Credit Card,86.76,Completed,Ride Payment
+116,167,489,2024-11-23 23:48:35,Credit Card,86.76,Completed,Ride Payment
+117,170,63,2025-03-13 03:27:48,Debit Card,781.49,Completed,Ride Payment
+118,171,483,2025-11-23 15:52:37,Bank Transfer,251.75,Completed,Ride Payment
+119,172,8,2025-12-30 20:26:15,Cash,180.92,Pending,Ride Payment
+120,173,127,2025-03-01 20:34:01,Debit Card,506.44,Completed,Ride Payment
+121,174,390,2024-10-09 04:48:22,Bank Transfer,309.43,Completed,Ride Payment
+122,176,233,2024-05-20 13:50:56,Debit Card,176.4,Completed,Ride Payment
+123,177,476,2025-10-09 16:10:59,Debit Card,131.26,Completed,Ride Payment
+124,178,238,2024-05-01 23:29:14,Debit Card,741.7,Completed,Ride Payment
+125,181,50,2024-03-04 23:23:59,Cash,175.76,Completed,Ride Payment
+126,182,161,2024-01-18 14:35:42,Credit Card,117.22,Completed,Ride Payment
+127,184,283,2024-05-25 01:09:31,Bank Transfer,269.24,Completed,Ride Payment
+128,185,171,2025-01-01 19:54:10,Cash,167.86,Completed,Ride Payment
+129,186,134,2024-07-16 10:56:44,Cash,410.83,Completed,Ride Payment
+130,187,500,2025-02-25 15:39:40,Credit Card,120.01,Completed,Ride Payment
+131,188,337,2025-02-18 16:45:55,Mobile Wallet,339.44,Failed,Ride Payment
+132,189,307,2024-12-13 02:36:31,Cash,664.98,Completed,Ride Payment
+133,190,398,2024-09-27 17:29:18,Mobile Wallet,244.99,Completed,Ride Payment
+134,192,31,2024-07-16 23:54:27,Cash,130.08,Completed,Ride Payment
+135,193,265,2024-09-23 15:33:54,Cash,139.61,Failed,Ride Payment
+136,195,161,2024-05-20 08:59:48,Mobile Wallet,163.54,Completed,Ride Payment
+137,196,255,2025-10-12 19:08:45,Credit Card,695.4,Completed,Ride Payment
+138,197,495,2024-09-03 13:42:48,Debit Card,198.99,Completed,Ride Payment
+139,199,165,2025-01-07 20:14:10,Cash,712.22,Completed,Ride Payment
+140,200,357,2025-11-23 14:00:33,Mobile Wallet,641.58,Completed,Ride Payment
+141,201,370,2024-06-04 16:06:34,Cash,126.39,Completed,Ride Payment
+142,202,30,2024-09-19 07:51:09,Debit Card,408.08,Completed,Ride Payment
+143,204,158,2025-05-09 18:50:22,Mobile Wallet,858.66,Completed,Ride Payment
+144,206,392,2024-02-14 08:37:58,Mobile Wallet,345.4,Completed,Ride Payment
+145,207,182,2024-02-19 04:58:18,Cash,496.5,Completed,Ride Payment
+146,208,191,2024-09-08 10:02:13,Debit Card,682.11,Completed,Ride Payment
+147,209,142,2024-06-05 08:08:35,Credit Card,245.57,Completed,Ride Payment
+148,211,294,2025-01-09 02:04:53,Debit Card,321.42,Completed,Ride Payment
+149,212,183,2025-03-08 13:37:24,Cash,222.44,Failed,Ride Payment
+150,213,63,2025-02-23 19:28:04,Debit Card,262.69,Completed,Ride Payment
+151,214,386,2024-04-02 10:00:48,Cash,319.05,Completed,Ride Payment
+152,215,179,2025-12-08 15:51:39,Cash,230.87,Completed,Ride Payment
+153,216,25,2025-01-27 10:47:26,Debit Card,192.21,Completed,Ride Payment
+154,218,407,2025-04-27 03:25:28,Cash,1714.68,Completed,Ride Payment
+155,220,279,2025-01-15 16:43:25,Cash,314.73,Completed,Ride Payment
+156,221,82,2025-03-14 04:14:29,Mobile Wallet,243.15,Completed,Ride Payment
+157,222,317,2024-09-27 02:26:38,Debit Card,1829.67,Completed,Ride Payment
+158,223,479,2025-05-13 14:22:59,Credit Card,83.23,Completed,Ride Payment
+159,224,377,2025-07-31 19:22:19,Credit Card,142.59,Completed,Ride Payment
+160,226,283,2025-05-27 17:42:54,Credit Card,187.84,Completed,Ride Payment
+161,227,378,2025-10-20 02:12:33,Debit Card,170.36,Refunded,Ride Payment
+162,228,62,2024-01-06 06:41:38,Cash,428.6,Completed,Ride Payment
+163,232,205,2025-12-30 16:16:24,Debit Card,279.12,Completed,Ride Payment
+164,233,360,2025-09-09 09:06:29,Mobile Wallet,218.45,Completed,Ride Payment
+165,235,196,2024-08-19 20:06:25,Bank Transfer,273.42,Completed,Ride Payment
+166,238,333,2025-08-02 05:45:20,Cash,599.79,Completed,Ride Payment
+167,239,267,2024-01-24 02:42:35,Mobile Wallet,258.1,Completed,Ride Payment
+168,240,27,2024-10-18 21:01:49,Credit Card,939.6,Completed,Ride Payment
+169,241,226,2025-08-19 17:06:38,Credit Card,1413.72,Completed,Ride Payment
+170,242,181,2025-11-19 16:00:26,Bank Transfer,623.24,Completed,Ride Payment
+171,243,103,2024-02-26 14:09:15,Cash,1088.66,Completed,Ride Payment
+172,244,194,2025-12-08 05:33:22,Mobile Wallet,594.43,Completed,Ride Payment
+173,245,328,2025-05-12 17:42:57,Cash,224.79,Completed,Ride Payment
+174,246,365,2024-08-27 04:52:42,Debit Card,190.9,Completed,Ride Payment
+175,247,415,2025-06-25 20:05:47,Cash,309.68,Completed,Ride Payment
+176,248,382,2025-01-24 10:18:13,Credit Card,403.38,Completed,Ride Payment
+177,249,284,2025-12-01 14:57:06,Bank Transfer,128.35,Completed,Ride Payment
+178,250,495,2025-10-08 20:37:52,Debit Card,368.56,Completed,Ride Payment
+179,251,156,2025-07-19 08:50:44,Debit Card,263.65,Completed,Ride Payment
+180,257,144,2024-01-20 01:01:12,Cash,438.13,Completed,Ride Payment
+181,258,98,2024-07-21 11:28:42,Cash,365.4,Completed,Ride Payment
+182,259,87,2025-03-10 22:18:44,Mobile Wallet,342.55,Failed,Ride Payment
+183,261,207,2024-04-01 20:26:07,Cash,490.29,Completed,Ride Payment
+184,262,474,2024-05-06 11:18:22,Cash,523.69,Completed,Ride Payment
+185,263,350,2025-07-11 00:18:32,Credit Card,1300.41,Completed,Ride Payment
+186,264,98,2024-09-17 09:09:40,Cash,441.05,Completed,Ride Payment
+187,265,171,2025-03-18 03:16:20,Cash,257.96,Completed,Ride Payment
+188,266,121,2024-06-11 14:05:23,Debit Card,775.33,Completed,Ride Payment
+189,267,246,2024-01-25 19:38:07,Credit Card,388.51,Completed,Ride Payment
+190,268,495,2025-05-28 05:43:09,Mobile Wallet,271.92,Completed,Ride Payment
+191,269,166,2024-05-28 15:19:47,Cash,339.5,Failed,Ride Payment
+192,270,483,2024-07-28 01:04:58,Cash,152.95,Completed,Ride Payment
+193,273,232,2024-11-15 19:20:23,Cash,799.71,Completed,Ride Payment
+194,276,263,2025-07-22 16:15:55,Cash,153.52,Completed,Ride Payment
+195,278,22,2024-10-26 12:06:53,Credit Card,203.99,Completed,Ride Payment
+196,279,169,2024-08-31 00:12:16,Debit Card,273.13,Completed,Ride Payment
+197,280,283,2025-05-04 03:13:41,Debit Card,761.9,Completed,Ride Payment
+198,281,95,2025-06-04 21:59:03,Cash,388.02,Completed,Ride Payment
+199,282,488,2024-09-07 12:19:24,Credit Card,191.37,Completed,Ride Payment
+200,283,157,2024-12-07 02:46:29,Cash,461.38,Completed,Ride Payment
+201,285,253,2024-08-11 19:12:07,Debit Card,184.53,Completed,Ride Payment
+202,287,296,2024-01-10 04:13:24,Mobile Wallet,1065.11,Completed,Ride Payment
+203,288,201,2025-03-30 01:24:54,Debit Card,1297.1,Completed,Ride Payment
+204,289,471,2025-04-08 12:53:04,Mobile Wallet,303.31,Completed,Ride Payment
+205,290,354,2025-08-09 17:12:07,Mobile Wallet,207.94,Completed,Ride Payment
+206,291,476,2024-10-19 14:13:47,Credit Card,559.6,Completed,Ride Payment
+207,292,253,2024-02-01 20:36:59,Bank Transfer,1529.44,Completed,Ride Payment
+208,293,135,2024-04-28 17:06:41,Cash,641.26,Completed,Ride Payment
+209,294,207,2025-01-06 20:16:47,Cash,457.81,Completed,Ride Payment
+210,296,175,2024-05-16 13:12:37,Mobile Wallet,331.91,Completed,Ride Payment
+211,297,361,2025-07-22 08:11:16,Cash,969.34,Completed,Ride Payment
+212,298,390,2024-12-24 00:12:37,Credit Card,318.35,Completed,Ride Payment
+213,299,3,2024-01-20 13:24:22,Credit Card,219.93,Completed,Ride Payment
+214,300,234,2025-07-11 22:52:34,Debit Card,816.09,Completed,Ride Payment
+215,301,207,2025-07-30 19:15:07,Credit Card,474.98,Completed,Ride Payment
+216,302,34,2024-07-15 10:50:56,Cash,246.67,Completed,Ride Payment
+217,303,167,2025-09-17 01:43:56,Cash,328.77,Completed,Ride Payment
+218,305,389,2025-06-19 10:48:43,Cash,256.88,Completed,Ride Payment
+219,306,321,2025-11-16 17:31:46,Cash,445.5,Completed,Ride Payment
+220,307,482,2024-07-04 03:35:14,Credit Card,526.55,Completed,Ride Payment
+221,310,64,2024-06-23 15:44:39,Credit Card,707.29,Completed,Ride Payment
+222,312,175,2025-03-28 01:22:50,Cash,463.38,Completed,Ride Payment
+223,314,167,2025-05-10 23:50:21,Credit Card,333.41,Completed,Ride Payment
+224,318,14,2024-01-07 12:16:17,Credit Card,219.8,Completed,Ride Payment
+225,320,148,2024-08-28 10:35:31,Cash,407.52,Completed,Ride Payment
+226,322,98,2024-07-16 09:52:53,Cash,480.78,Completed,Ride Payment
+227,323,46,2025-03-13 02:14:04,Debit Card,979.39,Refunded,Ride Payment
+228,324,361,2024-09-05 23:06:25,Debit Card,252.44,Completed,Ride Payment
+229,325,483,2025-12-20 02:34:36,Cash,207.33,Completed,Ride Payment
+230,326,217,2025-05-28 08:36:59,Credit Card,434.88,Completed,Ride Payment
+231,327,165,2025-05-11 02:31:14,Bank Transfer,346.92,Completed,Ride Payment
+232,329,228,2025-11-16 12:57:40,Credit Card,239.89,Completed,Ride Payment
+233,330,209,2024-01-08 07:20:13,Cash,789.59,Completed,Ride Payment
+234,331,381,2024-10-12 07:53:08,Cash,150.37,Completed,Ride Payment
+235,332,305,2025-08-28 17:27:02,Cash,315.09,Completed,Ride Payment
+236,333,230,2025-09-15 11:47:17,Mobile Wallet,382.0,Failed,Ride Payment
+237,334,237,2024-03-15 19:10:09,Mobile Wallet,92.49,Completed,Ride Payment
+238,335,277,2025-07-26 04:55:17,Mobile Wallet,910.36,Completed,Ride Payment
+239,336,145,2024-08-29 14:37:17,Mobile Wallet,661.82,Completed,Ride Payment
+240,337,3,2024-09-14 10:13:40,Debit Card,394.56,Completed,Ride Payment
+241,338,296,2025-06-24 09:40:18,Cash,156.78,Completed,Ride Payment
+242,339,112,2024-01-17 04:37:50,Cash,511.9,Completed,Ride Payment
+243,341,228,2025-03-22 06:38:50,Cash,120.6,Completed,Ride Payment
+244,342,383,2024-06-26 10:24:50,Cash,1033.88,Completed,Ride Payment
+245,343,153,2024-10-17 16:00:24,Debit Card,595.57,Refunded,Ride Payment
+246,344,79,2025-12-14 05:43:41,Mobile Wallet,165.87,Completed,Ride Payment
+247,345,183,2025-12-31 07:53:28,Cash,362.79,Completed,Ride Payment
+248,346,110,2025-05-20 00:52:25,Cash,554.49,Completed,Ride Payment
+249,347,184,2024-08-11 02:41:29,Credit Card,676.56,Completed,Ride Payment
+250,348,182,2025-09-18 19:50:10,Credit Card,1097.14,Completed,Ride Payment
+251,349,53,2024-04-16 20:01:11,Cash,1097.71,Completed,Ride Payment
+252,350,209,2025-06-08 22:45:00,Cash,162.26,Completed,Ride Payment
+253,351,48,2024-08-03 19:47:38,Credit Card,372.28,Completed,Ride Payment
+254,352,347,2025-04-07 19:38:13,Mobile Wallet,391.08,Completed,Ride Payment
+255,353,386,2025-05-18 13:43:25,Cash,376.75,Completed,Ride Payment
+256,355,202,2024-09-20 00:01:07,Credit Card,155.39,Completed,Ride Payment
+257,356,205,2025-01-31 09:17:14,Cash,489.76,Completed,Ride Payment
+258,357,113,2024-02-17 09:20:11,Mobile Wallet,203.86,Completed,Ride Payment
+259,358,4,2025-06-17 18:12:53,Bank Transfer,204.61,Completed,Ride Payment
+260,359,304,2024-07-30 09:30:52,Mobile Wallet,698.54,Completed,Ride Payment
+261,361,346,2025-09-28 13:05:27,Credit Card,774.88,Completed,Ride Payment
+262,362,111,2024-10-10 23:50:43,Cash,333.68,Completed,Ride Payment
+263,363,344,2024-01-28 22:13:18,Mobile Wallet,144.01,Completed,Ride Payment
+264,364,196,2025-09-11 13:03:35,Credit Card,512.34,Completed,Ride Payment
+265,366,183,2024-12-11 12:20:35,Cash,220.62,Completed,Ride Payment
+266,368,177,2025-09-25 01:33:23,Mobile Wallet,302.16,Completed,Ride Payment
+267,369,355,2025-01-01 13:18:17,Debit Card,464.23,Completed,Ride Payment
+268,370,291,2024-03-13 16:48:42,Cash,275.82,Completed,Ride Payment
+269,371,456,2025-03-06 07:12:03,Credit Card,285.77,Completed,Ride Payment
+270,372,169,2025-07-22 11:44:46,Debit Card,800.41,Completed,Ride Payment
+271,374,403,2025-02-12 01:51:59,Cash,156.64,Completed,Ride Payment
+272,375,93,2024-08-21 03:22:39,Cash,368.97,Completed,Ride Payment
+273,377,260,2024-05-29 22:28:01,Credit Card,195.99,Completed,Ride Payment
+274,378,490,2024-03-09 15:40:39,Cash,193.23,Completed,Ride Payment
+275,379,88,2025-03-25 21:15:31,Debit Card,235.96,Completed,Ride Payment
+276,381,146,2024-08-26 23:15:20,Cash,180.36,Completed,Ride Payment
+277,384,334,2024-12-14 01:08:45,Credit Card,486.72,Completed,Ride Payment
+278,386,329,2025-09-30 05:31:50,Credit Card,386.04,Completed,Ride Payment
+279,387,308,2025-08-14 10:28:52,Credit Card,120.16,Completed,Ride Payment
+280,388,346,2024-07-13 08:37:03,Credit Card,1223.29,Completed,Ride Payment
+281,389,129,2025-08-23 01:05:44,Mobile Wallet,103.76,Pending,Ride Payment
+282,391,212,2024-06-18 21:27:00,Cash,721.55,Pending,Ride Payment
+283,392,103,2024-08-30 08:41:03,Cash,461.05,Completed,Ride Payment
+284,393,296,2025-01-06 06:42:02,Bank Transfer,118.85,Completed,Ride Payment
+285,394,282,2024-06-08 11:02:01,Debit Card,1467.72,Failed,Ride Payment
+286,396,238,2025-09-21 14:19:23,Cash,1146.57,Completed,Ride Payment
+287,399,340,2025-02-25 08:07:20,Cash,427.05,Completed,Ride Payment
+288,401,8,2025-12-09 21:21:00,Cash,63.01,Completed,Ride Payment
+289,404,306,2025-04-28 19:07:05,Credit Card,356.94,Completed,Ride Payment
+290,405,491,2024-02-07 21:02:58,Mobile Wallet,2000.38,Completed,Ride Payment
+291,406,378,2024-09-24 12:22:02,Cash,173.34,Completed,Ride Payment
+292,408,324,2024-03-21 00:39:16,Mobile Wallet,285.06,Completed,Ride Payment
+293,409,285,2024-04-20 03:28:22,Mobile Wallet,252.81,Completed,Ride Payment
+294,410,215,2025-06-12 00:56:24,Cash,198.29,Completed,Ride Payment
+295,411,230,2024-07-05 04:39:24,Cash,1061.99,Completed,Ride Payment
+296,412,373,2024-09-28 02:37:59,Credit Card,325.36,Completed,Ride Payment
+297,413,235,2024-11-18 05:13:41,Debit Card,719.8,Completed,Ride Payment
+298,416,234,2024-09-06 08:14:27,Cash,389.97,Completed,Ride Payment
+299,418,410,2025-05-27 19:15:24,Mobile Wallet,142.24,Completed,Ride Payment
+300,419,495,2025-03-08 16:21:00,Cash,532.59,Completed,Ride Payment
+301,422,81,2024-08-16 18:20:45,Cash,1027.16,Completed,Ride Payment
+302,423,394,2025-08-05 00:12:26,Cash,123.01,Completed,Ride Payment
+303,424,364,2024-05-08 05:51:27,Debit Card,219.29,Completed,Ride Payment
+304,425,118,2025-11-14 23:58:52,Credit Card,201.47,Completed,Ride Payment
+305,426,216,2024-12-02 14:35:20,Cash,104.23,Completed,Ride Payment
+306,428,198,2025-07-11 08:36:38,Bank Transfer,1227.4,Completed,Ride Payment
+307,430,150,2024-06-25 20:54:49,Cash,234.84,Completed,Ride Payment
+308,431,469,2025-06-03 07:02:50,Mobile Wallet,83.01,Completed,Ride Payment
+309,434,473,2025-04-20 11:21:39,Credit Card,435.61,Pending,Ride Payment
+310,435,343,2025-05-24 12:59:53,Credit Card,878.62,Completed,Ride Payment
+311,438,17,2025-10-04 19:31:15,Bank Transfer,2313.2,Completed,Ride Payment
+312,439,215,2025-11-14 06:22:36,Mobile Wallet,885.08,Completed,Ride Payment
+313,440,419,2024-08-04 21:50:00,Mobile Wallet,609.58,Completed,Ride Payment
+314,441,472,2024-02-04 16:30:38,Cash,481.8,Failed,Ride Payment
+315,442,370,2025-04-25 12:32:24,Debit Card,565.16,Completed,Ride Payment
+316,443,79,2024-11-12 05:22:08,Credit Card,328.8,Completed,Ride Payment
+317,444,184,2025-12-07 15:56:39,Cash,434.21,Completed,Ride Payment
+318,445,469,2025-01-12 11:27:22,Cash,143.27,Completed,Ride Payment
+319,446,457,2025-10-02 14:48:20,Cash,386.91,Completed,Ride Payment
+320,449,182,2024-10-25 08:44:36,Debit Card,496.92,Completed,Ride Payment
+321,450,400,2024-07-02 07:35:38,Credit Card,180.95,Completed,Ride Payment
+322,453,255,2025-07-24 13:45:17,Cash,316.97,Completed,Ride Payment
+323,454,163,2024-08-21 19:07:12,Cash,505.97,Refunded,Ride Payment
+324,455,413,2024-09-21 02:43:22,Mobile Wallet,288.68,Completed,Ride Payment
+325,456,6,2024-06-15 06:24:34,Credit Card,163.68,Completed,Ride Payment
+326,457,18,2025-10-25 01:54:19,Debit Card,604.18,Completed,Ride Payment
+327,458,249,2024-04-21 02:52:18,Cash,201.4,Completed,Ride Payment
+328,459,157,2025-05-11 12:20:48,Cash,774.62,Completed,Ride Payment
+329,460,259,2024-08-31 21:36:41,Mobile Wallet,148.65,Completed,Ride Payment
+330,461,279,2024-04-30 19:35:17,Mobile Wallet,562.23,Completed,Ride Payment
+331,462,357,2024-03-18 04:48:29,Mobile Wallet,213.19,Completed,Ride Payment
+332,463,422,2024-08-22 20:15:21,Cash,402.41,Completed,Ride Payment
+333,465,371,2024-09-06 13:27:40,Cash,244.36,Completed,Ride Payment
+334,466,122,2025-10-13 06:40:58,Credit Card,450.1,Completed,Ride Payment
+335,467,3,2024-08-11 15:23:20,Mobile Wallet,568.53,Completed,Ride Payment
+336,468,33,2025-10-28 09:14:43,Mobile Wallet,76.33,Completed,Ride Payment
+337,470,106,2024-07-20 14:46:05,Debit Card,91.96,Completed,Ride Payment
+338,471,397,2025-05-14 20:42:45,Cash,481.63,Completed,Ride Payment
+339,472,333,2025-10-21 00:17:27,Credit Card,512.24,Completed,Ride Payment
+340,473,382,2024-12-08 06:06:06,Cash,541.47,Completed,Ride Payment
+341,475,287,2024-05-12 15:38:28,Debit Card,265.05,Completed,Ride Payment
+342,476,209,2024-08-08 08:06:01,Cash,395.98,Completed,Ride Payment
+343,479,106,2024-01-31 14:44:31,Mobile Wallet,664.09,Completed,Ride Payment
+344,480,496,2025-02-06 16:14:54,Cash,543.19,Completed,Ride Payment
+345,483,483,2024-09-10 08:06:30,Credit Card,439.67,Completed,Ride Payment
+346,484,2,2025-06-09 16:28:27,Cash,157.08,Completed,Ride Payment
+347,486,298,2025-06-03 16:41:00,Mobile Wallet,291.55,Completed,Ride Payment
+348,487,348,2024-07-27 22:05:45,Debit Card,315.94,Completed,Ride Payment
+349,489,449,2024-12-09 09:39:46,Cash,2108.43,Completed,Ride Payment
+350,490,3,2025-01-06 21:27:59,Bank Transfer,852.01,Completed,Ride Payment
+351,491,78,2025-02-02 00:28:39,Debit Card,598.82,Completed,Ride Payment
+352,495,262,2024-11-28 14:25:26,Mobile Wallet,214.55,Completed,Ride Payment
+353,496,106,2024-10-18 11:08:16,Cash,289.89,Completed,Ride Payment
+354,497,444,2024-06-02 22:37:36,Cash,597.65,Completed,Ride Payment
+355,498,302,2025-03-24 23:24:36,Cash,1708.65,Completed,Ride Payment
+356,499,284,2025-12-20 14:44:31,Debit Card,229.26,Completed,Ride Payment
+357,501,295,2025-03-22 17:07:21,Mobile Wallet,108.33,Completed,Ride Payment
+358,502,86,2024-02-01 15:54:45,Mobile Wallet,177.1,Completed,Ride Payment
+359,503,307,2024-04-21 13:03:46,Cash,200.15,Completed,Ride Payment
+360,504,319,2025-05-25 04:38:51,Cash,321.11,Completed,Ride Payment
+361,505,500,2025-08-21 15:18:48,Mobile Wallet,208.01,Completed,Ride Payment
+362,507,353,2024-03-16 23:36:52,Cash,169.06,Completed,Ride Payment
+363,508,479,2024-08-31 03:16:14,Cash,283.82,Completed,Ride Payment
+364,509,129,2024-04-16 15:16:12,Cash,346.53,Completed,Ride Payment
+365,510,430,2024-12-29 15:50:19,Cash,982.96,Completed,Ride Payment
+366,512,333,2024-03-11 04:42:45,Cash,531.06,Completed,Ride Payment
+367,513,3,2025-05-20 02:00:06,Cash,111.43,Completed,Ride Payment
+368,515,103,2024-04-18 05:21:35,Cash,834.67,Completed,Ride Payment
+369,516,193,2024-08-21 16:27:27,Credit Card,347.59,Completed,Ride Payment
+370,517,202,2024-05-12 01:18:36,Mobile Wallet,528.03,Completed,Ride Payment
+371,520,499,2024-02-07 23:14:41,Cash,279.44,Completed,Ride Payment
+372,525,2,2025-02-23 09:35:35,Mobile Wallet,628.24,Completed,Ride Payment
+373,527,83,2024-12-14 14:13:44,Mobile Wallet,76.05,Completed,Ride Payment
+374,528,34,2025-03-28 17:32:59,Debit Card,370.01,Refunded,Ride Payment
+375,529,39,2025-06-06 14:40:26,Mobile Wallet,151.05,Completed,Ride Payment
+376,530,35,2024-10-24 00:22:23,Credit Card,205.36,Completed,Ride Payment
+377,531,204,2025-01-05 00:07:09,Credit Card,618.54,Completed,Ride Payment
+378,532,424,2024-05-18 08:05:22,Credit Card,122.25,Completed,Ride Payment
+379,534,228,2025-05-11 15:11:17,Debit Card,800.78,Completed,Ride Payment
+380,536,200,2025-06-23 08:51:36,Cash,131.19,Completed,Ride Payment
+381,539,331,2025-05-27 16:56:27,Cash,205.04,Completed,Ride Payment
+382,540,138,2024-05-04 16:50:03,Credit Card,294.69,Completed,Ride Payment
+383,541,157,2024-05-12 21:29:56,Cash,168.87,Completed,Ride Payment
+384,542,471,2024-07-31 23:47:03,Mobile Wallet,413.68,Completed,Ride Payment
+385,543,120,2025-04-24 22:10:05,Cash,526.28,Completed,Ride Payment
+386,544,218,2025-04-19 10:54:14,Cash,258.68,Completed,Ride Payment
+387,545,175,2024-10-24 00:01:18,Debit Card,918.93,Completed,Ride Payment
+388,546,56,2024-07-30 05:05:47,Mobile Wallet,273.78,Completed,Ride Payment
+389,548,97,2025-06-16 17:54:31,Mobile Wallet,270.13,Failed,Ride Payment
+390,551,66,2025-04-15 09:23:00,Cash,1615.9,Completed,Ride Payment
+391,552,75,2025-11-12 15:06:39,Cash,90.89,Completed,Ride Payment
+392,553,63,2024-01-18 19:45:29,Mobile Wallet,266.91,Completed,Ride Payment
+393,554,410,2024-07-22 00:54:28,Cash,608.67,Completed,Ride Payment
+394,555,160,2024-01-17 06:50:35,Cash,593.15,Completed,Ride Payment
+395,556,30,2025-03-22 05:27:07,Debit Card,235.47,Completed,Ride Payment
+396,557,138,2024-06-06 18:34:09,Cash,600.92,Completed,Ride Payment
+397,558,237,2025-03-02 14:52:04,Mobile Wallet,465.0,Completed,Ride Payment
+398,559,201,2024-04-08 11:01:34,Credit Card,233.93,Completed,Ride Payment
+399,560,386,2025-12-01 01:07:57,Cash,1267.88,Completed,Ride Payment
+400,561,221,2025-03-13 22:50:38,Debit Card,236.39,Failed,Ride Payment
+401,563,298,2024-09-10 00:31:39,Mobile Wallet,86.16,Completed,Ride Payment
+402,564,383,2024-04-12 00:29:07,Bank Transfer,185.85,Completed,Ride Payment
+403,566,27,2025-01-23 15:14:47,Cash,100.54,Completed,Ride Payment
+404,567,413,2025-11-23 13:41:43,Debit Card,639.43,Completed,Ride Payment
+405,568,57,2024-08-06 04:52:37,Mobile Wallet,154.86,Completed,Ride Payment
+406,570,118,2025-12-26 11:21:26,Cash,396.77,Completed,Ride Payment
+407,571,370,2024-06-21 18:45:18,Cash,450.49,Completed,Ride Payment
+408,572,260,2025-10-22 16:34:39,Debit Card,607.24,Completed,Ride Payment
+409,573,264,2025-07-07 02:36:31,Bank Transfer,295.54,Completed,Ride Payment
+410,574,118,2025-10-05 15:23:51,Cash,336.18,Completed,Ride Payment
+411,576,274,2024-08-15 10:11:47,Cash,1032.7,Completed,Ride Payment
+412,577,326,2025-10-15 08:59:27,Mobile Wallet,759.86,Completed,Ride Payment
+413,579,223,2024-11-29 13:47:45,Cash,370.99,Completed,Ride Payment
+414,582,204,2024-08-08 06:58:29,Cash,81.41,Completed,Ride Payment
+415,584,379,2024-03-13 10:28:25,Debit Card,96.13,Completed,Ride Payment
+416,585,140,2025-11-01 08:37:23,Bank Transfer,659.02,Completed,Ride Payment
+417,586,218,2025-01-01 13:29:39,Cash,244.89,Completed,Ride Payment
+418,587,190,2025-01-25 19:32:08,Cash,275.51,Completed,Ride Payment
+419,588,323,2025-06-16 19:44:39,Cash,502.33,Completed,Ride Payment
+420,590,48,2025-05-31 20:13:58,Mobile Wallet,1453.06,Completed,Ride Payment
+421,591,209,2025-02-26 21:38:52,Mobile Wallet,899.75,Completed,Ride Payment
+422,592,136,2025-10-21 00:05:16,Cash,318.3,Refunded,Ride Payment
+423,594,196,2024-08-30 00:55:55,Debit Card,101.15,Completed,Ride Payment
+424,595,328,2025-01-13 19:45:19,Cash,849.69,Completed,Ride Payment
+425,597,36,2025-12-27 10:08:59,Credit Card,571.64,Completed,Ride Payment
+426,598,51,2025-07-03 12:40:13,Mobile Wallet,321.35,Completed,Ride Payment
+427,599,195,2025-03-12 15:22:08,Mobile Wallet,312.98,Completed,Ride Payment
+428,600,467,2024-04-27 06:14:40,Credit Card,572.99,Completed,Ride Payment
+429,601,60,2024-06-09 05:31:57,Cash,535.32,Completed,Ride Payment
+430,602,294,2025-12-17 06:47:49,Bank Transfer,235.55,Completed,Ride Payment
+431,606,210,2024-11-29 11:21:51,Debit Card,468.72,Completed,Ride Payment
+432,608,123,2024-08-05 13:28:42,Cash,374.0,Completed,Ride Payment
+433,609,11,2024-12-03 22:04:18,Cash,188.37,Completed,Ride Payment
+434,610,155,2024-03-28 07:25:28,Mobile Wallet,185.74,Completed,Ride Payment
+435,612,184,2024-01-09 06:50:12,Mobile Wallet,666.09,Completed,Ride Payment
+436,613,450,2024-09-13 05:35:01,Debit Card,274.37,Unknown,Ride Payment
+437,614,78,2025-02-10 11:19:53,Debit Card,607.5,Completed,Ride Payment
+438,615,225,2024-10-05 18:12:57,Credit Card,406.62,Completed,Ride Payment
+439,619,369,2024-08-25 16:29:31,Cash,444.45,Completed,Ride Payment
+440,620,135,2025-07-27 21:11:33,Cash,1125.35,Completed,Ride Payment
+441,621,127,2025-07-22 20:56:48,Bank Transfer,213.19,Completed,Ride Payment
+442,622,481,2024-10-30 23:22:55,Mobile Wallet,343.53,Completed,Ride Payment
+443,625,20,2024-10-04 06:34:33,Credit Card,197.53,Completed,Ride Payment
+444,626,320,2024-12-03 13:12:22,Cash,499.54,Completed,Ride Payment
+445,628,195,2025-08-03 01:05:03,Debit Card,326.49,Refunded,Ride Payment
+446,629,30,2025-01-30 05:29:45,Mobile Wallet,987.88,Failed,Ride Payment
+447,637,486,2024-02-05 19:34:10,Cash,220.21,Completed,Ride Payment
+448,639,103,2024-12-08 23:11:54,Cash,339.62,Completed,Ride Payment
+449,640,7,2025-10-25 18:52:33,Mobile Wallet,779.38,Completed,Ride Payment
+450,641,395,2024-03-18 13:26:46,Cash,325.97,Completed,Ride Payment
+451,642,435,2025-10-08 00:59:10,Bank Transfer,832.41,Completed,Ride Payment
+452,643,235,2025-11-29 00:37:24,Cash,188.22,Completed,Ride Payment
+453,644,303,2024-02-26 14:21:12,Cash,662.36,Completed,Ride Payment
+454,646,485,2024-04-02 06:21:04,Debit Card,213.08,Completed,Ride Payment
+455,647,216,2024-07-26 08:56:47,Cash,268.67,Completed,Ride Payment
+456,648,364,2024-06-09 10:33:15,Credit Card,380.87,Completed,Ride Payment
+457,649,39,2025-08-03 15:15:12,Credit Card,718.46,Completed,Ride Payment
+458,650,439,2024-02-02 17:57:11,Mobile Wallet,881.23,Completed,Ride Payment
+459,651,460,2024-02-28 21:34:18,Debit Card,731.53,Completed,Ride Payment
+460,652,165,2024-01-15 13:04:15,Cash,157.52,Completed,Ride Payment
+461,655,467,2025-11-29 22:29:23,Cash,191.94,Completed,Ride Payment
+462,656,477,2024-07-28 01:14:45,Mobile Wallet,316.81,Completed,Ride Payment
+463,657,440,2025-02-09 00:43:52,Cash,174.09,Completed,Ride Payment
+464,658,383,2024-03-03 08:24:30,Debit Card,699.84,Completed,Ride Payment
+465,660,379,2024-07-08 11:28:37,Mobile Wallet,350.37,Completed,Ride Payment
+466,661,6,2024-09-07 06:33:16,Bank Transfer,634.0,Completed,Ride Payment
+467,664,449,2025-04-21 01:39:35,Mobile Wallet,304.75,Completed,Ride Payment
+468,665,62,2024-06-07 14:28:08,Mobile Wallet,309.1,Failed,Ride Payment
+469,668,13,2024-11-25 19:48:35,Cash,452.3,Completed,Ride Payment
+470,671,244,2024-08-07 10:01:02,Mobile Wallet,297.27,Completed,Ride Payment
+471,675,446,2025-09-08 21:10:52,Mobile Wallet,325.04,Completed,Ride Payment
+472,677,194,2024-06-25 04:13:22,Credit Card,192.02,Completed,Ride Payment
+473,678,208,2024-07-20 22:32:31,Mobile Wallet,242.37,Completed,Ride Payment
+474,679,124,2024-05-05 12:42:18,Debit Card,240.8,Completed,Ride Payment
+475,682,43,2024-09-30 00:40:31,Cash,226.65,Completed,Ride Payment
+476,683,378,2024-01-19 09:32:23,Cash,133.41,Completed,Ride Payment
+477,684,463,2025-04-19 14:52:21,Mobile Wallet,135.43,Completed,Ride Payment
+478,689,178,2024-03-20 09:02:28,Credit Card,771.93,Completed,Ride Payment
+479,690,424,2025-11-25 05:56:27,Mobile Wallet,434.22,Completed,Ride Payment
+480,691,394,2024-08-23 10:42:26,Credit Card,341.53,Completed,Ride Payment
+481,693,410,2025-08-16 17:13:24,Credit Card,164.03,Completed,Ride Payment
+482,694,76,2024-03-27 17:49:25,Debit Card,988.52,Completed,Ride Payment
+483,695,324,2025-12-08 06:18:23,Credit Card,694.4,Completed,Ride Payment
+484,698,184,2024-03-18 20:05:00,Debit Card,247.41,Completed,Ride Payment
+485,699,187,2025-01-05 21:16:22,Cash,390.48,Completed,Ride Payment
+486,700,389,2025-03-14 21:59:30,Mobile Wallet,349.76,Completed,Ride Payment
+487,701,305,2025-07-24 14:09:26,Credit Card,122.74,Completed,Ride Payment
+488,706,87,2024-11-16 23:10:19,Mobile Wallet,389.52,Refunded,Ride Payment
+489,709,203,2025-09-02 17:54:43,Debit Card,165.27,Completed,Ride Payment
+490,710,52,2025-02-26 01:13:06,Cash,352.64,Refunded,Ride Payment
+491,711,212,2024-11-06 22:40:31,Cash,390.83,Completed,Ride Payment
+492,712,339,2025-10-17 23:00:08,Cash,111.55,Completed,Ride Payment
+493,713,453,2025-04-25 03:53:44,Mobile Wallet,416.66,Completed,Ride Payment
+494,714,196,2025-05-17 06:04:01,Credit Card,738.69,Completed,Ride Payment
+495,717,475,2025-05-26 21:56:05,Cash,194.33,Failed,Ride Payment
+496,719,204,2025-10-14 12:23:39,Cash,291.18,Completed,Ride Payment
+497,720,29,2025-10-07 08:36:26,Mobile Wallet,145.9,Completed,Ride Payment
+498,721,500,2024-09-30 23:53:04,Credit Card,315.86,Completed,Ride Payment
+499,722,476,2025-11-22 14:37:09,Cash,175.17,Completed,Ride Payment
+500,723,350,2024-10-03 04:36:13,Mobile Wallet,500.57,Completed,Ride Payment
+501,725,245,2025-02-23 02:31:55,Mobile Wallet,570.59,Completed,Ride Payment
+502,726,15,2025-04-20 04:44:56,Debit Card,299.69,Completed,Ride Payment
+503,728,305,2025-06-18 10:50:27,Cash,200.83,Completed,Ride Payment
+504,729,73,2024-07-07 01:28:38,Debit Card,291.47,Completed,Ride Payment
+505,734,493,2024-08-13 06:17:00,Mobile Wallet,704.05,Completed,Ride Payment
+506,736,261,2025-05-22 08:08:07,Credit Card,1106.14,Completed,Ride Payment
+507,737,239,2025-01-28 21:11:24,Cash,477.45,Completed,Ride Payment
+508,738,483,2024-01-03 02:47:13,Credit Card,316.59,Completed,Ride Payment
+509,739,385,2025-06-05 02:41:28,Credit Card,682.88,Pending,Ride Payment
+510,740,408,2024-02-10 00:46:52,Mobile Wallet,844.15,Completed,Ride Payment
+511,742,438,2024-03-24 01:34:28,Cash,607.93,Completed,Ride Payment
+512,743,373,2024-10-19 10:10:52,Cash,862.16,Failed,Ride Payment
+513,744,325,2025-11-20 09:27:22,Cash,338.06,Completed,Ride Payment
+514,745,381,2025-08-28 15:38:19,Credit Card,136.62,Completed,Ride Payment
+515,747,302,2025-03-29 21:14:39,Debit Card,238.98,Completed,Ride Payment
+516,748,130,2025-05-27 19:35:35,Mobile Wallet,405.32,Completed,Ride Payment
+517,750,350,2024-11-28 23:06:58,Mobile Wallet,265.19,Completed,Ride Payment
+518,752,223,2024-09-24 07:26:08,Cash,411.39,Completed,Ride Payment
+519,753,354,2025-06-29 18:14:11,Mobile Wallet,427.14,Completed,Ride Payment
+520,754,122,2025-01-14 06:02:04,Credit Card,97.83,Pending,Ride Payment
+521,755,450,2025-01-13 00:29:21,Cash,702.56,Completed,Ride Payment
+522,756,235,2024-09-11 10:48:34,Cash,90.12,Completed,Ride Payment
+523,757,479,2024-08-11 17:36:14,Debit Card,1105.23,Completed,Ride Payment
+524,758,256,2025-07-30 16:48:00,Debit Card,379.27,Completed,Ride Payment
+525,759,225,2024-01-20 17:59:07,Cash,602.15,Pending,Ride Payment
+526,760,102,2024-06-30 02:41:44,Cash,329.99,Completed,Ride Payment
+527,764,133,2024-05-15 13:17:55,Mobile Wallet,224.65,Completed,Ride Payment
+528,765,330,2025-07-24 01:55:00,Cash,252.34,Completed,Ride Payment
+529,767,433,2024-01-11 17:08:06,Debit Card,92.29,Completed,Ride Payment
+530,768,35,2025-10-07 22:39:06,Cash,459.29,Completed,Ride Payment
+531,769,22,2025-12-20 11:48:50,Cash,343.33,Completed,Ride Payment
+532,770,114,2024-10-23 21:54:45,Mobile Wallet,1779.73,Completed,Ride Payment
+533,771,351,2024-02-14 21:20:36,Debit Card,868.4,Failed,Ride Payment
+534,772,168,2024-03-22 16:09:28,Bank Transfer,126.58,Completed,Ride Payment
+535,773,355,2024-10-22 14:30:44,Credit Card,535.3,Completed,Ride Payment
+536,774,323,2025-04-17 10:03:17,Credit Card,622.86,Completed,Ride Payment
+537,775,234,2024-02-22 15:49:15,Cash,87.66,Completed,Ride Payment
+538,776,373,2024-10-03 13:47:20,Mobile Wallet,304.37,Completed,Ride Payment
+539,777,370,2024-11-05 20:44:58,Mobile Wallet,506.65,Completed,Ride Payment
+540,778,145,2024-12-14 19:18:23,Cash,217.05,Completed,Ride Payment
+541,779,496,2025-12-31 19:21:06,Mobile Wallet,130.25,Completed,Ride Payment
+542,780,477,2025-01-07 23:55:22,Mobile Wallet,291.71,Completed,Ride Payment
+543,781,145,2024-06-04 20:30:49,Mobile Wallet,387.83,Completed,Ride Payment
+544,782,247,2024-05-24 11:04:59,Cash,326.14,Pending,Ride Payment
+545,783,468,2024-12-24 01:17:06,Cash,1861.7,Completed,Ride Payment
+546,785,458,2024-08-02 08:54:50,Bank Transfer,572.54,Completed,Ride Payment
+547,786,150,2024-10-30 00:46:43,Cash,171.59,Refunded,Ride Payment
+548,788,348,2024-02-25 19:43:05,Credit Card,318.04,Pending,Ride Payment
+549,789,215,2024-09-21 17:46:07,Credit Card,1071.01,Completed,Ride Payment
+550,790,306,2024-03-22 22:25:03,Mobile Wallet,636.81,Completed,Ride Payment
+551,791,404,2024-02-01 12:43:16,Cash,135.26,Completed,Ride Payment
+552,792,214,2025-03-08 15:47:12,Cash,605.75,Completed,Ride Payment
+553,793,256,2024-07-20 08:39:06,Cash,220.48,Completed,Ride Payment
+554,794,350,2025-12-30 19:41:55,Debit Card,374.06,Completed,Ride Payment
+555,796,467,2024-03-05 11:23:23,Credit Card,333.78,Completed,Ride Payment
+556,797,2,2025-01-13 16:02:46,Credit Card,449.17,Completed,Ride Payment
+557,798,359,2024-04-07 05:46:35,Cash,1664.36,Completed,Ride Payment
+558,800,407,2025-09-25 06:00:21,Cash,498.53,Completed,Ride Payment
+559,801,262,2024-02-08 22:55:14,Mobile Wallet,113.54,Completed,Ride Payment
+560,802,477,2024-12-05 14:33:27,Cash,232.28,Completed,Ride Payment
+561,804,68,2024-03-10 23:33:32,Mobile Wallet,1204.5,Completed,Ride Payment
+562,810,369,2025-05-10 15:46:33,Debit Card,279.03,Completed,Ride Payment
+563,811,370,2024-05-27 00:26:50,Cash,262.94,Completed,Ride Payment
+564,812,411,2025-07-18 14:54:12,Debit Card,485.81,Completed,Ride Payment
+565,813,262,2025-07-04 21:26:20,Mobile Wallet,414.69,Completed,Ride Payment
+566,814,146,2024-06-22 12:02:31,Cash,615.06,Completed,Ride Payment
+567,815,129,2024-10-28 20:36:55,Mobile Wallet,520.34,Completed,Ride Payment
+568,818,31,2025-10-08 07:42:40,Mobile Wallet,351.13,Completed,Ride Payment
+569,820,289,2025-10-13 03:49:27,Cash,262.87,Completed,Ride Payment
+570,821,464,2024-04-22 18:30:30,Mobile Wallet,509.73,Completed,Ride Payment
+571,822,366,2025-07-09 01:47:53,Credit Card,480.74,Completed,Ride Payment
+572,823,276,2025-11-10 05:49:08,Mobile Wallet,885.56,Completed,Ride Payment
+573,824,103,2024-08-20 22:01:03,Mobile Wallet,1031.7,Completed,Ride Payment
+574,825,367,2025-03-15 23:33:23,Credit Card,473.36,Completed,Ride Payment
+575,826,105,2025-08-13 18:31:38,Cash,383.62,Completed,Ride Payment
+576,827,5,2024-12-16 16:49:31,Cash,703.84,Completed,Ride Payment
+577,828,183,2025-12-22 18:22:45,Credit Card,1501.89,Completed,Ride Payment
+578,829,161,2024-11-24 19:48:30,Cash,882.63,Completed,Ride Payment
+579,830,264,2025-12-23 20:52:10,Cash,231.72,Completed,Ride Payment
+580,831,2,2024-03-29 02:07:05,Debit Card,496.63,Completed,Ride Payment
+581,832,63,2024-03-22 02:14:44,Mobile Wallet,814.02,Completed,Ride Payment
+582,833,396,2024-01-24 09:23:13,Cash,444.11,Completed,Ride Payment
+583,834,375,2025-11-25 18:37:36,Credit Card,1455.96,Completed,Ride Payment
+584,836,282,2024-08-18 23:18:53,Debit Card,489.69,Completed,Ride Payment
+585,838,466,2025-06-21 13:17:22,Cash,343.81,Refunded,Ride Payment
+586,839,232,2025-04-24 02:01:02,Cash,142.93,Completed,Ride Payment
+587,840,359,2025-07-23 09:53:12,Cash,622.53,Completed,Ride Payment
+588,841,44,2025-08-21 01:39:50,Credit Card,183.06,Failed,Ride Payment
+589,843,91,2025-04-02 06:50:22,Cash,412.78,Completed,Ride Payment
+590,844,2,2025-05-27 22:13:12,Mobile Wallet,114.16,Completed,Ride Payment
+591,846,274,2024-04-17 18:22:38,Cash,317.5,Completed,Ride Payment
+592,847,66,2025-05-27 03:54:32,Cash,208.5,Completed,Ride Payment
+593,849,408,2024-11-13 17:03:32,Cash,1001.29,Completed,Ride Payment
+594,851,70,2024-06-04 08:51:41,Mobile Wallet,405.49,Completed,Ride Payment
+595,852,211,2024-11-08 03:27:01,Mobile Wallet,342.99,Completed,Ride Payment
+596,853,233,2025-07-20 06:41:51,Bank Transfer,379.69,Completed,Ride Payment
+597,854,114,2024-09-21 22:29:04,Mobile Wallet,458.75,Completed,Ride Payment
+598,856,204,2024-12-03 20:01:52,Mobile Wallet,264.22,Completed,Ride Payment
+599,857,141,2025-02-06 06:55:46,Mobile Wallet,104.67,Completed,Ride Payment
+600,860,110,2025-07-26 01:13:46,Cash,449.2,Completed,Ride Payment
+601,861,121,2024-11-17 14:39:51,Mobile Wallet,710.53,Completed,Ride Payment
+602,862,186,2025-02-08 14:39:29,Cash,212.8,Completed,Ride Payment
+603,863,4,2025-07-29 02:37:51,Cash,637.13,Failed,Ride Payment
+604,867,361,2024-02-15 02:11:44,Credit Card,403.32,Completed,Ride Payment
+605,868,374,2024-09-07 02:01:46,Cash,2468.69,Completed,Ride Payment
+606,869,125,2025-10-05 14:41:45,Mobile Wallet,147.31,Completed,Ride Payment
+607,870,462,2024-07-27 10:54:32,Credit Card,1105.28,Failed,Ride Payment
+608,872,313,2025-03-10 20:33:42,Cash,351.18,Completed,Ride Payment
+609,873,31,2024-12-18 18:38:05,Cash,519.23,Completed,Ride Payment
+610,874,119,2024-11-06 20:53:03,Cash,1162.93,Completed,Ride Payment
+611,875,136,2025-04-16 10:20:24,Mobile Wallet,804.98,Completed,Ride Payment
+612,876,136,2025-05-01 20:20:21,Bank Transfer,242.1,Completed,Ride Payment
+613,877,443,2024-09-28 08:15:48,Debit Card,446.15,Completed,Ride Payment
+614,879,71,2025-05-28 14:31:34,Cash,209.25,Completed,Ride Payment
+615,880,498,2024-12-17 17:41:51,Cash,725.0,Completed,Ride Payment
+616,883,222,2025-09-02 09:08:36,Mobile Wallet,355.03,Completed,Ride Payment
+617,885,466,2024-06-15 12:46:01,Cash,440.7,Completed,Ride Payment
+618,887,179,2024-01-21 14:19:05,Credit Card,84.83,Completed,Ride Payment
+619,890,124,2024-07-01 17:22:30,Mobile Wallet,630.73,Completed,Ride Payment
+620,892,140,2024-10-30 15:40:58,Debit Card,98.67,Completed,Ride Payment
+621,893,206,2025-02-10 14:40:33,Credit Card,605.77,Completed,Ride Payment
+622,894,138,2025-06-21 11:29:34,Cash,243.43,Completed,Ride Payment
+623,895,75,2025-12-24 11:20:32,Mobile Wallet,266.72,Completed,Ride Payment
+624,898,191,2025-09-25 21:20:12,Cash,197.41,Completed,Ride Payment
+625,899,49,2025-03-22 07:31:57,Cash,265.8,Completed,Ride Payment
+626,900,274,2024-01-16 15:32:32,Mobile Wallet,556.11,Completed,Ride Payment
+627,902,311,2024-06-23 20:31:26,Cash,382.16,Completed,Ride Payment
+628,903,6,2025-10-31 07:51:53,Debit Card,343.95,Completed,Ride Payment
+629,905,467,2024-06-05 06:23:33,Cash,218.98,Completed,Ride Payment
+630,908,370,2025-06-19 12:21:07,Debit Card,955.26,Completed,Ride Payment
+631,909,169,2024-05-12 21:13:29,Cash,210.15,Completed,Ride Payment
+632,910,467,2024-06-23 01:39:03,Mobile Wallet,927.74,Completed,Ride Payment
+633,911,253,2024-05-17 05:24:05,Cash,129.93,Completed,Ride Payment
+634,912,398,2025-03-01 20:30:16,Mobile Wallet,180.71,Completed,Ride Payment
+635,913,407,2024-05-15 06:18:34,Debit Card,87.03,Failed,Ride Payment
+636,914,484,2024-02-28 10:41:01,Credit Card,160.87,Completed,Ride Payment
+637,915,232,2024-12-22 04:11:48,Credit Card,385.35,Completed,Ride Payment
+638,917,407,2024-07-29 19:42:33,Cash,470.87,Completed,Ride Payment
+639,918,13,2024-07-13 18:03:26,Credit Card,662.86,Completed,Ride Payment
+640,919,364,2024-08-07 14:15:29,Credit Card,132.27,Completed,Ride Payment
+641,920,481,2024-05-10 01:54:59,Bank Transfer,1379.59,Completed,Ride Payment
+642,922,456,2025-02-21 18:55:37,Debit Card,134.27,Completed,Ride Payment
+643,924,210,2024-10-31 18:55:01,Mobile Wallet,561.42,Completed,Ride Payment
+644,926,357,2024-07-16 01:46:29,Mobile Wallet,269.57,Completed,Ride Payment
+645,927,31,2025-07-31 19:40:55,Credit Card,463.48,Completed,Ride Payment
+646,934,74,2024-06-10 09:55:18,Credit Card,752.07,Completed,Ride Payment
+647,937,337,2024-03-09 01:31:58,Debit Card,488.65,Completed,Ride Payment
+648,939,52,2025-03-07 02:50:28,Credit Card,177.36,Completed,Ride Payment
+649,940,281,2024-08-30 18:13:00,Credit Card,133.59,Completed,Ride Payment
+650,943,235,2024-12-21 15:26:44,Cash,181.07,Completed,Ride Payment
+651,944,32,2025-05-10 09:44:04,Debit Card,364.25,Completed,Ride Payment
+652,947,496,2025-05-05 15:44:56,Mobile Wallet,539.03,Completed,Ride Payment
+653,948,120,2025-05-24 21:04:43,Debit Card,288.65,Completed,Ride Payment
+654,949,413,2025-11-18 08:18:46,Mobile Wallet,592.74,Completed,Ride Payment
+655,951,13,2024-01-04 08:08:42,Cash,266.17,Completed,Ride Payment
+656,952,355,2024-02-09 16:12:22,Cash,180.85,Completed,Ride Payment
+657,953,117,2025-02-18 04:15:08,Cash,1565.31,Completed,Ride Payment
+658,954,281,2024-11-30 18:40:04,Debit Card,417.54,Completed,Ride Payment
+659,956,306,2025-12-30 01:17:27,Credit Card,177.76,Completed,Ride Payment
+660,959,400,2024-06-16 01:33:13,Cash,203.45,Completed,Ride Payment
+661,960,440,2024-07-31 17:32:34,Credit Card,180.65,Completed,Ride Payment
+662,961,226,2024-08-09 21:58:10,Debit Card,131.34,Failed,Ride Payment
+663,964,394,2025-05-14 13:30:42,Cash,269.62,Completed,Ride Payment
+664,965,477,2024-03-23 16:55:26,Credit Card,126.91,Completed,Ride Payment
+665,966,337,2024-08-07 16:19:04,Mobile Wallet,162.89,Completed,Ride Payment
+666,969,105,2025-04-22 08:53:04,Cash,392.25,Completed,Ride Payment
+667,970,95,2025-06-01 09:46:33,Debit Card,341.76,Completed,Ride Payment
+668,971,274,2025-10-02 03:56:11,Mobile Wallet,127.53,Completed,Ride Payment
+669,972,4,2024-04-15 19:13:09,Cash,1213.87,Completed,Ride Payment
+670,973,206,2025-03-17 14:29:01,Mobile Wallet,122.31,Completed,Ride Payment
+671,975,96,2024-04-21 07:47:55,Cash,582.96,Completed,Ride Payment
+672,976,168,2025-11-11 08:58:32,Credit Card,724.87,Completed,Ride Payment
+673,977,436,2024-05-21 20:36:09,Cash,823.15,Completed,Ride Payment
+674,978,108,2024-12-20 13:23:28,Debit Card,69.64,Completed,Ride Payment
+675,979,110,2025-11-28 02:53:15,Debit Card,1220.7,Completed,Ride Payment
+676,981,66,2025-04-21 08:54:27,Cash,156.2,Completed,Ride Payment
+677,982,113,2024-12-09 22:11:13,Cash,671.46,Completed,Ride Payment
+678,983,15,2024-01-17 04:32:47,Credit Card,268.6,Completed,Ride Payment
+679,984,6,2024-09-21 11:08:58,Cash,129.78,Completed,Ride Payment
+680,986,262,2025-03-14 18:23:16,Mobile Wallet,368.7,Completed,Ride Payment
+681,987,476,2025-01-13 12:47:53,Debit Card,264.76,Completed,Ride Payment
+682,989,481,2024-09-17 09:05:59,Mobile Wallet,703.24,Completed,Ride Payment
+683,990,490,2025-09-19 02:33:29,Bank Transfer,659.5,Completed,Ride Payment
+684,991,15,2024-05-18 07:30:05,Debit Card,1182.84,Completed,Ride Payment
+685,992,479,2025-01-30 21:21:18,Cash,96.24,Failed,Ride Payment
+686,993,291,2024-01-27 07:44:51,Credit Card,263.5,Completed,Ride Payment
+687,994,343,2025-01-08 08:29:21,Bank Transfer,466.79,Completed,Ride Payment
+688,995,347,2025-06-23 07:49:45,Mobile Wallet,143.12,Completed,Ride Payment
+689,996,251,2025-05-16 15:36:45,Mobile Wallet,194.16,Completed,Ride Payment
+690,997,73,2025-06-25 13:06:18,Credit Card,355.29,Completed,Ride Payment
+691,998,356,2025-03-23 07:04:26,Credit Card,150.27,Completed,Ride Payment
+692,999,183,2024-04-16 10:28:08,Debit Card,71.78,Completed,Ride Payment
+693,1000,492,2025-05-02 22:08:26,Bank Transfer,132.79,Completed,Ride Payment
+694,1001,119,2025-04-15 12:49:44,Cash,816.75,Completed,Ride Payment
+695,1002,89,2024-04-27 12:36:34,Debit Card,226.01,Completed,Ride Payment
+696,1003,206,2024-02-06 02:26:26,Debit Card,430.01,Completed,Ride Payment
+697,1004,411,2025-07-03 23:16:38,Debit Card,153.49,Completed,Ride Payment
+698,1006,241,2025-07-12 05:42:21,Mobile Wallet,273.97,Completed,Ride Payment
+699,1007,440,2025-10-20 01:48:32,Mobile Wallet,70.74,Completed,Ride Payment
+700,1008,153,2024-04-12 22:00:42,Mobile Wallet,592.87,Completed,Ride Payment
+701,1010,152,2025-08-18 10:58:39,Debit Card,1087.33,Completed,Ride Payment
+702,1011,212,2025-05-03 20:12:24,Mobile Wallet,263.51,Completed,Ride Payment
+703,1012,33,2024-11-18 20:07:31,Debit Card,140.08,Completed,Ride Payment
+704,1013,392,2025-08-03 08:48:00,Bank Transfer,474.88,Completed,Ride Payment
+705,1016,296,2025-08-07 00:06:07,Mobile Wallet,534.41,Completed,Ride Payment
+706,1017,296,2024-06-26 15:48:33,Cash,133.22,Completed,Ride Payment
+707,1018,64,2025-12-07 03:29:10,Debit Card,421.92,Completed,Ride Payment
+708,1020,64,2025-03-10 08:37:20,Mobile Wallet,1296.81,Completed,Ride Payment
+709,1022,16,2025-09-15 00:48:22,Credit Card,355.75,Completed,Ride Payment
+710,1023,419,2025-04-30 10:33:07,Mobile Wallet,165.78,Completed,Ride Payment
+711,1025,239,2025-09-02 05:43:33,Debit Card,268.29,Completed,Ride Payment
+712,1026,451,2025-06-17 08:54:50,Cash,2925.29,Completed,Ride Payment
+713,1028,106,2025-11-12 12:26:05,Credit Card,341.66,Completed,Ride Payment
+714,1029,443,2024-03-21 13:36:37,Cash,423.57,Completed,Ride Payment
+715,1030,411,2025-01-29 11:01:26,Credit Card,1560.06,Completed,Ride Payment
+716,1031,68,2024-03-16 23:28:38,Debit Card,739.69,Completed,Ride Payment
+717,1032,471,2024-01-01 12:43:21,Cash,95.55,Completed,Ride Payment
+718,1033,239,2024-06-18 07:26:21,Mobile Wallet,474.55,Completed,Ride Payment
+719,1036,466,2024-08-17 21:05:34,Mobile Wallet,367.9,Completed,Ride Payment
+720,1041,229,2024-09-06 16:18:06,Debit Card,75.32,Completed,Ride Payment
+721,1042,498,2025-12-15 21:34:04,Mobile Wallet,130.17,Completed,Ride Payment
+722,1045,303,2025-06-07 08:44:51,Cash,1955.66,Completed,Ride Payment
+723,1048,334,2025-01-05 16:27:36,Credit Card,1097.84,Completed,Ride Payment
+724,1049,265,2025-10-15 02:01:06,Credit Card,773.06,Completed,Ride Payment
+725,1050,241,2024-01-29 23:58:05,Cash,402.27,Pending,Ride Payment
+726,1051,273,2025-06-04 08:53:43,Cash,902.5,Completed,Ride Payment
+727,1052,424,2024-05-24 00:31:57,Mobile Wallet,498.38,Completed,Ride Payment
+728,1053,229,2025-08-20 07:48:10,Credit Card,365.06,Completed,Ride Payment
+729,1054,443,2025-04-15 15:29:12,Mobile Wallet,366.14,Completed,Ride Payment
+730,1056,149,2025-04-30 01:47:34,Bank Transfer,167.52,Completed,Ride Payment
+731,1057,500,2025-06-14 04:57:10,Credit Card,188.77,Completed,Ride Payment
+732,1060,164,2025-05-03 19:44:47,Cash,974.75,Completed,Ride Payment
+733,1061,369,2024-05-24 03:49:00,Cash,75.11,Completed,Ride Payment
+734,1062,144,2025-06-10 04:29:52,Mobile Wallet,875.71,Completed,Ride Payment
+735,1066,87,2025-07-18 08:37:54,Cash,291.94,Completed,Ride Payment
+736,1068,253,2024-04-17 23:35:03,Debit Card,190.83,Completed,Ride Payment
+737,1070,196,2025-05-16 16:27:31,Cash,844.52,Failed,Ride Payment
+738,1071,284,2024-10-19 21:46:02,Credit Card,239.38,Completed,Ride Payment
+739,1072,297,2025-11-12 02:03:02,Cash,149.01,Completed,Ride Payment
+740,1073,119,2025-01-02 16:16:14,Cash,465.63,Completed,Ride Payment
+741,1074,190,2025-02-13 08:45:15,Credit Card,954.5,Completed,Ride Payment
+742,1075,496,2024-05-10 18:52:11,Mobile Wallet,234.34,Completed,Ride Payment
+743,1076,40,2024-08-03 11:27:49,Credit Card,571.18,Completed,Ride Payment
+744,1077,336,2024-10-20 16:51:56,Bank Transfer,337.61,Completed,Ride Payment
+745,1078,430,2024-01-29 20:14:26,Mobile Wallet,1410.93,Completed,Ride Payment
+746,1080,422,2025-11-29 12:54:14,Debit Card,1279.02,Completed,Ride Payment
+747,1081,62,2025-08-12 20:59:25,Credit Card,158.76,Completed,Ride Payment
+748,1082,457,2025-06-14 10:25:08,Cash,1534.55,Completed,Ride Payment
+749,1083,26,2025-11-12 19:08:29,Mobile Wallet,755.64,Completed,Ride Payment
+750,1084,497,2025-03-05 05:09:18,Credit Card,351.09,Completed,Ride Payment
+751,1089,134,2024-06-16 08:17:54,Debit Card,234.84,Completed,Ride Payment
+752,1090,207,2024-12-03 03:33:31,Debit Card,185.33,Completed,Ride Payment
+753,1092,375,2025-03-04 01:33:05,Cash,410.64,Completed,Ride Payment
+754,1093,276,2024-10-15 01:11:24,Mobile Wallet,538.23,Completed,Ride Payment
+755,1094,294,2025-05-16 16:26:09,Cash,298.79,Completed,Ride Payment
+756,1096,252,2024-09-09 20:59:26,Credit Card,351.15,Completed,Ride Payment
+757,1097,225,2024-07-26 02:43:14,Mobile Wallet,172.63,Completed,Ride Payment
+758,1099,218,2024-03-05 03:45:33,Cash,907.07,Completed,Ride Payment
+759,1100,292,2025-03-17 20:13:43,Mobile Wallet,377.95,Completed,Ride Payment
+760,1102,404,2024-07-18 10:09:31,Cash,247.67,Completed,Ride Payment
+761,1103,386,2025-03-01 06:20:40,Cash,221.68,Completed,Ride Payment
+762,1105,20,2025-11-24 10:19:35,Credit Card,805.3,Completed,Ride Payment
+763,1109,397,2025-04-21 15:29:19,Cash,173.34,Completed,Ride Payment
+764,1110,78,2025-05-06 21:44:15,Mobile Wallet,1065.07,Completed,Ride Payment
+765,1111,86,2025-11-26 19:31:48,Credit Card,417.72,Completed,Ride Payment
+766,1113,140,2025-06-12 05:46:11,Cash,215.68,Completed,Ride Payment
+767,1114,155,2024-12-30 13:48:25,Mobile Wallet,276.11,Completed,Ride Payment
+768,1117,8,2024-01-21 21:57:36,Mobile Wallet,175.78,Completed,Ride Payment
+769,1118,338,2024-10-17 06:13:31,Credit Card,366.82,Completed,Ride Payment
+770,1121,307,2024-06-16 14:54:01,Credit Card,667.22,Completed,Ride Payment
+771,1122,34,2024-04-26 04:30:15,Credit Card,468.5,Completed,Ride Payment
+772,1123,333,2025-03-27 05:44:53,Cash,163.11,Completed,Ride Payment
+773,1124,482,2024-03-26 17:37:49,Mobile Wallet,288.3,Completed,Ride Payment
+774,1125,150,2025-01-24 17:56:58,Cash,585.95,Failed,Ride Payment
+775,1127,207,2025-08-07 20:45:38,Cash,94.09,Completed,Ride Payment
+776,1129,61,2025-05-29 08:07:27,Cash,621.11,Completed,Ride Payment
+777,1130,409,2025-02-25 14:46:40,Cash,546.89,Completed,Ride Payment
+778,1132,414,2024-09-24 07:55:39,Cash,138.45,Completed,Ride Payment
+779,1133,182,2025-11-22 18:34:57,Cash,350.57,Completed,Ride Payment
+780,1134,331,2024-09-11 17:13:39,Cash,157.01,Completed,Ride Payment
+781,1136,175,2025-02-15 22:08:15,Debit Card,149.06,Completed,Ride Payment
+782,1138,415,2025-11-03 12:26:44,Mobile Wallet,282.14,Completed,Ride Payment
+783,1139,113,2024-08-06 21:51:36,Credit Card,319.72,Completed,Ride Payment
+784,1140,435,2025-09-14 07:30:53,Credit Card,257.93,Completed,Ride Payment
+785,1141,473,2025-04-21 13:31:17,Cash,393.98,Completed,Ride Payment
+786,1142,431,2025-10-02 03:07:33,Credit Card,239.07,Completed,Ride Payment
+787,1144,161,2025-05-06 00:32:34,Debit Card,360.36,Completed,Ride Payment
+788,1145,144,2024-05-14 22:05:50,Cash,99.44,Completed,Ride Payment
+789,1146,77,2025-07-03 20:37:04,Debit Card,328.14,Completed,Ride Payment
+790,1147,398,2025-04-02 21:36:52,Mobile Wallet,170.63,Completed,Ride Payment
+791,1148,450,2025-01-22 23:45:06,Cash,1177.55,Completed,Ride Payment
+792,1149,3,2025-12-07 22:24:40,Mobile Wallet,391.71,Completed,Ride Payment
+793,1150,204,2025-12-08 22:47:50,Cash,178.5,Completed,Ride Payment
+794,1152,106,2025-05-08 11:21:36,Credit Card,96.72,Completed,Ride Payment
+795,1153,81,2025-04-15 04:31:53,Mobile Wallet,265.94,Completed,Ride Payment
+796,1154,495,2024-05-19 12:56:36,Credit Card,251.6,Completed,Ride Payment
+797,1155,476,2024-05-19 15:55:55,Credit Card,271.51,Completed,Ride Payment
+798,1157,411,2024-03-11 09:57:50,Debit Card,380.79,Completed,Ride Payment
+799,1158,106,2025-11-01 15:42:31,Debit Card,208.12,Completed,Ride Payment
+800,1159,3,2024-12-14 06:33:01,Mobile Wallet,470.77,Completed,Ride Payment
+801,1160,374,2024-07-18 03:15:49,Mobile Wallet,79.89,Completed,Ride Payment
+802,1161,434,2024-06-05 07:32:04,Debit Card,699.08,Completed,Ride Payment
+803,1163,240,2025-12-08 20:41:55,Debit Card,1159.36,Refunded,Ride Payment
+804,1164,279,2024-12-04 15:02:56,Cash,215.78,Completed,Ride Payment
+805,1165,281,2024-07-11 23:48:12,Credit Card,284.96,Completed,Ride Payment
+806,1168,132,2024-01-11 14:31:58,Credit Card,248.4,Completed,Ride Payment
+807,1169,252,2025-10-09 21:55:20,Mobile Wallet,123.21,Completed,Ride Payment
+808,1170,150,2024-12-19 03:13:50,Debit Card,143.12,Completed,Ride Payment
+809,1172,77,2025-01-22 20:06:52,Credit Card,398.86,Completed,Ride Payment
+810,1175,63,2024-04-26 01:33:03,Debit Card,188.57,Completed,Ride Payment
+811,1176,159,2024-06-08 21:41:14,Credit Card,1134.25,Completed,Ride Payment
+812,1178,318,2024-06-26 08:40:46,Cash,2073.44,Completed,Ride Payment
+813,1179,105,2025-05-12 23:26:53,Mobile Wallet,700.27,Completed,Ride Payment
+814,1180,206,2024-04-27 13:35:22,Cash,601.8,Completed,Ride Payment
+815,1181,334,2025-11-12 00:22:48,Cash,309.23,Completed,Ride Payment
+816,1184,233,2025-05-31 08:47:53,Credit Card,223.61,Completed,Ride Payment
+817,1185,31,2024-11-20 04:51:50,Bank Transfer,211.0,Completed,Ride Payment
+818,1186,223,2024-11-25 04:16:42,Debit Card,138.97,Completed,Ride Payment
+819,1187,83,2024-06-27 07:15:10,Mobile Wallet,405.16,Completed,Ride Payment
+820,1188,201,2025-10-22 09:15:26,Cash,499.24,Completed,Ride Payment
+821,1189,168,2024-04-12 15:29:04,Credit Card,276.63,Completed,Ride Payment
+822,1191,410,2024-03-29 23:13:15,Cash,253.1,Completed,Ride Payment
+823,1192,154,2024-07-18 10:30:15,Mobile Wallet,806.84,Completed,Ride Payment
+824,1193,349,2024-07-27 20:23:14,Cash,326.92,Completed,Ride Payment
+825,1194,76,2025-01-23 09:46:45,Mobile Wallet,562.64,Completed,Ride Payment
+826,1196,345,2025-11-27 03:53:24,Cash,178.7,Failed,Ride Payment
+827,1197,184,2025-09-06 23:40:56,Credit Card,1281.1,Completed,Ride Payment
+828,1199,123,2025-07-24 22:59:24,Cash,300.24,Completed,Ride Payment
+829,1200,191,2025-12-02 10:05:37,Debit Card,952.91,Completed,Ride Payment
+830,1201,66,2024-08-12 21:52:59,Mobile Wallet,1277.82,Completed,Ride Payment
+831,1203,484,2025-07-15 06:26:48,Mobile Wallet,140.67,Failed,Ride Payment
+832,1204,485,2024-06-01 08:55:05,Mobile Wallet,1095.12,Completed,Ride Payment
+833,1206,141,2025-03-23 00:48:54,Mobile Wallet,573.67,Completed,Ride Payment
+834,1207,87,2025-11-25 04:38:47,Cash,71.17,Failed,Ride Payment
+835,1208,182,2025-01-15 11:07:42,Cash,172.37,Completed,Ride Payment
+836,1209,225,2025-06-07 15:14:00,Cash,163.36,Completed,Ride Payment
+837,1210,71,2024-05-29 04:32:32,Debit Card,247.67,Completed,Ride Payment
+838,1211,495,2024-03-16 05:51:35,Mobile Wallet,438.31,Completed,Ride Payment
+839,1212,354,2024-11-29 18:18:45,Credit Card,549.99,Completed,Ride Payment
+840,1213,452,2024-06-19 14:04:45,Debit Card,1096.36,Completed,Ride Payment
+841,1214,443,2025-06-25 08:23:19,Cash,268.38,Completed,Ride Payment
+842,1215,417,2025-09-25 00:52:21,Cash,174.3,Completed,Ride Payment
+843,1216,326,2024-01-23 09:07:31,Debit Card,499.68,Completed,Ride Payment
+844,1218,365,2024-04-25 02:02:24,Cash,308.72,Completed,Ride Payment
+845,1219,424,2024-01-25 09:31:53,Mobile Wallet,1051.7,Completed,Ride Payment
+846,1221,352,2025-03-20 09:39:01,Mobile Wallet,483.63,Completed,Ride Payment
+847,1222,113,2024-02-17 05:32:07,Debit Card,510.46,Completed,Ride Payment
+848,1224,145,2024-10-23 21:26:58,Cash,157.89,Completed,Ride Payment
+849,1225,228,2025-08-27 15:34:28,Cash,434.87,Completed,Ride Payment
+850,1226,225,2025-12-20 22:54:18,Credit Card,363.66,Completed,Ride Payment
+851,1227,182,2025-02-12 12:43:53,Bank Transfer,379.89,Completed,Ride Payment
+852,1228,2,2024-09-11 14:01:08,Credit Card,210.73,Completed,Ride Payment
+853,1230,19,2025-10-29 11:00:03,Mobile Wallet,332.97,Completed,Ride Payment
+854,1231,447,2024-11-11 09:25:20,Mobile Wallet,105.98,Pending,Ride Payment
+855,1232,306,2025-12-20 00:33:07,Mobile Wallet,541.57,Completed,Ride Payment
+856,1233,68,2024-11-14 12:54:58,Credit Card,681.44,Refunded,Ride Payment
+857,1236,239,2025-03-27 14:16:56,Debit Card,394.63,Completed,Ride Payment
+858,1237,157,2025-04-03 10:25:47,Credit Card,614.74,Refunded,Ride Payment
+859,1240,299,2024-12-04 22:41:34,Cash,635.96,Completed,Ride Payment
+860,1241,378,2025-10-26 05:53:34,Debit Card,600.18,Pending,Ride Payment
+861,1242,136,2025-03-23 08:27:34,Mobile Wallet,1088.8,Completed,Ride Payment
+862,1243,424,2024-11-19 20:15:28,Bank Transfer,331.74,Completed,Ride Payment
+863,1244,12,2025-11-02 08:28:47,Credit Card,613.27,Completed,Ride Payment
+864,1247,447,2025-06-07 01:21:17,Cash,243.06,Completed,Ride Payment
+865,1248,386,2025-11-25 14:47:47,Cash,292.28,Completed,Ride Payment
+866,1250,161,2024-08-27 04:46:37,Mobile Wallet,411.35,Completed,Ride Payment
+867,1251,78,2024-11-23 12:41:20,Debit Card,281.75,Pending,Ride Payment
+868,1252,31,2024-01-13 17:28:32,Mobile Wallet,154.41,Completed,Ride Payment
+869,1254,17,2024-09-02 05:45:19,Cash,221.22,Completed,Ride Payment
+870,1255,175,2025-06-27 07:53:15,Mobile Wallet,501.07,Completed,Ride Payment
+871,1257,230,2025-07-09 12:44:28,Bank Transfer,766.61,Completed,Ride Payment
+872,1258,157,2024-07-31 20:50:57,Debit Card,662.26,Completed,Ride Payment
+873,1259,331,2024-09-08 23:36:22,Mobile Wallet,260.95,Completed,Ride Payment
+874,1260,264,2025-05-24 00:52:37,Debit Card,539.85,Completed,Ride Payment
+875,1261,244,2025-12-03 09:57:58,Debit Card,2153.3,Completed,Ride Payment
+876,1263,482,2025-04-08 12:58:38,Cash,369.25,Completed,Ride Payment
+877,1264,328,2024-01-27 00:52:55,Bank Transfer,692.87,Completed,Ride Payment
+878,1265,154,2024-03-05 04:14:41,Mobile Wallet,859.12,Completed,Ride Payment
+879,1267,76,2025-05-13 13:34:29,Credit Card,515.55,Completed,Ride Payment
+880,1269,354,2024-05-27 06:35:32,Credit Card,291.06,Completed,Ride Payment
+881,1270,366,2025-01-20 17:58:34,Credit Card,150.67,Completed,Ride Payment
+882,1273,171,2025-09-03 01:51:52,Debit Card,227.12,Completed,Ride Payment
+883,1274,138,2024-12-26 01:44:12,Mobile Wallet,214.33,Completed,Ride Payment
+884,1275,123,2025-03-15 03:22:50,Cash,605.46,Completed,Ride Payment
+885,1276,320,2024-04-07 07:10:57,Mobile Wallet,812.59,Completed,Ride Payment
+886,1277,157,2024-03-13 20:14:16,Cash,323.91,Pending,Ride Payment
+887,1278,100,2024-12-16 10:28:23,Mobile Wallet,101.15,Completed,Ride Payment
+888,1279,169,2024-08-18 09:10:30,Cash,1151.25,Completed,Ride Payment
+889,1280,440,2025-08-07 09:46:18,Cash,856.33,Completed,Ride Payment
+890,1282,363,2024-11-20 08:18:38,Bank Transfer,316.45,Refunded,Ride Payment
+891,1283,125,2025-08-30 03:18:48,Debit Card,165.11,Completed,Ride Payment
+892,1284,80,2024-01-09 17:55:22,Cash,273.87,Completed,Ride Payment
+893,1285,150,2025-01-29 01:00:50,Mobile Wallet,397.94,Completed,Ride Payment
+894,1287,475,2024-02-03 05:26:38,Mobile Wallet,139.3,Completed,Ride Payment
+895,1289,296,2024-03-03 09:04:15,Mobile Wallet,263.25,Completed,Ride Payment
+896,1290,189,2024-09-01 14:42:12,Cash,747.66,Completed,Ride Payment
+897,1291,4,2025-08-31 13:13:34,Cash,1682.99,Completed,Ride Payment
+898,1292,413,2025-06-12 01:14:08,Cash,765.81,Completed,Ride Payment
+899,1293,448,2024-07-12 21:05:20,Cash,441.77,Completed,Ride Payment
+900,1294,449,2024-12-21 10:05:27,Cash,189.29,Completed,Ride Payment
+901,1295,217,2024-05-14 07:45:34,Debit Card,308.72,Completed,Ride Payment
+902,1298,411,2025-06-29 18:29:44,Cash,700.81,Completed,Ride Payment
+903,1301,4,2024-10-16 19:45:08,Debit Card,230.69,Completed,Ride Payment
+904,1302,92,2024-02-23 22:14:41,Mobile Wallet,943.41,Completed,Ride Payment
+905,1303,15,2025-05-11 09:25:40,Cash,386.46,Pending,Ride Payment
+906,1304,324,2024-08-21 19:02:00,Cash,599.72,Completed,Ride Payment
+907,1305,98,2025-11-22 02:55:40,Cash,130.66,Completed,Ride Payment
+908,1306,386,2025-02-28 08:34:36,Credit Card,271.67,Completed,Ride Payment
+909,1311,207,2024-11-30 01:41:53,Mobile Wallet,1197.35,Completed,Ride Payment
+910,1312,41,2024-07-20 04:32:20,Cash,359.06,Completed,Ride Payment
+911,1314,11,2024-07-06 00:00:53,Mobile Wallet,251.15,Completed,Ride Payment
+912,1315,247,2025-12-16 07:18:08,Cash,225.27,Completed,Ride Payment
+913,1316,430,2024-10-02 18:58:15,Cash,292.41,Completed,Ride Payment
+914,1318,171,2024-03-23 00:50:17,Credit Card,146.83,Completed,Ride Payment
+915,1319,430,2024-09-06 11:45:35,Bank Transfer,323.09,Completed,Ride Payment
+916,1320,21,2025-08-25 12:49:38,Debit Card,289.98,Completed,Ride Payment
+917,1321,111,2024-10-01 15:02:48,Bank Transfer,806.37,Completed,Ride Payment
+918,1323,479,2024-12-27 00:50:20,Credit Card,439.4,Completed,Ride Payment
+919,1325,232,2024-06-20 07:18:42,Debit Card,215.55,Completed,Ride Payment
+920,1326,303,2024-01-13 07:43:27,Credit Card,251.91,Completed,Ride Payment
+921,1327,413,2025-12-26 05:32:26,Cash,209.3,Completed,Ride Payment
+922,1328,367,2024-06-22 01:23:16,Cash,224.37,Completed,Ride Payment
+923,1329,4,2025-10-10 19:08:15,Cash,577.63,Completed,Ride Payment
+924,1330,134,2025-03-18 11:08:02,Mobile Wallet,94.15,Completed,Ride Payment
+925,1331,336,2025-12-22 06:51:06,Credit Card,259.87,Completed,Ride Payment
+926,1332,204,2024-12-05 08:30:17,Debit Card,655.7,Completed,Ride Payment
+927,1333,113,2024-05-31 16:02:13,Cash,240.6,Completed,Ride Payment
+928,1334,68,2024-09-24 09:52:18,Cash,312.17,Completed,Ride Payment
+929,1336,347,2024-04-27 16:42:03,Cash,202.11,Completed,Ride Payment
+930,1339,345,2024-06-23 01:15:29,Mobile Wallet,800.06,Completed,Ride Payment
+931,1340,440,2024-10-19 19:36:17,Credit Card,654.25,Completed,Ride Payment
+932,1341,150,2025-12-27 23:01:38,Debit Card,555.83,Completed,Ride Payment
+933,1343,165,2024-08-19 16:36:28,Cash,127.84,Completed,Ride Payment
+934,1346,143,2025-10-30 13:06:51,Mobile Wallet,685.09,Completed,Ride Payment
+935,1349,18,2024-10-14 18:11:17,Debit Card,220.48,Completed,Ride Payment
+936,1351,382,2024-06-19 09:38:56,Credit Card,1399.84,Completed,Ride Payment
+937,1352,262,2025-01-01 22:03:19,Cash,173.66,Completed,Ride Payment
+938,1353,344,2025-03-26 04:22:51,Mobile Wallet,80.46,Completed,Ride Payment
+939,1355,145,2025-04-25 04:22:33,Mobile Wallet,233.39,Completed,Ride Payment
+940,1358,64,2025-06-23 00:24:09,Cash,188.06,Completed,Ride Payment
+941,1359,210,2025-10-19 00:17:29,Credit Card,238.85,Completed,Ride Payment
+942,1360,305,2024-08-09 16:06:51,Cash,397.22,Pending,Ride Payment
+943,1361,150,2025-09-07 12:30:55,Credit Card,166.95,Completed,Ride Payment
+944,1362,457,2025-08-02 05:34:51,Credit Card,933.31,Completed,Ride Payment
+945,1364,471,2024-11-09 13:48:55,Cash,639.19,Completed,Ride Payment
+946,1365,274,2025-04-08 15:35:17,Bank Transfer,306.91,Completed,Ride Payment
+947,1366,230,2024-02-08 15:49:21,Mobile Wallet,360.94,Completed,Ride Payment
+948,1367,183,2024-05-23 00:14:04,Cash,202.61,Completed,Ride Payment
+949,1368,232,2024-06-29 19:36:39,Mobile Wallet,210.04,Completed,Ride Payment
+950,1369,150,2024-11-21 14:31:20,Cash,453.2,Completed,Ride Payment
+951,1370,183,2025-03-12 17:28:55,Cash,350.17,Completed,Ride Payment
+952,1371,66,2025-01-18 19:29:41,Debit Card,1154.25,Completed,Ride Payment
+953,1374,113,2024-09-30 07:13:35,Mobile Wallet,90.74,Completed,Ride Payment
+954,1375,372,2025-11-17 05:26:51,Debit Card,155.0,Completed,Ride Payment
+955,1376,68,2025-09-12 21:45:12,Debit Card,110.84,Completed,Ride Payment
+956,1377,417,2024-12-04 23:40:31,Debit Card,179.04,Completed,Ride Payment
+957,1378,97,2025-02-05 19:52:40,Debit Card,100.44,Completed,Ride Payment
+958,1379,429,2025-05-13 14:25:12,Cash,834.57,Completed,Ride Payment
+959,1380,224,2024-04-16 06:07:36,Cash,175.87,Completed,Ride Payment
+960,1381,279,2025-06-13 03:59:20,Bank Transfer,606.38,Completed,Ride Payment
+961,1383,475,2025-08-16 04:34:41,Credit Card,1940.11,Completed,Ride Payment
+962,1385,211,2025-02-28 12:48:16,Debit Card,142.94,Completed,Ride Payment
+963,1388,225,2025-09-15 17:54:44,Credit Card,332.82,Completed,Ride Payment
+964,1389,475,2025-09-06 05:58:50,Mobile Wallet,937.59,Completed,Ride Payment
+965,1390,41,2024-09-22 21:51:22,Mobile Wallet,347.73,Completed,Ride Payment
+966,1393,145,2024-01-07 16:22:24,Mobile Wallet,141.55,Completed,Ride Payment
+967,1394,215,2024-01-24 19:30:50,Cash,797.62,Completed,Ride Payment
+968,1395,361,2025-11-09 20:36:16,Mobile Wallet,424.68,Completed,Ride Payment
+969,1396,285,2024-10-04 06:47:46,Credit Card,441.07,Completed,Ride Payment
+970,1397,428,2025-06-04 22:28:48,Cash,100.5,Completed,Ride Payment
+971,1401,385,2024-06-02 01:42:33,Mobile Wallet,142.23,Completed,Ride Payment
+972,1402,406,2025-04-30 08:33:15,Mobile Wallet,193.1,Refunded,Ride Payment
+973,1403,383,2024-11-14 05:13:19,Credit Card,89.19,Completed,Ride Payment
+974,1404,424,2024-10-29 08:04:12,Mobile Wallet,362.88,Completed,Ride Payment
+975,1405,365,2024-04-22 06:45:28,Cash,396.37,Completed,Ride Payment
+976,1408,2,2025-05-28 05:17:44,Mobile Wallet,311.17,Completed,Ride Payment
+977,1410,31,2025-08-21 01:12:59,Mobile Wallet,698.05,Completed,Ride Payment
+978,1411,286,2025-10-20 03:13:33,Credit Card,265.23,Completed,Ride Payment
+979,1413,102,2024-10-26 23:14:58,Debit Card,332.91,Completed,Ride Payment
+980,1414,54,2024-06-16 15:14:21,Debit Card,214.29,Completed,Ride Payment
+981,1415,187,2025-09-29 18:44:44,Cash,1591.65,Completed,Ride Payment
+982,1417,426,2025-08-21 00:58:54,Credit Card,193.62,Completed,Ride Payment
+983,1418,8,2024-07-10 19:27:22,Mobile Wallet,2035.69,Completed,Ride Payment
+984,1419,413,2024-12-27 02:02:13,Cash,1436.56,Failed,Ride Payment
+985,1421,491,2024-12-07 18:21:51,Cash,941.06,Completed,Ride Payment
+986,1424,301,2024-10-15 10:53:19,Debit Card,124.85,Completed,Ride Payment
+987,1426,95,2025-10-21 13:35:19,Credit Card,195.7,Completed,Ride Payment
+988,1427,63,2024-11-11 12:27:58,Mobile Wallet,632.45,Completed,Ride Payment
+989,1428,302,2024-02-12 20:26:39,Debit Card,249.16,Completed,Ride Payment
+990,1432,161,2024-08-28 19:30:28,Bank Transfer,215.55,Completed,Ride Payment
+991,1433,280,2025-11-12 22:06:05,Mobile Wallet,106.27,Completed,Ride Payment
+992,1435,215,2025-06-24 06:54:08,Credit Card,358.44,Completed,Ride Payment
+993,1436,195,2024-09-21 01:26:14,Mobile Wallet,410.81,Completed,Ride Payment
+994,1437,134,2024-10-26 07:36:10,Mobile Wallet,560.06,Completed,Ride Payment
+995,1438,455,2025-09-18 14:44:45,Bank Transfer,220.64,Completed,Ride Payment
+996,1439,451,2025-12-28 07:43:11,Mobile Wallet,600.97,Completed,Ride Payment
+997,1440,298,2024-03-12 13:44:44,Credit Card,308.11,Completed,Ride Payment
+998,1441,153,2024-05-09 05:38:05,Credit Card,631.61,Completed,Ride Payment
+999,1442,168,2025-09-26 04:41:19,Cash,275.68,Completed,Ride Payment
+1000,1443,108,2024-06-25 20:59:53,Debit Card,193.38,Completed,Ride Payment
+1001,1444,225,2025-04-24 22:06:30,Mobile Wallet,356.08,Refunded,Ride Payment
+1002,1448,236,2025-09-25 15:20:51,Cash,331.8,Failed,Ride Payment
+1003,1449,419,2025-09-29 01:11:53,Mobile Wallet,1030.13,Completed,Ride Payment
+1004,1451,155,2024-02-28 21:05:29,Cash,375.28,Completed,Ride Payment
+1005,1452,475,2025-08-11 11:26:54,Cash,63.98,Completed,Ride Payment
+1006,1456,66,2024-07-15 19:19:22,Mobile Wallet,284.63,Completed,Ride Payment
+1007,1458,124,2024-11-09 05:01:52,Mobile Wallet,1061.14,Completed,Ride Payment
+1008,1459,461,2025-04-26 22:16:16,Bank Transfer,846.66,Completed,Ride Payment
+1009,1460,350,2025-05-30 18:13:03,Cash,442.18,Pending,Ride Payment
+1010,1461,3,2024-08-07 10:35:26,Credit Card,702.51,Completed,Ride Payment
+1011,1463,302,2024-01-23 04:47:06,Mobile Wallet,443.36,Completed,Ride Payment
+1012,1464,103,2024-01-18 05:14:02,Cash,281.82,Completed,Ride Payment
+1013,1468,171,2025-02-22 11:28:54,Credit Card,226.59,Completed,Ride Payment
+1014,1469,471,2025-03-23 07:38:15,Cash,283.85,Completed,Ride Payment
+1015,1470,381,2024-12-20 09:41:19,Mobile Wallet,2440.53,Completed,Ride Payment
+1016,1471,197,2025-01-15 05:45:43,Mobile Wallet,506.22,Completed,Ride Payment
+1017,1472,13,2025-11-22 22:56:54,Mobile Wallet,150.56,Completed,Ride Payment
+1018,1473,209,2025-03-17 19:52:33,Cash,1038.34,Completed,Ride Payment
+1019,1476,40,2025-04-18 22:11:40,Mobile Wallet,131.38,Completed,Ride Payment
+1020,1477,131,2025-04-02 22:21:38,Credit Card,800.47,Completed,Ride Payment
+1021,1479,450,2024-07-07 04:05:23,Bank Transfer,232.5,Completed,Ride Payment
+1022,1480,364,2024-08-02 23:37:09,Cash,143.32,Completed,Ride Payment
+1023,1481,440,2024-02-05 22:07:45,Mobile Wallet,155.2,Completed,Ride Payment
+1024,1482,274,2025-03-24 01:04:21,Cash,736.65,Completed,Ride Payment
+1025,1483,191,2024-03-06 03:18:04,Cash,285.3,Completed,Ride Payment
+1026,1484,388,2024-06-26 08:51:49,Cash,429.43,Completed,Ride Payment
+1027,1485,169,2024-02-20 03:40:01,Cash,243.89,Completed,Ride Payment
+1028,1486,116,2025-12-18 20:27:03,Debit Card,241.09,Completed,Ride Payment
+1029,1487,80,2024-12-12 04:22:57,Mobile Wallet,124.88,Completed,Ride Payment
+1030,1489,202,2024-12-21 11:44:42,Cash,217.07,Completed,Ride Payment
+1031,1491,275,2024-09-05 13:40:42,Mobile Wallet,630.63,Completed,Ride Payment
+1032,1492,350,2024-03-25 02:58:59,Mobile Wallet,574.88,Completed,Ride Payment
+1033,1493,302,2024-12-08 00:35:58,Credit Card,449.39,Completed,Ride Payment
+1034,1494,302,2024-11-04 06:23:25,Cash,1103.54,Completed,Ride Payment
+1035,1495,198,2024-01-22 03:24:38,Mobile Wallet,390.03,Completed,Ride Payment
+1036,1497,328,2024-02-10 20:59:13,Cash,208.42,Failed,Ride Payment
+1037,1498,466,2024-01-22 04:09:37,Debit Card,1619.61,Completed,Ride Payment
+1038,1499,78,2024-07-29 06:18:04,Cash,205.68,Completed,Ride Payment
+1039,1500,244,2024-01-31 00:41:05,Cash,887.75,Completed,Ride Payment
+1040,1501,372,2025-03-07 08:09:36,Cash,446.78,Completed,Ride Payment
+1041,1502,497,2025-11-28 09:32:46,Cash,150.91,Completed,Ride Payment
+1042,1503,461,2025-11-18 06:37:12,Mobile Wallet,361.09,Completed,Ride Payment
+1043,1505,15,2024-05-23 21:45:54,Mobile Wallet,216.81,Completed,Ride Payment
+1044,1508,262,2024-08-27 23:18:14,Cash,233.55,Completed,Ride Payment
+1045,1509,365,2025-02-11 23:06:14,Cash,209.24,Completed,Ride Payment
+1046,1510,73,2024-09-13 09:07:26,Debit Card,412.45,Completed,Ride Payment
+1047,1511,208,2025-08-10 15:57:44,Cash,403.06,Completed,Ride Payment
+1048,1512,209,2025-09-13 00:54:26,Mobile Wallet,169.13,Completed,Ride Payment
+1049,1513,495,2024-05-18 23:45:21,Cash,80.87,Completed,Ride Payment
+1050,1514,457,2025-05-28 19:08:54,Mobile Wallet,405.97,Completed,Ride Payment
+1051,1515,85,2024-09-21 11:42:51,Cash,207.49,Completed,Ride Payment
+1052,1516,171,2024-09-09 06:13:46,Mobile Wallet,216.84,Completed,Ride Payment
+1053,1517,87,2024-04-23 06:14:06,Debit Card,584.37,Completed,Ride Payment
+1054,1518,361,2024-02-16 14:56:31,Mobile Wallet,196.02,Failed,Ride Payment
+1055,1519,218,2024-06-28 23:53:50,Bank Transfer,299.21,Completed,Ride Payment
+1056,1520,477,2025-01-06 07:40:38,Debit Card,479.28,Completed,Ride Payment
+1057,1521,236,2025-05-02 11:42:56,Mobile Wallet,69.72,Completed,Ride Payment
+1058,1522,234,2025-12-19 13:42:51,Debit Card,1147.8,Completed,Ride Payment
+1059,1524,358,2025-05-23 20:14:26,Cash,853.12,Completed,Ride Payment
+1060,1525,466,2024-09-01 19:39:59,Cash,254.16,Completed,Ride Payment
+1061,1527,255,2025-02-06 13:19:49,Credit Card,314.49,Completed,Ride Payment
+1062,1528,21,2025-03-12 12:59:31,Cash,734.57,Completed,Ride Payment
+1063,1529,192,2025-09-01 07:56:27,Cash,166.5,Completed,Ride Payment
+1064,1530,315,2025-05-27 12:42:05,Cash,626.08,Completed,Ride Payment
+1065,1531,134,2024-11-27 11:27:33,Cash,630.18,Completed,Ride Payment
+1066,1532,398,2025-04-20 23:00:56,Cash,126.65,Completed,Ride Payment
+1067,1533,454,2024-07-05 19:48:32,Cash,277.12,Completed,Ride Payment
+1068,1534,398,2025-10-11 07:56:35,Cash,600.45,Completed,Ride Payment
+1069,1535,31,2024-04-23 09:05:53,Debit Card,691.32,Completed,Ride Payment
+1070,1537,495,2025-01-02 03:11:50,Mobile Wallet,848.57,Completed,Ride Payment
+1071,1538,279,2024-10-22 10:43:04,Credit Card,790.56,Completed,Ride Payment
+1072,1539,318,2024-09-23 11:32:09,Cash,364.45,Completed,Ride Payment
+1073,1540,2,2025-06-30 16:54:04,Cash,371.83,Completed,Ride Payment
+1074,1541,175,2025-08-24 12:32:29,Mobile Wallet,453.6,Completed,Ride Payment
+1075,1542,356,2024-04-12 19:05:35,Credit Card,690.12,Completed,Ride Payment
+1076,1543,239,2024-01-03 05:42:10,Mobile Wallet,241.7,Failed,Ride Payment
+1077,1544,431,2024-01-18 09:23:01,Mobile Wallet,396.04,Completed,Ride Payment
+1078,1546,442,2025-10-07 16:18:52,Cash,89.14,Completed,Ride Payment
+1079,1547,288,2024-03-03 16:43:56,Cash,249.18,Completed,Ride Payment
+1080,1548,302,2024-04-12 16:28:36,Credit Card,170.96,Completed,Ride Payment
+1081,1549,82,2024-05-15 15:37:15,Debit Card,173.02,Completed,Ride Payment
+1082,1550,306,2024-12-25 21:44:54,Cash,147.51,Completed,Ride Payment
+1083,1551,157,2025-06-13 11:28:27,Mobile Wallet,1747.17,Completed,Ride Payment
+1084,1552,325,2024-03-26 00:01:17,Cash,197.96,Completed,Ride Payment
+1085,1553,320,2024-07-20 02:50:52,Cash,228.1,Completed,Ride Payment
+1086,1554,56,2024-08-08 08:58:45,Cash,679.65,Completed,Ride Payment
+1087,1556,365,2024-01-25 22:17:26,Mobile Wallet,166.57,Completed,Ride Payment
+1088,1558,48,2025-06-11 12:28:04,Mobile Wallet,474.98,Completed,Ride Payment
+1089,1559,415,2025-09-07 08:47:27,Cash,884.71,Completed,Ride Payment
+1090,1560,180,2024-01-30 13:01:15,Mobile Wallet,707.92,Completed,Ride Payment
+1091,1562,121,2024-01-12 05:23:23,Credit Card,778.83,Completed,Ride Payment
+1092,1563,15,2025-04-06 16:51:29,Mobile Wallet,180.34,Completed,Ride Payment
+1093,1564,34,2025-06-10 06:02:51,Cash,96.23,Completed,Ride Payment
+1094,1565,264,2025-08-11 20:15:09,Cash,429.21,Completed,Ride Payment
+1095,1567,473,2025-12-03 02:41:24,Debit Card,171.01,Failed,Ride Payment
+1096,1568,356,2024-10-21 22:34:59,Mobile Wallet,295.73,Failed,Ride Payment
+1097,1570,252,2025-03-19 06:30:04,Credit Card,1647.73,Completed,Ride Payment
+1098,1571,8,2024-09-16 18:20:03,Bank Transfer,174.13,Completed,Ride Payment
+1099,1572,83,2024-07-09 04:19:18,Bank Transfer,350.49,Completed,Ride Payment
+1100,1573,383,2024-04-11 04:11:19,Credit Card,65.32,Completed,Ride Payment
+1101,1575,292,2024-03-18 04:18:43,Cash,258.61,Completed,Ride Payment
+1102,1576,194,2025-08-16 09:08:38,Mobile Wallet,223.81,Completed,Ride Payment
+1103,1577,210,2025-03-19 19:41:03,Cash,468.18,Completed,Ride Payment
+1104,1578,335,2025-04-10 23:50:33,Bank Transfer,251.05,Completed,Ride Payment
+1105,1579,483,2024-08-28 05:45:57,Cash,539.51,Unknown,Ride Payment
+1106,1580,437,2025-09-24 21:15:35,Bank Transfer,548.12,Completed,Ride Payment
+1107,1582,323,2025-10-20 11:04:09,Cash,189.92,Completed,Ride Payment
+1108,1583,210,2024-12-21 08:21:05,Credit Card,1284.66,Completed,Ride Payment
+1109,1584,333,2025-02-28 20:53:52,Debit Card,595.51,Failed,Ride Payment
+1110,1585,375,2025-01-02 23:22:10,Mobile Wallet,84.89,Completed,Ride Payment
+1111,1587,273,2024-09-15 18:30:33,Debit Card,273.0,Completed,Ride Payment
+1112,1588,203,2024-03-28 10:17:50,Debit Card,321.1,Completed,Ride Payment
+1113,1589,485,2025-10-22 02:42:48,Bank Transfer,861.68,Completed,Ride Payment
+1114,1591,218,2025-11-14 08:55:04,Cash,1009.99,Completed,Ride Payment
+1115,1592,354,2024-11-18 20:51:23,Mobile Wallet,1401.3,Completed,Ride Payment
+1116,1595,318,2024-02-10 17:21:11,Cash,677.41,Completed,Ride Payment
+1117,1596,427,2024-08-29 14:43:50,Bank Transfer,707.38,Completed,Ride Payment
+1118,1597,461,2025-02-05 00:41:59,Mobile Wallet,214.21,Completed,Ride Payment
+1119,1599,164,2025-02-14 05:43:54,Debit Card,446.96,Completed,Ride Payment
+1120,1600,267,2025-11-08 21:39:40,Debit Card,146.88,Completed,Ride Payment
+1121,1602,400,2025-03-10 09:59:17,Credit Card,286.01,Completed,Ride Payment
+1122,1603,94,2024-08-25 09:17:48,Credit Card,335.94,Pending,Ride Payment
+1123,1604,225,2024-10-05 00:48:10,Credit Card,172.62,Completed,Ride Payment
+1124,1605,369,2024-01-12 22:21:58,Mobile Wallet,463.51,Completed,Ride Payment
+1125,1607,188,2025-03-12 09:27:56,Debit Card,303.72,Completed,Ride Payment
+1126,1608,318,2025-01-24 16:13:33,Cash,233.0,Completed,Ride Payment
+1127,1610,299,2025-05-17 18:32:01,Mobile Wallet,596.07,Completed,Ride Payment
+1128,1611,355,2025-12-10 19:37:42,Mobile Wallet,532.44,Pending,Ride Payment
+1129,1612,102,2024-07-06 19:08:46,Debit Card,512.57,Completed,Ride Payment
+1130,1613,419,2025-10-13 07:39:22,Credit Card,1144.16,Completed,Ride Payment
+1131,1614,76,2024-12-28 04:20:41,Cash,434.13,Completed,Ride Payment
+1132,1616,448,2025-09-05 02:03:09,Mobile Wallet,506.35,Completed,Ride Payment
+1133,1617,281,2025-03-28 07:44:51,Debit Card,216.11,Completed,Ride Payment
+1134,1619,7,2024-10-10 17:38:09,Cash,968.45,Failed,Ride Payment
+1135,1620,392,2024-12-05 14:59:56,Credit Card,324.05,Completed,Ride Payment
+1136,1621,206,2025-01-05 03:25:42,Credit Card,213.76,Refunded,Ride Payment
+1137,1622,95,2025-08-06 22:51:11,Cash,94.87,Failed,Ride Payment
+1138,1623,362,2025-04-03 23:34:19,Credit Card,569.33,Refunded,Ride Payment
+1139,1624,378,2025-10-20 18:51:01,Cash,381.61,Completed,Ride Payment
+1140,1625,396,2024-07-22 06:32:45,Credit Card,274.43,Completed,Ride Payment
+1141,1627,247,2025-11-26 02:10:46,Cash,373.96,Completed,Ride Payment
+1142,1628,70,2024-10-11 23:29:46,Credit Card,129.7,Completed,Ride Payment
+1143,1629,115,2025-09-15 01:49:36,Mobile Wallet,359.86,Failed,Ride Payment
+1144,1630,460,2024-04-30 14:51:47,Cash,203.14,Completed,Ride Payment
+1145,1631,238,2025-12-02 18:39:38,Mobile Wallet,762.12,Completed,Ride Payment
+1146,1632,150,2025-08-18 05:54:10,Mobile Wallet,392.47,Completed,Ride Payment
+1147,1634,442,2025-04-25 23:22:30,Mobile Wallet,110.71,Completed,Ride Payment
+1148,1635,489,2025-03-24 13:33:03,Debit Card,81.02,Completed,Ride Payment
+1149,1636,272,2025-10-23 09:42:42,Credit Card,264.03,Completed,Ride Payment
+1150,1637,375,2024-07-29 16:47:48,Cash,164.92,Completed,Ride Payment
+1151,1638,192,2024-06-08 16:59:51,Mobile Wallet,802.5,Completed,Ride Payment
+1152,1639,259,2025-05-05 19:37:13,Cash,278.55,Completed,Ride Payment
+1153,1640,264,2024-03-27 03:08:58,Cash,400.98,Pending,Ride Payment
+1154,1642,413,2025-09-03 03:48:56,Debit Card,819.09,Completed,Ride Payment
+1155,1643,325,2025-08-06 08:08:09,Credit Card,491.01,Completed,Ride Payment
+1156,1644,494,2025-08-13 18:20:18,Cash,285.12,Completed,Ride Payment
+1157,1645,350,2025-08-16 02:37:18,Credit Card,455.16,Completed,Ride Payment
+1158,1646,211,2025-11-03 23:41:43,Credit Card,216.71,Completed,Ride Payment
+1159,1647,66,2024-09-14 03:54:18,Cash,430.11,Completed,Ride Payment
+1160,1648,91,2025-05-05 08:19:54,Bank Transfer,274.14,Completed,Ride Payment
+1161,1650,406,2025-11-30 05:10:32,Mobile Wallet,1392.63,Pending,Ride Payment
+1162,1651,47,2025-07-03 09:31:16,Cash,173.99,Completed,Ride Payment
+1163,1652,15,2025-07-06 10:18:10,Mobile Wallet,599.43,Completed,Ride Payment
+1164,1653,16,2024-11-08 07:24:18,Mobile Wallet,622.59,Completed,Ride Payment
+1165,1654,103,2024-11-15 09:18:44,Cash,310.4,Completed,Ride Payment
+1166,1658,214,2024-10-29 01:34:26,Debit Card,537.65,Completed,Ride Payment
+1167,1659,423,2025-05-12 10:13:28,Mobile Wallet,861.84,Completed,Ride Payment
+1168,1660,377,2025-09-29 14:11:12,Cash,80.48,Completed,Ride Payment
+1169,1661,196,2024-06-04 17:12:26,Mobile Wallet,701.57,Completed,Ride Payment
+1170,1662,456,2024-02-13 18:28:01,Debit Card,515.73,Completed,Ride Payment
+1171,1664,77,2025-08-11 16:23:51,Cash,320.11,Completed,Ride Payment
+1172,1665,238,2024-08-29 01:25:44,Credit Card,90.51,Pending,Ride Payment
+1173,1667,201,2025-02-01 18:48:08,Cash,447.44,Completed,Ride Payment
+1174,1668,93,2025-04-19 12:00:40,Cash,723.44,Completed,Ride Payment
+1175,1671,7,2025-11-22 13:56:14,Credit Card,182.05,Completed,Ride Payment
+1176,1672,240,2024-10-13 19:13:05,Mobile Wallet,234.09,Completed,Ride Payment
+1177,1674,348,2025-06-23 10:37:42,Mobile Wallet,794.99,Completed,Ride Payment
+1178,1675,53,2025-12-02 21:17:22,Credit Card,198.48,Completed,Ride Payment
+1179,1676,55,2025-09-12 19:24:17,Cash,311.23,Completed,Ride Payment
+1180,1677,272,2024-09-19 23:33:32,Credit Card,394.58,Completed,Ride Payment
+1181,1678,201,2025-11-22 03:35:09,Cash,709.88,Completed,Ride Payment
+1182,1679,161,2025-10-25 01:44:22,Cash,208.04,Completed,Ride Payment
+1183,1680,130,2024-04-21 23:31:43,Mobile Wallet,227.6,Completed,Ride Payment
+1184,1682,411,2024-10-06 22:36:42,Debit Card,149.65,Completed,Ride Payment
+1185,1683,293,2025-12-17 04:37:15,Mobile Wallet,239.5,Completed,Ride Payment
+1186,1685,328,2025-09-25 02:18:14,Credit Card,736.97,Completed,Ride Payment
+1187,1686,76,2024-02-15 17:40:25,Credit Card,123.74,Completed,Ride Payment
+1188,1688,225,2025-09-27 01:20:07,Mobile Wallet,435.97,Completed,Ride Payment
+1189,1689,103,2024-04-24 19:36:35,Credit Card,1127.6,Completed,Ride Payment
+1190,1690,404,2025-09-11 03:28:09,Mobile Wallet,296.22,Completed,Ride Payment
+1191,1691,206,2025-04-24 04:36:44,Cash,181.89,Completed,Ride Payment
+1192,1692,247,2024-11-13 09:45:43,Cash,630.09,Completed,Ride Payment
+1193,1693,286,2025-04-09 02:33:00,Cash,222.21,Completed,Ride Payment
+1194,1694,50,2025-01-06 19:04:00,Credit Card,585.86,Completed,Ride Payment
+1195,1695,63,2024-12-28 10:10:57,Debit Card,273.46,Completed,Ride Payment
+1196,1696,3,2024-04-26 10:36:32,Cash,226.15,Completed,Ride Payment
+1197,1698,237,2024-08-28 12:36:15,Credit Card,1426.35,Completed,Ride Payment
+1198,1699,428,2024-11-28 03:51:24,Mobile Wallet,148.39,Completed,Ride Payment
+1199,1700,344,2024-07-25 05:20:25,Cash,150.04,Completed,Ride Payment
+1200,1701,377,2025-10-08 23:18:22,Cash,312.85,Completed,Ride Payment
+1201,1702,434,2024-01-10 23:51:04,Debit Card,254.79,Completed,Ride Payment
+1202,1704,18,2025-12-08 14:53:31,Cash,788.18,Completed,Ride Payment
+1203,1705,338,2024-05-23 14:11:14,Cash,97.14,Completed,Ride Payment
+1204,1706,338,2025-10-09 00:33:26,Cash,84.69,Completed,Ride Payment
+1205,1708,333,2025-11-03 13:49:18,Cash,266.46,Completed,Ride Payment
+1206,1709,10,2024-03-14 07:34:07,Mobile Wallet,217.73,Completed,Ride Payment
+1207,1710,259,2024-08-07 13:21:02,Mobile Wallet,153.89,Completed,Ride Payment
+1208,1712,354,2025-08-25 17:17:00,Cash,368.14,Completed,Ride Payment
+1209,1714,320,2024-06-09 06:36:47,Cash,366.84,Completed,Ride Payment
+1210,1715,228,2025-10-25 01:59:53,Mobile Wallet,205.74,Completed,Ride Payment
+1211,1716,298,2024-05-06 05:01:19,Credit Card,207.05,Completed,Ride Payment
+1212,1717,430,2024-08-24 17:45:35,Cash,924.77,Completed,Ride Payment
+1213,1718,214,2024-08-01 23:15:38,Mobile Wallet,378.57,Completed,Ride Payment
+1214,1720,149,2024-07-07 23:27:50,Cash,770.45,Failed,Ride Payment
+1215,1721,347,2024-04-08 11:06:42,Mobile Wallet,194.03,Failed,Ride Payment
+1216,1722,107,2024-11-20 23:40:42,Cash,284.58,Completed,Ride Payment
+1217,1723,410,2025-02-07 19:30:45,Cash,380.61,Completed,Ride Payment
+1218,1724,111,2024-11-26 10:50:09,Cash,1401.21,Completed,Ride Payment
+1219,1725,76,2025-08-13 17:27:54,Cash,604.75,Completed,Ride Payment
+1220,1726,79,2025-08-13 15:59:11,Mobile Wallet,153.52,Completed,Ride Payment
+1221,1728,248,2024-01-01 09:40:42,Cash,1711.85,Completed,Ride Payment
+1222,1729,138,2024-05-28 02:14:22,Cash,186.55,Completed,Ride Payment
+1223,1730,240,2024-10-13 03:00:41,Debit Card,189.02,Completed,Ride Payment
+1224,1732,214,2024-12-16 07:40:34,Mobile Wallet,122.12,Completed,Ride Payment
+1225,1734,294,2024-03-22 03:04:20,Credit Card,739.5,Completed,Ride Payment
+1226,1735,370,2025-07-16 22:15:39,Mobile Wallet,411.48,Completed,Ride Payment
+1227,1737,432,2025-10-12 19:25:09,Cash,1535.47,Completed,Ride Payment
+1228,1739,361,2025-09-28 12:47:07,Bank Transfer,256.04,Completed,Ride Payment
+1229,1740,271,2025-01-03 05:15:50,Cash,405.67,Completed,Ride Payment
+1230,1742,375,2025-02-09 00:59:29,Mobile Wallet,230.69,Completed,Ride Payment
+1231,1743,226,2024-03-14 21:03:56,Cash,208.62,Completed,Ride Payment
+1232,1744,484,2025-08-14 01:06:58,Mobile Wallet,799.69,Completed,Ride Payment
+1233,1746,296,2024-11-15 05:13:38,Cash,169.23,Completed,Ride Payment
+1234,1748,189,2025-08-30 23:47:00,Cash,932.21,Completed,Ride Payment
+1235,1751,281,2025-01-04 21:40:14,Bank Transfer,544.64,Completed,Ride Payment
+1236,1752,431,2025-07-17 19:31:31,Mobile Wallet,383.16,Completed,Ride Payment
+1237,1755,435,2024-06-23 21:20:08,Cash,378.43,Completed,Ride Payment
+1238,1756,244,2025-11-26 16:30:39,Mobile Wallet,252.46,Completed,Ride Payment
+1239,1758,476,2024-08-15 22:54:24,Credit Card,1085.79,Completed,Ride Payment
+1240,1759,301,2025-10-11 14:15:22,Mobile Wallet,733.08,Completed,Ride Payment
+1241,1760,210,2024-09-15 10:21:07,Mobile Wallet,298.65,Completed,Ride Payment
+1242,1761,357,2024-01-17 14:05:01,Debit Card,219.63,Failed,Ride Payment
+1243,1762,71,2025-09-09 23:48:08,Credit Card,136.95,Completed,Ride Payment
+1244,1763,354,2024-04-20 05:00:23,Credit Card,396.09,Refunded,Ride Payment
+1245,1764,279,2024-07-02 13:39:02,Mobile Wallet,181.55,Completed,Ride Payment
+1246,1765,36,2025-10-22 02:19:20,Credit Card,1276.51,Completed,Ride Payment
+1247,1766,215,2025-04-29 05:17:05,Cash,457.23,Completed,Ride Payment
+1248,1767,381,2024-08-03 20:56:19,Mobile Wallet,1105.81,Completed,Ride Payment
+1249,1769,155,2025-06-12 18:23:28,Debit Card,897.23,Completed,Ride Payment
+1250,1770,331,2025-05-12 06:59:15,Mobile Wallet,168.16,Completed,Ride Payment
+1251,1771,230,2024-04-23 17:27:12,Mobile Wallet,302.69,Completed,Ride Payment
+1252,1774,207,2024-01-14 20:10:36,Cash,1252.66,Completed,Ride Payment
+1253,1775,346,2024-12-05 05:05:37,Mobile Wallet,337.61,Completed,Ride Payment
+1254,1778,460,2024-05-13 22:28:31,Mobile Wallet,763.56,Completed,Ride Payment
+1255,1779,499,2025-09-23 18:06:26,Cash,307.08,Completed,Ride Payment
+1256,1781,48,2024-05-16 16:04:42,Credit Card,280.79,Pending,Ride Payment
+1257,1782,255,2025-09-29 01:06:48,Credit Card,101.7,Completed,Ride Payment
+1258,1784,117,2025-03-23 03:59:11,Cash,141.79,Completed,Ride Payment
+1259,1785,68,2025-02-20 07:49:54,Cash,700.72,Completed,Ride Payment
+1260,1786,490,2025-06-29 02:43:00,Bank Transfer,301.62,Failed,Ride Payment
+1261,1787,442,2024-04-17 04:48:44,Credit Card,410.62,Completed,Ride Payment
+1262,1788,321,2024-11-17 00:25:32,Bank Transfer,134.88,Completed,Ride Payment
+1263,1789,108,2025-09-17 12:10:24,Credit Card,162.21,Completed,Ride Payment
+1264,1790,112,2025-05-28 06:55:28,Cash,188.84,Completed,Ride Payment
+1265,1791,4,2024-06-16 23:45:43,Credit Card,629.99,Completed,Ride Payment
+1266,1793,136,2024-12-15 04:03:11,Credit Card,448.29,Completed,Ride Payment
+1267,1795,465,2025-12-19 00:38:25,Debit Card,200.94,Completed,Ride Payment
+1268,1796,265,2024-10-13 10:30:19,Cash,659.4,Completed,Ride Payment
+1269,1797,204,2025-03-09 22:22:35,Credit Card,142.54,Completed,Ride Payment
+1270,1798,383,2025-11-16 22:15:19,Cash,96.7,Completed,Ride Payment
+1271,1800,494,2024-09-16 19:53:48,Mobile Wallet,918.38,Completed,Ride Payment
+1272,1802,384,2024-04-26 23:34:51,Credit Card,290.56,Completed,Ride Payment
+1273,1803,164,2025-02-28 14:54:34,Credit Card,386.32,Completed,Ride Payment
+1274,1804,287,2025-02-27 14:46:15,Cash,673.66,Completed,Ride Payment
+1275,1806,471,2025-08-05 04:26:17,Mobile Wallet,432.72,Completed,Ride Payment
+1276,1807,183,2025-10-04 17:30:39,Debit Card,168.78,Completed,Ride Payment
+1277,1808,17,2025-05-30 17:56:33,Cash,1508.87,Completed,Ride Payment
+1278,1809,398,2025-03-22 05:05:26,Cash,804.48,Completed,Ride Payment
+1279,1810,103,2024-07-13 18:32:10,Mobile Wallet,995.33,Completed,Ride Payment
+1280,1811,344,2025-07-02 12:28:16,Cash,328.1,Completed,Ride Payment
+1281,1812,467,2025-10-04 06:28:55,Cash,321.87,Completed,Ride Payment
+1282,1813,106,2024-07-17 11:00:04,Cash,187.43,Completed,Ride Payment
+1283,1814,87,2025-07-06 04:26:44,Cash,263.17,Completed,Ride Payment
+1284,1815,103,2025-04-11 13:11:09,Debit Card,197.05,Completed,Ride Payment
+1285,1816,259,2025-08-06 17:32:55,Cash,720.25,Completed,Ride Payment
+1286,1817,350,2024-03-07 22:50:14,Mobile Wallet,175.18,Completed,Ride Payment
+1287,1819,488,2024-01-27 12:05:35,Debit Card,198.07,Completed,Ride Payment
+1288,1820,289,2025-08-26 06:38:36,Cash,572.77,Completed,Ride Payment
+1289,1821,360,2024-12-09 06:50:58,Credit Card,333.72,Completed,Ride Payment
+1290,1822,64,2024-07-15 11:52:46,Credit Card,1003.1,Failed,Ride Payment
+1291,1823,172,2025-07-28 21:22:09,Cash,221.55,Completed,Ride Payment
+1292,1824,472,2025-11-27 18:56:26,Mobile Wallet,292.09,Completed,Ride Payment
+1293,1825,397,2025-11-28 20:14:40,Mobile Wallet,217.27,Completed,Ride Payment
+1294,1826,18,2024-09-22 12:29:32,Debit Card,1326.33,Refunded,Ride Payment
+1295,1827,241,2024-08-07 19:35:05,Mobile Wallet,818.26,Completed,Ride Payment
+1296,1828,452,2024-10-27 10:58:37,Cash,243.06,Completed,Ride Payment
+1297,1829,499,2024-02-19 02:38:16,Mobile Wallet,583.33,Completed,Ride Payment
+1298,1830,58,2024-04-29 19:07:28,Mobile Wallet,253.66,Completed,Ride Payment
+1299,1831,253,2025-05-08 08:16:46,Mobile Wallet,523.58,Completed,Ride Payment
+1300,1832,41,2025-11-23 05:01:08,Debit Card,123.01,Completed,Ride Payment
+1301,1833,386,2024-02-14 17:05:28,Cash,500.26,Completed,Ride Payment
+1302,1834,223,2025-01-16 02:52:41,Mobile Wallet,292.07,Completed,Ride Payment
+1303,1835,279,2025-03-30 12:59:35,Cash,264.33,Completed,Ride Payment
+1304,1836,350,2024-08-15 04:06:46,Credit Card,237.1,Completed,Ride Payment
+1305,1837,92,2024-04-10 18:39:18,Cash,843.13,Completed,Ride Payment
+1306,1838,154,2024-05-09 15:19:35,Mobile Wallet,599.08,Completed,Ride Payment
+1307,1839,186,2025-12-08 11:08:36,Cash,147.69,Completed,Ride Payment
+1308,1840,63,2025-06-10 11:05:32,Cash,209.33,Completed,Ride Payment
+1309,1841,255,2024-11-02 13:10:32,Cash,933.61,Completed,Ride Payment
+1310,1842,216,2025-06-14 11:18:36,Cash,184.76,Completed,Ride Payment
+1311,1843,173,2025-07-19 18:14:01,Cash,918.54,Completed,Ride Payment
+1312,1844,265,2025-05-19 19:58:05,Cash,273.83,Completed,Ride Payment
+1313,1845,447,2024-04-07 14:59:26,Mobile Wallet,283.56,Completed,Ride Payment
+1314,1851,259,2025-05-10 21:05:26,Credit Card,147.74,Completed,Ride Payment
+1315,1852,294,2024-05-18 07:50:24,Cash,674.49,Completed,Ride Payment
+1316,1853,285,2024-03-08 09:04:55,Bank Transfer,268.37,Completed,Ride Payment
+1317,1854,261,2025-04-25 08:12:00,Cash,904.02,Completed,Ride Payment
+1318,1855,86,2024-10-14 12:45:20,Mobile Wallet,237.71,Completed,Ride Payment
+1319,1856,101,2025-03-29 08:59:02,Mobile Wallet,231.97,Completed,Ride Payment
+1320,1859,165,2024-04-19 18:08:23,Mobile Wallet,416.75,Completed,Ride Payment
+1321,1860,218,2024-03-14 15:19:33,Debit Card,988.07,Completed,Ride Payment
+1322,1861,413,2024-08-07 06:31:43,Mobile Wallet,213.95,Completed,Ride Payment
+1323,1862,413,2025-03-14 09:26:52,Cash,584.66,Completed,Ride Payment
+1324,1863,334,2025-08-25 03:00:13,Debit Card,631.86,Completed,Ride Payment
+1325,1864,144,2025-01-10 06:03:40,Debit Card,771.07,Completed,Ride Payment
+1326,1865,241,2025-02-04 21:38:08,Debit Card,295.97,Pending,Ride Payment
+1327,1866,196,2025-08-31 18:32:15,Mobile Wallet,234.96,Completed,Ride Payment
+1328,1867,232,2024-04-07 22:57:41,Mobile Wallet,220.22,Completed,Ride Payment
+1329,1868,194,2025-10-10 05:28:33,Cash,376.42,Completed,Ride Payment
+1330,1870,7,2025-07-16 11:12:10,Mobile Wallet,1010.39,Completed,Ride Payment
+1331,1871,11,2024-02-24 17:49:18,Cash,491.35,Completed,Ride Payment
+1332,1872,292,2025-06-16 07:50:29,Cash,237.89,Completed,Ride Payment
+1333,1873,89,2024-08-11 02:33:28,Mobile Wallet,353.18,Completed,Ride Payment
+1334,1877,437,2024-10-21 06:43:21,Bank Transfer,941.22,Completed,Ride Payment
+1335,1878,15,2025-10-01 07:33:58,Mobile Wallet,1232.95,Completed,Ride Payment
+1336,1879,488,2025-01-31 18:23:09,Mobile Wallet,149.65,Completed,Ride Payment
+1337,1880,165,2024-08-28 20:42:25,Debit Card,845.48,Completed,Ride Payment
+1338,1881,218,2024-09-10 23:23:27,Mobile Wallet,442.42,Completed,Ride Payment
+1339,1882,370,2024-03-22 23:08:48,Mobile Wallet,318.6,Completed,Ride Payment
+1340,1885,229,2025-02-16 22:58:02,Cash,1079.31,Completed,Ride Payment
+1341,1886,61,2024-06-07 13:34:13,Cash,69.66,Completed,Ride Payment
+1342,1889,131,2025-10-30 00:44:30,Credit Card,277.87,Completed,Ride Payment
+1343,1890,253,2024-10-13 20:34:57,Mobile Wallet,148.81,Completed,Ride Payment
+1344,1891,332,2024-03-22 05:01:09,Cash,353.55,Completed,Ride Payment
+1345,1892,214,2024-04-21 22:42:54,Credit Card,577.95,Completed,Ride Payment
+1346,1893,381,2025-07-04 10:08:37,Debit Card,1003.35,Completed,Ride Payment
+1347,1894,359,2024-01-18 05:12:33,Cash,168.67,Completed,Ride Payment
+1348,1895,93,2024-03-25 11:51:41,Cash,406.81,Completed,Ride Payment
+1349,1896,477,2024-04-14 02:58:33,Debit Card,193.1,Completed,Ride Payment
+1350,1898,40,2024-02-22 10:40:03,Credit Card,63.42,Completed,Ride Payment
+1351,1900,389,2024-07-08 15:43:07,Cash,407.59,Completed,Ride Payment
+1352,1901,153,2024-12-16 11:53:19,Mobile Wallet,930.87,Refunded,Ride Payment
+1353,1903,408,2025-05-11 07:55:34,Mobile Wallet,188.96,Completed,Ride Payment
+1354,1904,306,2025-03-03 20:18:19,Credit Card,1226.37,Failed,Ride Payment
+1355,1905,289,2024-03-26 09:00:03,Mobile Wallet,643.05,Completed,Ride Payment
+1356,1907,490,2024-06-11 07:59:27,Mobile Wallet,345.56,Completed,Ride Payment
+1357,1909,465,2024-03-19 05:06:24,Bank Transfer,203.35,Completed,Ride Payment
+1358,1910,377,2025-08-04 03:55:34,Cash,94.66,Completed,Ride Payment
+1359,1911,499,2025-04-16 23:57:18,Cash,314.41,Completed,Ride Payment
+1360,1912,350,2025-12-09 17:29:41,Cash,596.66,Completed,Ride Payment
+1361,1913,20,2025-05-17 16:28:23,Credit Card,414.53,Completed,Ride Payment
+1362,1915,95,2025-10-06 21:27:44,Debit Card,521.33,Completed,Ride Payment
+1363,1916,63,2024-02-01 05:27:45,Mobile Wallet,226.59,Completed,Ride Payment
+1364,1918,78,2024-06-15 07:14:39,Credit Card,729.58,Completed,Ride Payment
+1365,1919,75,2025-10-20 17:22:21,Cash,269.24,Completed,Ride Payment
+1366,1920,488,2025-03-04 20:42:27,Cash,607.06,Completed,Ride Payment
+1367,1921,468,2024-08-27 09:22:35,Mobile Wallet,1432.0,Completed,Ride Payment
+1368,1922,6,2025-05-05 17:38:23,Mobile Wallet,1333.69,Completed,Ride Payment
+1369,1923,145,2025-08-02 09:03:50,Mobile Wallet,464.94,Completed,Ride Payment
+1370,1925,394,2024-02-16 14:23:13,Credit Card,165.87,Completed,Ride Payment
+1371,1926,66,2025-12-02 05:11:30,Mobile Wallet,381.48,Completed,Ride Payment
+1372,1929,473,2024-03-26 15:03:55,Cash,1200.31,Completed,Ride Payment
+1373,1930,380,2024-03-12 08:56:22,Cash,700.27,Failed,Ride Payment
+1374,1931,242,2025-12-19 14:37:18,Cash,550.93,Completed,Ride Payment
+1375,1932,486,2024-12-06 20:38:53,Credit Card,1240.67,Completed,Ride Payment
+1376,1933,479,2025-05-27 08:17:09,Debit Card,409.13,Completed,Ride Payment
+1377,1934,123,2025-08-02 04:41:52,Mobile Wallet,182.25,Completed,Ride Payment
+1378,1935,56,2024-08-01 01:44:24,Credit Card,103.81,Completed,Ride Payment
+1379,1937,369,2025-06-18 05:16:38,Cash,424.65,Completed,Ride Payment
+1380,1938,106,2024-04-30 16:12:20,Credit Card,429.84,Failed,Ride Payment
+1381,1939,263,2025-02-17 04:45:19,Cash,109.33,Completed,Ride Payment
+1382,1940,159,2024-06-23 05:26:44,Credit Card,151.24,Completed,Ride Payment
+1383,1941,450,2024-05-13 15:28:58,Mobile Wallet,349.87,Completed,Ride Payment
+1384,1944,144,2025-08-28 04:29:37,Credit Card,75.22,Completed,Ride Payment
+1385,1945,458,2024-05-01 19:42:44,Mobile Wallet,231.19,Completed,Ride Payment
+1386,1946,499,2024-11-04 08:59:03,Mobile Wallet,326.92,Completed,Ride Payment
+1387,1947,165,2025-11-21 02:02:28,Debit Card,330.16,Completed,Ride Payment
+1388,1948,333,2025-04-20 16:53:00,Credit Card,1259.39,Failed,Ride Payment
+1389,1951,423,2024-02-20 10:21:44,Credit Card,902.34,Pending,Ride Payment
+1390,1952,87,2024-04-17 07:34:20,Mobile Wallet,364.89,Completed,Ride Payment
+1391,1953,361,2024-07-17 05:34:25,Cash,384.26,Completed,Ride Payment
+1392,1954,378,2025-09-03 14:47:45,Debit Card,323.19,Completed,Ride Payment
+1393,1956,383,2025-03-08 18:47:03,Cash,972.76,Completed,Ride Payment
+1394,1957,233,2025-08-09 12:15:59,Credit Card,201.92,Completed,Ride Payment
+1395,1958,239,2024-11-03 10:33:52,Cash,380.64,Pending,Ride Payment
+1396,1960,488,2024-01-30 11:29:48,Cash,488.66,Completed,Ride Payment
+1397,1962,106,2025-03-16 12:03:56,Debit Card,193.67,Completed,Ride Payment
+1398,1963,499,2024-10-17 18:38:24,Cash,991.36,Completed,Ride Payment
+1399,1964,260,2024-12-31 02:10:27,Cash,691.28,Completed,Ride Payment
+1400,1965,301,2025-04-23 16:16:14,Credit Card,130.68,Completed,Ride Payment
+1401,1966,126,2024-04-16 23:00:03,Mobile Wallet,516.46,Refunded,Ride Payment
+1402,1968,136,2025-12-16 12:30:17,Cash,501.66,Completed,Ride Payment
+1403,1969,459,2025-07-13 14:56:39,Mobile Wallet,810.05,Completed,Ride Payment
+1404,1970,248,2025-04-29 07:23:52,Mobile Wallet,215.56,Completed,Ride Payment
+1405,1971,299,2024-12-05 04:13:14,Credit Card,354.65,Completed,Ride Payment
+1406,1972,496,2024-06-18 01:39:30,Debit Card,803.31,Failed,Ride Payment
+1407,1973,276,2024-08-13 04:13:50,Cash,1162.77,Completed,Ride Payment
+1408,1974,499,2024-10-27 16:33:06,Cash,424.31,Completed,Ride Payment
+1409,1975,350,2024-04-17 19:48:12,Cash,492.67,Completed,Ride Payment
+1410,1979,201,2025-01-09 11:39:53,Credit Card,1122.08,Completed,Ride Payment
+1411,1980,311,2024-05-25 01:55:24,Cash,594.37,Completed,Ride Payment
+1412,1983,55,2025-03-15 10:37:35,Cash,301.45,Completed,Ride Payment
+1413,1984,140,2024-06-09 22:16:54,Credit Card,67.6,Completed,Ride Payment
+1414,1985,467,2024-03-14 17:44:30,Mobile Wallet,828.47,Completed,Ride Payment
+1415,1986,33,2025-08-29 11:13:51,Credit Card,142.5,Completed,Ride Payment
+1416,1987,430,2024-12-15 17:51:56,Credit Card,1080.48,Completed,Ride Payment
+1417,1989,264,2025-01-09 19:22:35,Credit Card,222.75,Completed,Ride Payment
+1418,1991,343,2024-02-01 09:59:25,Credit Card,680.72,Completed,Ride Payment
+1419,1992,187,2024-01-11 04:36:57,Cash,119.42,Unknown,Ride Payment
+1420,1994,230,2024-02-28 07:09:34,Mobile Wallet,807.86,Completed,Ride Payment
+1421,1995,497,2024-04-27 13:08:57,Cash,925.65,Completed,Ride Payment
+1422,1997,443,2024-10-23 03:58:33,Mobile Wallet,644.31,Completed,Ride Payment
+1423,1998,264,2025-07-04 12:11:42,Mobile Wallet,124.3,Failed,Ride Payment
+1424,1999,52,2025-03-05 13:40:38,Bank Transfer,539.72,Completed,Ride Payment
+845,1219,424,2024-01-25 09:31:53,Mobile Wallet,1051.7,Completed,Ride Payment

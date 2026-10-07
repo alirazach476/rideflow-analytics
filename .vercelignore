@@ -1,0 +1,17 @@
+.pgdata
+.venv
+venv
+__pycache__
+*.pyc
+.env
+dbt/target
+dbt/logs
+dbt/dbt_packages
+airflow/logs
+.pytest_cache
+data/source
+data/raw
+data/processed
+*.csv
+node_modules
+.git

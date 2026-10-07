@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: stg_users
+    description: Cleaned users from raw.users
+    columns:
+      - name: user_id
+        tests: [not_null, unique]
+  - name: stg_drivers
+    columns:
+      - name: driver_id
+        tests: [not_null, unique]
+  - name: stg_vehicles
+    columns:
+      - name: vehicle_id
+        tests: [not_null, unique]
+  - name: stg_rides
+    columns:
+      - name: ride_id
+        tests: [not_null]
+  - name: stg_payments
+    columns:
+      - name: payment_id
+        tests: [not_null]
+  - name: stg_ratings
+  - name: stg_cities
+  - name: stg_zones
+  - name: stg_driver_sessions
+  - name: stg_promotions

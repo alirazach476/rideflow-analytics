@@ -1,0 +1,11 @@
+promotion_id,promotion_code,promotion_type,discount_percentage,maximum_discount,start_date,end_date,target_user_type
+1,RFPEA0001,Peak Hour,25.0,100.0,2025-01-04,2025-01-21,Premium
+2,RFWEE0002,Weekend,20.0,100.0,2024-01-10,2024-02-04,Regular
+3,RFPER0003,Percentage,5.0,150.0,2025-08-02,2025-08-21,Regular
+4,RFREF0004,Referral,15.0,200.0,2025-01-16,2025-03-17,Premium
+5,RFFIR0005,First Ride,5.0,50.0,2024-01-11,2024-02-09,Frequent
+6,RFFIX0006,Fixed Amount,15.0,50.0,2024-02-23,2024-03-26,Frequent
+7,RFPER0007,Percentage,15.0,200.0,2024-02-05,2024-02-25,Occasional
+8,RFREF0008,Referral,10.0,200.0,2025-03-08,2025-05-31,All
+9,RFREF0009,Referral,25.0,150.0,2025-08-12,2025-08-30,Frequent
+10,RFPER0010,Percentage,10.0,100.0,2025-05-19,2025-06-30,All

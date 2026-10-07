@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: cities
+      - name: zones
+      - name: users
+      - name: drivers
+      - name: vehicles
+      - name: rides
+      - name: payments
+      - name: ratings
+      - name: driver_sessions
+      - name: promotions

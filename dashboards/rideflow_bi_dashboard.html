@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RideFlow Analytics — BI Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <style>
+    :root {
+      --ink: #0f1c1a;
+      --ink-2: #1a2e2a;
+      --surface: #f3f0e8;
+      --surface-2: #ebe6da;
+      --card: #fffcf5;
+      --line: #d4cfc2;
+      --muted: #5c6b66;
+      --text: #14221f;
+      --accent: #0d7a62;
+      --accent-2: #c45c26;
+      --good: #1f7a4d;
+      --warn: #b45309;
+      --bad: #b42318;
+      --chart-1: #0d7a62;
+      --chart-2: #c45c26;
+      --chart-3: #1d4e89;
+      --chart-4: #7a5c2e;
+      --chart-5: #5b4b8a;
+      --radius: 14px;
+      --shadow: none;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--surface); color: var(--text);
+      font-family: "DM Sans", system-ui, sans-serif; min-height: 100%; }
+    body { background:
+      radial-gradient(1200px 600px at 10% -10%, #dceee8 0%, transparent 55%),
+      radial-gradient(900px 500px at 100% 0%, #f0e0d4 0%, transparent 45%),
+      var(--surface); }
+
+    .shell { display: grid; grid-template-columns: 240px 1fr; min-height: 100vh; }
+    @media (max-width: 960px) {
+      .shell { grid-template-columns: 1fr; }
+      .nav { position: sticky; top: 0; z-index: 20; display: flex; flex-wrap: wrap; gap: 6px; padding: 12px !important; }
+      .brand { width: 100%; margin-bottom: 4px; }
+      .nav button { flex: 1 1 auto; }
+    }
+
+    .nav {
+      background: var(--ink);
+      color: #e8efeC;
+      padding: 28px 18px;
+      display: flex; flex-direction: column; gap: 6px;
+    }
+    .brand { padding: 0 10px 22px; border-bottom: 1px solid #2a403b; margin-bottom: 14px; }
+    .brand .mark {
+      font-family: "Instrument Serif", Georgia, serif;
+      font-size: 2rem; letter-spacing: -0.02em; line-height: 1;
+      color: #f4f7f5;
+    }
+    .brand .sub { margin-top: 6px; font-size: 0.75rem; color: #9bb0a9; letter-spacing: 0.04em; text-transform: uppercase; }
+    .nav button {
+      appearance: none; border: 0; background: transparent; color: #c5d4ce;
+      text-align: left; padding: 11px 12px; border-radius: 10px; cursor: pointer;
+      font: inherit; font-size: 0.92rem; font-weight: 500;
+    }
+    .nav button:hover { background: #243834; color: #fff; }
+    .nav button.active { background: var(--accent); color: #fff; }
+    .nav .note { margin-top: auto; padding: 14px 10px 4px; font-size: 0.72rem; color: #7f958e; line-height: 1.45; }
+
+    .main { padding: 28px 32px 48px; max-width: 1400px; }
+    .page { display: none; animation: fade .25s ease; }
+    .page.active { display: block; }
+    @keyframes fade { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+
+    .hero {
+      display: flex; justify-content: space-between; align-items: flex-end; gap: 16px;
+      margin-bottom: 22px; flex-wrap: wrap;
+    }
+    .hero h1 {
+      margin: 0; font-family: "Instrument Serif", Georgia, serif;
+      font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 400; letter-spacing: -0.02em;
+    }
+    .hero p { margin: 8px 0 0; color: var(--muted); max-width: 52ch; line-height: 1.5; }
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+      padding: 8px 14px; font-size: 0.78rem; color: var(--muted);
+    }
+    .badge i { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); display: inline-block; }
+
+    .kpi-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 18px;
+    }
+    @media (max-width: 1100px) { .kpi-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 560px) { .kpi-grid { grid-template-columns: 1fr; } }
+
+    .kpi {
+      background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 16px 18px; position: relative; overflow: hidden;
+    }
+    .kpi::before {
+      content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
+      background: var(--accent);
+    }
+    .kpi.warm::before { background: var(--accent-2); }
+    .kpi .label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+    .kpi .value { margin-top: 8px; font-size: 1.65rem; font-weight: 700; letter-spacing: -0.03em; }
+    .kpi .hint { margin-top: 4px; font-size: 0.78rem; color: var(--muted); }
+
+    .grid-2 { display: grid; grid-template-columns: 1.4fr 1fr; gap: 14px; margin-bottom: 14px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 14px; }
+    @media (max-width: 1000px) {
+      .grid-2, .grid-3 { grid-template-columns: 1fr; }
+    }
+
+    .panel {
+      background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 16px 18px 12px;
+    }
+    .panel h3 {
+      margin: 0 0 4px; font-size: 0.95rem; font-weight: 600;
+    }
+    .panel .caption { margin: 0 0 12px; font-size: 0.75rem; color: var(--muted); }
+    .chart-wrap { position: relative; height: 280px; }
+    .chart-wrap.sm { height: 220px; }
+    .chart-wrap.tall { height: 340px; }
+
+    table.data {
+      width: 100%; border-collapse: collapse; font-size: 0.86rem;
+    }
+    table.data th, table.data td {
+      text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line);
+    }
+    table.data th { color: var(--muted); font-weight: 600; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    table.data tr:hover td { background: #f7f3ea; }
+    .num { text-align: right !important; font-variant-numeric: tabular-nums; }
+    .pill {
+      display: inline-block; padding: 3px 9px; border-radius: 999px; font-size: 0.72rem; font-weight: 600;
+      background: #e4f2ec; color: var(--good);
+    }
+    .pill.warn { background: #fceedd; color: var(--warn); }
+    .pill.bad { background: #fbe4e1; color: var(--bad); }
+    .pill.neutral { background: #e8ebe9; color: var(--muted); }
+
+    .callout {
+      border: 1px solid var(--line); background: #fff8ef; border-radius: var(--radius);
+      padding: 14px 16px; margin-bottom: 14px; font-size: 0.88rem; line-height: 1.5; color: #5a4634;
+    }
+    .footer {
+      margin-top: 28px; padding-top: 14px; border-top: 1px solid var(--line);
+      font-size: 0.75rem; color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <aside class="nav">
+      <div class="brand">
+        <div class="mark">RideFlow</div>
+        <div class="sub">Analytics Platform</div>
+      </div>
+      <button class="active" data-page="exec">Executive</button>
+      <button data-page="rides">Ride Analytics</button>
+      <button data-page="customers">Customers</button>
+      <button data-page="drivers">Drivers</button>
+      <button data-page="geo">City &amp; Zones</button>
+      <button data-page="surge">Surge &amp; Pricing</button>
+      <button data-page="cancel">Cancellations</button>
+      <button data-page="anomaly">Anomaly Monitor</button>
+      <div class="note">Connected to live PostgreSQL warehouse exports. Synthetic RideFlow data only.</div>
+    </aside>
+
+    <main class="main">
+      <!-- EXEC -->
+      <section class="page active" id="page-exec">
+        <div class="hero">
+          <div>
+            <h1>Executive overview</h1>
+            <p>Completion, revenue, demand rhythm, and city performance from the RideFlow warehouse.</p>
+          </div>
+          <div class="badge"><i></i> Live warehouse snapshot</div>
+        </div>
+        <div class="kpi-grid" id="exec-kpis"></div>
+        <div class="grid-2">
+          <div class="panel">
+            <h3>Revenue &amp; ride trend</h3>
+            <p class="caption">Source: analytics.mart_daily_ride_metrics · sampled for readability</p>
+            <div class="chart-wrap"><canvas id="chartRevenueTrend"></canvas></div>
+          </div>
+          <div class="panel">
+            <h3>Revenue by city</h3>
+            <p class="caption">Source: analytics.mart_city_performance</p>
+            <div class="chart-wrap"><canvas id="chartCityRevenue"></canvas></div>
+          </div>
+        </div>
+        <div class="grid-3">
+          <div class="panel">
+            <h3>Ride status mix</h3>
+            <p class="caption">warehouse.fact_rides</p>
+            <div class="chart-wrap sm"><canvas id="chartStatus"></canvas></div>
+          </div>
+          <div class="panel">
+            <h3>Rides by vehicle type</h3>
+            <p class="caption">analytics.mart_vehicle_performance</p>
+            <div class="chart-wrap sm"><canvas id="chartVehicle"></canvas></div>
+          </div>
+          <div class="panel">
+            <h3>Hourly demand</h3>
+            <p class="caption">Requests by hour of day</p>
+            <div class="chart-wrap sm"><canvas id="chartHourly"></canvas></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RIDES -->
+      <section class="page" id="page-rides">
+        <div class="hero">
+          <div>
+            <h1>Ride analytics</h1>
+            <p>Volume, completion, fare, distance, and payment mix across the ride lifecycle.</p>
+          </div>
+        </div>
+        <div class="kpi-grid" id="ride-kpis"></div>
+        <div class="grid-2">
+          <div class="panel">
+            <h3>Monthly rides &amp; revenue</h3>
+            <p class="caption">analytics.mart_monthly_ride_metrics</p>
+            <div class="chart-wrap tall"><canvas id="chartMonthly"></canvas></div>
+          </div>
+          <div class="panel">
+            <h3>Payment method share</h3>
+            <p class="caption">analytics.mart_payment_performance</p>
+            <div class="chart-wrap tall"><canvas id="chartPayments"></canvas></div>
+          </div>
+        </div>
+        <div class="panel">
+          <h3>Payment performance</h3>
+          <p class="caption">Success / failure rates by method</p>
+          <div id="payment-table"></div>
+        </div>
+      </section>
+
+      <!-- CUSTOMERS -->
+      <section class="page" id="page-customers">
+        <div class="hero">
+          <div>
+            <h1>Customer analytics</h1>
+            <p>Behavioral segments from documented activity rules (not hardcoded labels).</p>
+          </div>
+        </div>
+        <div class="grid-2">
+          <div class="panel">
+            <h3>Customer segments by spend</h3>
+            <p class="caption">analytics.mart_user_activity</p>
+            <div class="chart-wrap"><canvas id="chartSegments"></canvas></div>
+          </div>
+          <div class="panel">
+            <h3>Segment table</h3>
+            <p class="caption">Users and total spend (RFU)</p>
+            <div id="segment-table"></div>
+          </div>
+        </div>
+        <div class="panel">
+          <h3>Rating distribution</h3>
+          <p class="caption">analytics.mart_rating_analysis</p>
+          <div class="chart-wrap sm"><canvas id="chartRatings"></canvas></div>
+        </div>
+      </section>
+
+      <!-- DRIVERS -->
+      <section class="page" id="page-drivers">
+        <div class="hero">
+          <div>
+            <h1>Driver analytics</h1>
+            <p>Utilization leaders ranked by revenue per online hour.</p>
+          </div>
+        </div>
+        <div class="panel">
+          <h3>Top drivers by revenue / online hour</h3>
+          <p class="caption">analytics.mart_driver_performance</p>
+          <div class="chart-wrap"><canvas id="chartDrivers"></canvas></div>
+        </div>
+        <div class="panel" style="margin-top:14px">
+          <h3>Driver leaderboard</h3>
+          <div id="driver-table"></div>
+        </div>
+      </section>
+
+      <!-- GEO -->
+      <section class="page" id="page-geo">
+        <div class="hero">
+          <div>
+            <h1>City &amp; zone analytics</h1>
+            <p>Geographic demand, revenue concentration, and cancellation hotspots.</p>
+          </div>
+        </div>
+        <div class="grid-2">
+          <div class="panel">
+            <h3>City cancellation vs revenue</h3>
+            <p class="caption">Higher bars = cancellation rate (%)</p>
+            <div class="chart-wrap"><canvas id="chartCityCancel"></canvas></div>
+          </div>
+          <div class="panel">
+            <h3>Supply–demand pressure</h3>
+            <p class="caption">analytics.mart_supply_demand hour buckets</p>
+            <div class="chart-wrap"><canvas id="chartSupply"></canvas></div>
+          </div>
+        </div>
+        <div class="panel">
+          <h3>Top pickup zones</h3>
+          <p class="caption">analytics.mart_zone_performance</p>
+          <div id="zone-table"></div>
+        </div>
+      </section>
+
+      <!-- SURGE -->
+      <section class="page" id="page-surge">
+        <div class="hero">
+          <div>
+            <h1>Surge &amp; pricing</h1>
+            <p>Does higher surge lift revenue while changing completion or cancellations? Measured, not assumed.</p>
+          </div>
+        </div>
+        <div class="grid-2">
+          <div class="panel">
+            <h3>Revenue vs surge multiplier</h3>
+            <p class="caption">analytics.mart_surge_analysis</p>
+            <div class="chart-wrap"><canvas id="chartSurgeRev"></canvas></div>
+          </div>
+          <div class="panel">
+            <h3>Completion &amp; cancellation vs surge</h3>
+            <p class="caption">Rates in percent</p>
+            <div class="chart-wrap"><canvas id="chartSurgeRates"></canvas></div>
+          </div>
+        </div>
+        <div class="panel">
+          <h3>Average fare by vehicle type</h3>
+          <div class="chart-wrap sm"><canvas id="chartFareVehicle"></canvas></div>
+        </div>
+      </section>
+
+      <!-- CANCEL -->
+      <section class="page" id="page-cancel">
+        <div class="hero">
+          <div>
+            <h1>Cancellation analytics</h1>
+            <p>Rider and driver cancellation reasons and timing patterns.</p>
+          </div>
+        </div>
+        <div class="grid-2">
+          <div class="panel">
+            <h3>Cancellations by hour</h3>
+            <div class="chart-wrap"><canvas id="chartCancelHour"></canvas></div>
+          </div>
+          <div class="panel">
+            <h3>Top cancellation reasons</h3>
+            <div class="chart-wrap"><canvas id="chartCancelReason"></canvas></div>
+          </div>
+        </div>
+        <div class="panel">
+          <h3>Reason detail</h3>
+          <div id="cancel-table"></div>
+        </div>
+      </section>
+
+      <!-- ANOMALY -->
+      <section class="page" id="page-anomaly">
+        <div class="hero">
+          <div>
+            <h1>Anomaly monitoring</h1>
+            <p>Potential unusual rides requiring review — not fraud confirmation.</p>
+          </div>
+        </div>
+        <div class="callout">
+          <strong>Analytical anomaly monitoring — not fraud confirmation.</strong>
+          Flags come from rule-based checks, customer fare z-scores, and optional Isolation Forest screening on synthetic RideFlow rides.
+        </div>
+        <div class="grid-2">
+          <div class="panel">
+            <h3>Anomalies by severity</h3>
+            <p class="caption">monitoring.ride_anomalies</p>
+            <div class="chart-wrap"><canvas id="chartAnomalySev"></canvas></div>
+          </div>
+          <div class="panel">
+            <h3>Top anomaly reasons</h3>
+            <div id="anomaly-table"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer" id="dash-footer"></div>
+    </main>
+  </div>
+
+  <script>
+  /*__RIDEFLOW_DATA_START__*/
+const RIDEFLOW_DATA = {"meta": {"company": "RideFlow", "source": "PostgreSQL warehouse + analytics marts", "note": "Synthetic data. Analytical anomaly monitoring is not fraud confirmation."}, "kpis": {"total_rides": 2000.0, "completed_rides": 1425.0, "cancelled_rides": 424.0, "completion_rate": 71.25, "cancellation_rate": 21.2, "total_revenue": 655772.24, "average_fare": 460.51, "average_distance": 11.72, "average_duration": 27.59, "active_users": 432.0, "active_drivers": 72.0}, "cities": [{"city_name": "Karachi", "total_rides": 438, "completed_rides": 294, "completion_rate": 67.12, "cancellation_rate": 22.37, "total_revenue": 116363.68, "average_fare": 395.79, "average_surge": 1.29}, {"city_name": "Lahore", "total_rides": 353, "completed_rides": 253, "completion_rate": 71.67, "cancellation_rate": 20.4, "total_revenue": 103174.64, "average_fare": 407.8, "average_surge": 1.3}, {"city_name": "Islamabad", "total_rides": 229, "completed_rides": 168, "completion_rate": 73.36, "cancellation_rate": 19.21, "total_revenue": 97955.59, "average_fare": 583.07, "average_surge": 1.31}, {"city_name": "Faisalabad", "total_rides": 196, "completed_rides": 152, "completion_rate": 77.55, "cancellation_rate": 20.41, "total_revenue": 76653.71, "average_fare": 507.64, "average_surge": 1.28}, {"city_name": "Sialkot", "total_rides": 174, "completed_rides": 124, "completion_rate": 71.26, "cancellation_rate": 20.69, "total_revenue": 69860.49, "average_fare": 563.39, "average_surge": 1.26}, {"city_name": "Rawalpindi", "total_rides": 148, "completed_rides": 115, "completion_rate": 77.7, "cancellation_rate": 14.86, "total_revenue": 50471.34, "average_fare": 438.88, "average_surge": 1.26}, {"city_name": "Gujranwala", "total_rides": 131, "completed_rides": 94, "completion_rate": 71.76, "cancellation_rate": 21.37, "total_revenue": 41476.04, "average_fare": 441.23, "average_surge": 1.27}, {"city_name": "Multan", "total_rides": 107, "completed_rides": 75, "completion_rate": 70.09, "cancellation_rate": 23.36, "total_revenue": 38642.83, "average_fare": 515.24, "average_surge": 1.27}, {"city_name": "Quetta", "total_rides": 133, "completed_rides": 94, "completion_rate": 70.68, "cancellation_rate": 26.32, "total_revenue": 37406.27, "average_fare": 397.94, "average_surge": 1.27}, {"city_name": "Peshawar", "total_rides": 91, "completed_rides": 56, "completion_rate": 61.54, "cancellation_rate": 26.37, "total_revenue": 23767.65, "average_fare": 424.42, "average_surge": 1.27}], "vehicles": [{"vehicle_type": "Sedan", "total_rides": 535, "completed_rides": 415, "revenue": 187047.42, "average_fare": 451.81, "cancellation_rate": 20.93}, {"vehicle_type": "Economy", "total_rides": 564, "completed_rides": 410, "revenue": 134843.73, "average_fare": 328.89, "cancellation_rate": 24.11}, {"vehicle_type": "Bike", "total_rides": 250, "completed_rides": 186, "revenue": 42511.12, "average_fare": 228.55, "cancellation_rate": 25.2}, {"vehicle_type": "Suv", "total_rides": 228, "completed_rides": 177, "revenue": 105419.56, "average_fare": 595.59, "cancellation_rate": 19.74}, {"vehicle_type": "Premium", "total_rides": 200, "completed_rides": 152, "revenue": 128003.05, "average_fare": 842.13, "cancellation_rate": 23.0}, {"vehicle_type": "Van", "total_rides": 108, "completed_rides": 85, "revenue": 57947.36, "average_fare": 681.73, "cancellation_rate": 20.37}], "surge": [{"surge_multiplier": 1.0, "ride_demand": 418, "completed_rides": 294, "revenue": 105858.98, "average_fare": 361.29, "completion_rate": 70.33, "cancellation_rate": 22.01}, {"surge_multiplier": 1.2, "ride_demand": 823, "completed_rides": 592, "revenue": 251780.06, "average_fare": 425.3, "completion_rate": 71.93, "cancellation_rate": 20.17}, {"surge_multiplier": 1.5, "ride_demand": 717, "completed_rides": 508, "revenue": 269621.07, "average_fare": 530.75, "completion_rate": 70.85, "cancellation_rate": 22.18}, {"surge_multiplier": 2.0, "ride_demand": 40, "completed_rides": 29, "revenue": 26797.32, "average_fare": 924.05, "completion_rate": 72.5, "cancellation_rate": 17.5}, {"surge_multiplier": 2.5, "ride_demand": 2, "completed_rides": 2, "revenue": 1714.81, "average_fare": 857.41, "completion_rate": 100.0, "cancellation_rate": 0.0}], "payments": [{"payment_method": "Cash", "payment_count": 522, "payment_value": 241039.87, "success_rate": 91.95, "failure_rate": 4.21, "method_share_pct": 36.66}, {"payment_method": "Mobile Wallet", "payment_count": 366, "payment_value": 169323.55, "success_rate": 93.72, "failure_rate": 3.55, "method_share_pct": 25.7}, {"payment_method": "Credit Card", "payment_count": 259, "payment_value": 118509.8, "success_rate": 92.28, "failure_rate": 2.32, "method_share_pct": 18.19}, {"payment_method": "Debit Card", "payment_count": 210, "payment_value": 94884.61, "success_rate": 90.48, "failure_rate": 4.29, "method_share_pct": 14.75}, {"payment_method": "Bank Transfer", "payment_count": 67, "payment_value": 32014.41, "success_rate": 97.01, "failure_rate": 1.49, "method_share_pct": 4.71}], "daily": [{"full_date": "2024-01-01", "total_rides": 3, "completed_rides": 2, "total_revenue": 1807.4, "average_fare": 903.7, "cancellation_rate": 33.33}, {"full_date": "2024-01-08", "total_rides": 2, "completed_rides": 1, "total_revenue": 789.59, "average_fare": 789.59, "cancellation_rate": 50.0}, {"full_date": "2024-01-15", "total_rides": 5, "completed_rides": 1, "total_revenue": 157.52, "average_fare": 157.52, "cancellation_rate": 60.0}, {"full_date": "2024-01-22", "total_rides": 3, "completed_rides": 2, "total_revenue": 2009.64, "average_fare": 1004.82, "cancellation_rate": 33.33}, {"full_date": "2024-01-29", "total_rides": 3, "completed_rides": 2, "total_revenue": 1813.2, "average_fare": 906.6, "cancellation_rate": 33.33}, {"full_date": "2024-02-05", "total_rides": 2, "completed_rides": 2, "total_revenue": 375.41, "average_fare": 187.71, "cancellation_rate": 0.0}, {"full_date": "2024-02-13", "total_rides": 1, "completed_rides": 1, "total_revenue": 515.73, "average_fare": 515.73, "cancellation_rate": 0.0}, {"full_date": "2024-02-20", "total_rides": 4, "completed_rides": 3, "total_revenue": 1976.48, "average_fare": 658.83, "cancellation_rate": 0.0}, {"full_date": "2024-02-28", "total_rides": 4, "completed_rides": 4, "total_revenue": 2075.54, "average_fare": 518.89, "cancellation_rate": 0.0}, {"full_date": "2024-03-07", "total_rides": 1, "completed_rides": 1, "total_revenue": 175.18, "average_fare": 175.18, "cancellation_rate": 0.0}, {"full_date": "2024-03-14", "total_rides": 5, "completed_rides": 5, "total_revenue": 3047.49, "average_fare": 609.5, "cancellation_rate": 0.0}, {"full_date": "2024-03-22", "total_rides": 6, "completed_rides": 6, "total_revenue": 2989.06, "average_fare": 498.18, "cancellation_rate": 0.0}, {"full_date": "2024-03-29", "total_rides": 3, "completed_rides": 2, "total_revenue": 749.73, "average_fare": 374.87, "cancellation_rate": 33.33}, {"full_date": "2024-04-07", "total_rides": 4, "completed_rides": 4, "total_revenue": 2980.73, "average_fare": 745.18, "cancellation_rate": 0.0}, {"full_date": "2024-04-15", "total_rides": 2, "completed_rides": 1, "total_revenue": 1213.87, "average_fare": 1213.87, "cancellation_rate": 50.0}, {"full_date": "2024-04-22", "total_rides": 2, "completed_rides": 2, "total_revenue": 906.1, "average_fare": 453.05, "cancellation_rate": 0.0}, {"full_date": "2024-04-29", "total_rides": 3, "completed_rides": 1, "total_revenue": 253.66, "average_fare": 253.66, "cancellation_rate": 0.0}, {"full_date": "2024-05-06", "total_rides": 3, "completed_rides": 2, "total_revenue": 730.74, "average_fare": 365.37, "cancellation_rate": 33.33}, {"full_date": "2024-05-15", "total_rides": 3, "completed_rides": 3, "total_revenue": 484.7, "average_fare": 161.57, "cancellation_rate": 0.0}, {"full_date": "2024-05-22", "total_rides": 2, "completed_rides": 1, "total_revenue": 202.61, "average_fare": 202.61, "cancellation_rate": 0.0}, {"full_date": "2024-05-29", "total_rides": 2, "completed_rides": 2, "total_revenue": 443.66, "average_fare": 221.83, "cancellation_rate": 0.0}, {"full_date": "2024-06-06", "total_rides": 2, "completed_rides": 2, "total_revenue": 862.37, "average_fare": 431.19, "cancellation_rate": 0.0}, {"full_date": "2024-06-15", "total_rides": 4, "completed_rides": 3, "total_revenue": 1333.96, "average_fare": 444.65, "cancellation_rate": 25.0}, {"full_date": "2024-06-23", "total_rides": 6, "completed_rides": 6, "total_revenue": 3346.92, "average_fare": 557.82, "cancellation_rate": 0.0}, {"full_date": "2024-06-30", "total_rides": 3, "completed_rides": 1, "total_revenue": 329.99, "average_fare": 329.99, "cancellation_rate": 33.33}, {"full_date": "2024-07-07", "total_rides": 4, "completed_rides": 3, "total_revenue": 1294.42, "average_fare": 431.47, "cancellation_rate": 25.0}, {"full_date": "2024-07-15", "total_rides": 3, "completed_rides": 3, "total_revenue": 1534.4, "average_fare": 511.47, "cancellation_rate": 0.0}, {"full_date": "2024-07-22", "total_rides": 1, "completed_rides": 1, "total_revenue": 274.43, "average_fare": 274.43, "cancellation_rate": 0.0}, {"full_date": "2024-07-30", "total_rides": 4, "completed_rides": 3, "total_revenue": 1141.64, "average_fare": 380.55, "cancellation_rate": 25.0}, {"full_date": "2024-08-06", "total_rides": 4, "completed_rides": 2, "total_revenue": 474.58, "average_fare": 237.29, "cancellation_rate": 50.0}, {"full_date": "2024-08-15", "total_rides": 5, "completed_rides": 3, "total_revenue": 2355.59, "average_fare": 785.2, "cancellation_rate": 20.0}, {"full_date": "2024-08-22", "total_rides": 2, "completed_rides": 1, "total_revenue": 402.41, "average_fare": 402.41, "cancellation_rate": 50.0}, {"full_date": "2024-08-29", "total_rides": 3, "completed_rides": 3, "total_revenue": 1459.71, "average_fare": 486.57, "cancellation_rate": 0.0}, {"full_date": "2024-09-05", "total_rides": 4, "completed_rides": 3, "total_revenue": 1130.21, "average_fare": 376.74, "cancellation_rate": 25.0}, {"full_date": "2024-09-13", "total_rides": 3, "completed_rides": 2, "total_revenue": 686.82, "average_fare": 343.41, "cancellation_rate": 33.33}, {"full_date": "2024-09-20", "total_rides": 1, "completed_rides": 0, "total_revenue": null, "average_fare": null, "cancellation_rate": 0.0}, {"full_date": "2024-09-28", "total_rides": 2, "completed_rides": 2, "total_revenue": 771.51, "average_fare": 385.76, "cancellation_rate": 0.0}, {"full_date": "2024-10-05", "total_rides": 2, "completed_rides": 2, "total_revenue": 579.24, "average_fare": 289.62, "cancellation_rate": 0.0}, {"full_date": "2024-10-12", "total_rides": 3, "completed_rides": 2, "total_revenue": 425.38, "average_fare": 212.69, "cancellation_rate": 33.33}, {"full_date": "2024-10-19", "total_rides": 5, "completed_rides": 4, "total_revenue": 2315.39, "average_fare": 578.85, "cancellation_rate": 20.0}, {"full_date": "2024-10-26", "total_rides": 3, "completed_rides": 3, "total_revenue": 1096.96, "average_fare": 365.65, "cancellation_rate": 0.0}, {"full_date": "2024-11-02", "total_rides": 2, "completed_rides": 1, "total_revenue": 933.61, "average_fare": 933.61, "cancellation_rate": 0.0}, {"full_date": "2024-11-09", "total_rides": 2, "completed_rides": 2, "total_revenue": 1700.33, "average_fare": 850.17, "cancellation_rate": 0.0}, {"full_date": "2024-11-16", "total_rides": 1, "completed_rides": 1, "total_revenue": 389.52, "average_fare": 389.52, "cancellation_rate": 0.0}, {"full_date": "2024-11-24", "total_rides": 2, "completed_rides": 1, "total_revenue": 882.63, "average_fare": 882.63, "cancellation_rate": 0.0}, {"full_date": "2024-12-01", "total_rides": 2, "completed_rides": 0, "total_revenue": null, "average_fare": null, "cancellation_rate": 50.0}, {"full_date": "2024-12-08", "total_rides": 3, "completed_rides": 2, "total_revenue": 881.09, "average_fare": 440.55, "cancellation_rate": 0.0}, {"full_date": "2024-12-15", "total_rides": 3, "completed_rides": 2, "total_revenue": 1528.77, "average_fare": 764.39, "cancellation_rate": 33.33}, {"full_date": "2024-12-22", "total_rides": 2, "completed_rides": 1, "total_revenue": 385.35, "average_fare": 385.35, "cancellation_rate": 50.0}, {"full_date": "2024-12-29", "total_rides": 2, "completed_rides": 1, "total_revenue": 982.96, "average_fare": 982.96, "cancellation_rate": 0.0}, {"full_date": "2025-01-05", "total_rides": 3, "completed_rides": 3, "total_revenue": 1702.08, "average_fare": 567.36, "cancellation_rate": 0.0}, {"full_date": "2025-01-13", "total_rides": 3, "completed_rides": 3, "total_revenue": 1563.62, "average_fare": 521.21, "cancellation_rate": 0.0}, {"full_date": "2025-01-23", "total_rides": 3, "completed_rides": 2, "total_revenue": 663.18, "average_fare": 331.59, "cancellation_rate": 0.0}, {"full_date": "2025-01-31", "total_rides": 3, "completed_rides": 2, "total_revenue": 639.41, "average_fare": 319.71, "cancellation_rate": 33.33}, {"full_date": "2025-02-08", "total_rides": 1, "completed_rides": 1, "total_revenue": 212.8, "average_fare": 212.8, "cancellation_rate": 0.0}, {"full_date": "2025-02-15", "total_rides": 1, "completed_rides": 1, "total_revenue": 149.06, "average_fare": 149.06, "cancellation_rate": 0.0}, {"full_date": "2025-02-22", "total_rides": 2, "completed_rides": 1, "total_revenue": 226.59, "average_fare": 226.59, "cancellation_rate": 50.0}, {"full_date": "2025-03-02", "total_rides": 2, "completed_rides": 1, "total_revenue": 465.0, "average_fare": 465.0, "cancellation_rate": 50.0}, {"full_date": "2025-03-09", "total_rides": 2, "completed_rides": 2, "total_revenue": 337.35, "average_fare": 168.68, "cancellation_rate": 0.0}, {"full_date": "2025-03-16", "total_rides": 5, "completed_rides": 1, "total_revenue": 193.67, "average_fare": 193.67, "cancellation_rate": 40.0}, {"full_date": "2025-03-23", "total_rides": 5, "completed_rides": 5, "total_revenue": 2401.36, "average_fare": 480.27, "cancellation_rate": 0.0}, {"full_date": "2025-03-30", "total_rides": 1, "completed_rides": 1, "total_revenue": 264.33, "average_fare": 264.33, "cancellation_rate": 0.0}, {"full_date": "2025-04-08", "total_rides": 6, "completed_rides": 3, "total_revenue": 979.47, "average_fare": 326.49, "cancellation_rate": 33.33}, {"full_date": "2025-04-16", "total_rides": 2, "completed_rides": 2, "total_revenue": 1119.39, "average_fare": 559.7, "cancellation_rate": 0.0}, {"full_date": "2025-04-23", "total_rides": 1, "completed_rides": 1, "total_revenue": 130.68, "average_fare": 130.68, "cancellation_rate": 0.0}, {"full_date": "2025-04-30", "total_rides": 3, "completed_rides": 3, "total_revenue": 526.4, "average_fare": 175.47, "cancellation_rate": 0.0}, {"full_date": "2025-05-07", "total_rides": 1, "completed_rides": 0, "total_revenue": null, "average_fare": null, "cancellation_rate": 100.0}, {"full_date": "2025-05-14", "total_rides": 2, "completed_rides": 2, "total_revenue": 751.25, "average_fare": 375.63, "cancellation_rate": 0.0}, {"full_date": "2025-05-23", "total_rides": 2, "completed_rides": 2, "total_revenue": 1392.97, "average_fare": 696.49, "cancellation_rate": 0.0}, {"full_date": "2025-05-30", "total_rides": 2, "completed_rides": 2, "total_revenue": 1951.05, "average_fare": 975.53, "cancellation_rate": 0.0}, {"full_date": "2025-06-06", "total_rides": 1, "completed_rides": 1, "total_revenue": 151.05, "average_fare": 151.05, "cancellation_rate": 0.0}, {"full_date": "2025-06-13", "total_rides": 2, "completed_rides": 2, "total_revenue": 2353.55, "average_fare": 1176.78, "cancellation_rate": 0.0}, {"full_date": "2025-06-22", "total_rides": 5, "completed_rides": 0, "total_revenue": null, "average_fare": null, "cancellation_rate": 60.0}, {"full_date": "2025-06-30", "total_rides": 1, "completed_rides": 1, "total_revenue": 371.83, "average_fare": 371.83, "cancellation_rate": 0.0}, {"full_date": "2025-07-08", "total_rides": 1, "completed_rides": 0, "total_revenue": null, "average_fare": null, "cancellation_rate": 100.0}, {"full_date": "2025-07-15", "total_rides": 1, "completed_rides": 1, "total_revenue": 140.67, "average_fare": 140.67, "cancellation_rate": 0.0}, {"full_date": "2025-07-22", "total_rides": 5, "completed_rides": 4, "total_revenue": 2136.46, "average_fare": 534.12, "cancellation_rate": 20.0}, {"full_date": "2025-07-29", "total_rides": 2, "completed_rides": 1, "total_revenue": 637.13, "average_fare": 637.13, "cancellation_rate": 50.0}, {"full_date": "2025-08-05", "total_rides": 1, "completed_rides": 1, "total_revenue": 432.72, "average_fare": 432.72, "cancellation_rate": 0.0}, {"full_date": "2025-08-12", "total_rides": 2, "completed_rides": 1, "total_revenue": 158.76, "average_fare": 158.76, "cancellation_rate": 50.0}, {"full_date": "2025-08-19", "total_rides": 2, "completed_rides": 1, "total_revenue": 1413.72, "average_fare": 1413.72, "cancellation_rate": 50.0}, {"full_date": "2025-08-27", "total_rides": 2, "completed_rides": 1, "total_revenue": 434.87, "average_fare": 434.87, "cancellation_rate": 0.0}, {"full_date": "2025-09-03", "total_rides": 5, "completed_rides": 3, "total_revenue": 1369.4, "average_fare": 456.47, "cancellation_rate": 20.0}, {"full_date": "2025-09-11", "total_rides": 3, "completed_rides": 2, "total_revenue": 808.56, "average_fare": 404.28, "cancellation_rate": 0.0}, {"full_date": "2025-09-19", "total_rides": 1, "completed_rides": 1, "total_revenue": 659.5, "average_fare": 659.5, "cancellation_rate": 0.0}, {"full_date": "2025-09-26", "total_rides": 2, "completed_rides": 2, "total_revenue": 389.36, "average_fare": 194.68, "cancellation_rate": 0.0}, {"full_date": "2025-10-03", "total_rides": 3, "completed_rides": 1, "total_revenue": 743.36, "average_fare": 743.36, "cancellation_rate": 66.67}, {"full_date": "2025-10-10", "total_rides": 2, "completed_rides": 2, "total_revenue": 954.05, "average_fare": 477.03, "cancellation_rate": 0.0}, {"full_date": "2025-10-17", "total_rides": 1, "completed_rides": 1, "total_revenue": 111.55, "average_fare": 111.55, "cancellation_rate": 0.0}, {"full_date": "2025-10-24", "total_rides": 1, "completed_rides": 0, "total_revenue": null, "average_fare": null, "cancellation_rate": 100.0}, {"full_date": "2025-10-31", "total_rides": 1, "completed_rides": 1, "total_revenue": 343.95, "average_fare": 343.95, "cancellation_rate": 0.0}, {"full_date": "2025-11-07", "total_rides": 2, "completed_rides": 0, "total_revenue": null, "average_fare": null, "cancellation_rate": 50.0}, {"full_date": "2025-11-14", "total_rides": 3, "completed_rides": 3, "total_revenue": 2096.54, "average_fare": 698.85, "cancellation_rate": 0.0}, {"full_date": "2025-11-21", "total_rides": 1, "completed_rides": 1, "total_revenue": 330.16, "average_fare": 330.16, "cancellation_rate": 0.0}, {"full_date": "2025-11-28", "total_rides": 3, "completed_rides": 3, "total_revenue": 1588.88, "average_fare": 529.63, "cancellation_rate": 0.0}, {"full_date": "2025-12-06", "total_rides": 1, "completed_rides": 0, "total_revenue": null, "average_fare": null, "cancellation_rate": 100.0}, {"full_date": "2025-12-16", "total_rides": 3, "completed_rides": 2, "total_revenue": 726.93, "average_fare": 363.47, "cancellation_rate": 0.0}, {"full_date": "2025-12-24", "total_rides": 1, "completed_rides": 1, "total_revenue": 266.72, "average_fare": 266.72, "cancellation_rate": 0.0}, {"full_date": "2025-12-31", "total_rides": 5, "completed_rides": 3, "total_revenue": 602.27, "average_fare": 200.76, "cancellation_rate": 40.0}], "hourly": [{"hour": 0, "ride_requests": 89, "completed": 61, "cancelled": 25}, {"hour": 1, "ride_requests": 81, "completed": 59, "cancelled": 19}, {"hour": 2, "ride_requests": 71, "completed": 57, "cancelled": 10}, {"hour": 3, "ride_requests": 69, "completed": 45, "cancelled": 21}, {"hour": 4, "ride_requests": 89, "completed": 63, "cancelled": 17}, {"hour": 5, "ride_requests": 76, "completed": 56, "cancelled": 14}, {"hour": 6, "ride_requests": 87, "completed": 59, "cancelled": 23}, {"hour": 7, "ride_requests": 90, "completed": 69, "cancelled": 14}, {"hour": 8, "ride_requests": 103, "completed": 73, "cancelled": 22}, {"hour": 9, "ride_requests": 89, "completed": 56, "cancelled": 26}, {"hour": 10, "ride_requests": 80, "completed": 62, "cancelled": 9}, {"hour": 11, "ride_requests": 75, "completed": 50, "cancelled": 18}, {"hour": 12, "ride_requests": 80, "completed": 53, "cancelled": 18}, {"hour": 13, "ride_requests": 77, "completed": 59, "cancelled": 13}, {"hour": 14, "ride_requests": 80, "completed": 58, "cancelled": 14}, {"hour": 15, "ride_requests": 81, "completed": 60, "cancelled": 15}, {"hour": 16, "ride_requests": 74, "completed": 51, "cancelled": 18}, {"hour": 17, "ride_requests": 82, "completed": 60, "cancelled": 17}, {"hour": 18, "ride_requests": 96, "completed": 60, "cancelled": 28}, {"hour": 19, "ride_requests": 94, "completed": 71, "cancelled": 15}, {"hour": 20, "ride_requests": 74, "completed": 54, "cancelled": 14}, {"hour": 21, "ride_requests": 89, "completed": 64, "cancelled": 19}, {"hour": 22, "ride_requests": 86, "completed": 63, "cancelled": 15}, {"hour": 23, "ride_requests": 88, "completed": 62, "cancelled": 20}], "zones": [{"zone_name": "Karachi Airport 3", "zone_type": "Airport", "pickup_volume": 94, "revenue": 37755.23, "average_fare": 599.29, "cancellation_rate": 22.34}, {"zone_name": "Karachi Business District 5", "zone_type": "Business District", "pickup_volume": 92, "revenue": 19222.22, "average_fare": 343.25, "cancellation_rate": 29.35}, {"zone_name": "Karachi Residential 1", "zone_type": "Residential", "pickup_volume": 91, "revenue": 20664.64, "average_fare": 322.89, "cancellation_rate": 18.68}, {"zone_name": "Lahore Business District 5", "zone_type": "Business District", "pickup_volume": 90, "revenue": 22556.97, "average_fare": 369.79, "cancellation_rate": 20.0}, {"zone_name": "Karachi University 4", "zone_type": "University", "pickup_volume": 81, "revenue": 18038.27, "average_fare": 322.11, "cancellation_rate": 23.46}, {"zone_name": "Karachi Commercial 2", "zone_type": "Commercial", "pickup_volume": 80, "revenue": 20683.32, "average_fare": 376.06, "cancellation_rate": 17.5}, {"zone_name": "Lahore Residential 1", "zone_type": "Residential", "pickup_volume": 79, "revenue": 19256.44, "average_fare": 401.18, "cancellation_rate": 29.11}, {"zone_name": "Lahore Airport 3", "zone_type": "Airport", "pickup_volume": 65, "revenue": 29763.21, "average_fare": 583.59, "cancellation_rate": 16.92}, {"zone_name": "Lahore Commercial 2", "zone_type": "Commercial", "pickup_volume": 60, "revenue": 13359.02, "average_fare": 310.67, "cancellation_rate": 23.33}, {"zone_name": "Lahore University 4", "zone_type": "University", "pickup_volume": 59, "revenue": 18239.0, "average_fare": 364.78, "cancellation_rate": 10.17}, {"zone_name": "Islamabad Residential 1", "zone_type": "Residential", "pickup_volume": 47, "revenue": 20444.41, "average_fare": 584.13, "cancellation_rate": 19.15}, {"zone_name": "Islamabad Business District 5", "zone_type": "Business District", "pickup_volume": 47, "revenue": 14430.13, "average_fare": 437.28, "cancellation_rate": 25.53}, {"zone_name": "Islamabad Commercial 2", "zone_type": "Commercial", "pickup_volume": 46, "revenue": 16202.66, "average_fare": 450.07, "cancellation_rate": 10.87}, {"zone_name": "Islamabad Airport 3", "zone_type": "Airport", "pickup_volume": 45, "revenue": 31987.77, "average_fare": 969.33, "cancellation_rate": 20.0}, {"zone_name": "Rawalpindi Residential 1", "zone_type": "Residential", "pickup_volume": 45, "revenue": 15455.33, "average_fare": 441.58, "cancellation_rate": 20.0}], "segments": [{"customer_segment": "Inactive", "users": 318, "spend": 303250.94}, {"customer_segment": "Low Activity", "users": 135, "spend": 192288.05}, {"customer_segment": "Medium Activity", "users": 47, "spend": 160233.25}], "drivers": [{"driver_id": 16, "driver_type": "Regular", "completed_rides": 29, "average_rating": 4.07, "revenue_generated": 27077.77, "revenue_per_online_hour": 3326.51, "rides_per_online_hour": 3.563, "cancellation_rate": 2.94}, {"driver_id": 2, "driver_type": "Regular", "completed_rides": 18, "average_rating": 4.09, "revenue_generated": 9058.29, "revenue_per_online_hour": 2625.59, "rides_per_online_hour": 5.217, "cancellation_rate": 13.04}, {"driver_id": 45, "driver_type": "Part-Time", "completed_rides": 23, "average_rating": 3.86, "revenue_generated": 9585.37, "revenue_per_online_hour": 2017.97, "rides_per_online_hour": 4.842, "cancellation_rate": 3.45}, {"driver_id": 49, "driver_type": "Part-Time", "completed_rides": 64, "average_rating": 4.19, "revenue_generated": 29670.84, "revenue_per_online_hour": 1265.28, "rides_per_online_hour": 2.729, "cancellation_rate": 7.23}, {"driver_id": 11, "driver_type": "Regular", "completed_rides": 21, "average_rating": 4.17, "revenue_generated": 14935.66, "revenue_per_online_hour": 987.16, "rides_per_online_hour": 1.388, "cancellation_rate": 8.0}, {"driver_id": 87, "driver_type": "Regular", "completed_rides": 27, "average_rating": 4.47, "revenue_generated": 16924.24, "revenue_per_online_hour": 983.97, "rides_per_online_hour": 1.57, "cancellation_rate": 6.45}, {"driver_id": 8, "driver_type": "Part-Time", "completed_rides": 10, "average_rating": 3.86, "revenue_generated": 5632.72, "revenue_per_online_hour": 937.22, "rides_per_online_hour": 1.664, "cancellation_rate": 0.0}, {"driver_id": 10, "driver_type": "Regular", "completed_rides": 24, "average_rating": 4.06, "revenue_generated": 15424.89, "revenue_per_online_hour": 785.78, "rides_per_online_hour": 1.223, "cancellation_rate": 3.57}, {"driver_id": 34, "driver_type": "Part-Time", "completed_rides": 10, "average_rating": 4.33, "revenue_generated": 10052.65, "revenue_per_online_hour": 743.54, "rides_per_online_hour": 0.74, "cancellation_rate": 0.0}, {"driver_id": 80, "driver_type": "Part-Time", "completed_rides": 16, "average_rating": 3.91, "revenue_generated": 12215.45, "revenue_per_online_hour": 690.53, "rides_per_online_hour": 0.904, "cancellation_rate": 5.26}, {"driver_id": 6, "driver_type": "Premium", "completed_rides": 12, "average_rating": 4.2, "revenue_generated": 10300.21, "revenue_per_online_hour": 664.53, "rides_per_online_hour": 0.774, "cancellation_rate": 11.76}, {"driver_id": 42, "driver_type": "Premium", "completed_rides": 37, "average_rating": 4.15, "revenue_generated": 27608.44, "revenue_per_online_hour": 637.9, "rides_per_online_hour": 0.855, "cancellation_rate": 5.77}, {"driver_id": 20, "driver_type": "Regular", "completed_rides": 23, "average_rating": 3.78, "revenue_generated": 10774.29, "revenue_per_online_hour": 599.57, "rides_per_online_hour": 1.28, "cancellation_rate": 3.33}, {"driver_id": 82, "driver_type": "Part-Time", "completed_rides": 22, "average_rating": 4.08, "revenue_generated": 9174.64, "revenue_per_online_hour": 574.13, "rides_per_online_hour": 1.377, "cancellation_rate": 7.41}, {"driver_id": 12, "driver_type": "Part-Time", "completed_rides": 40, "average_rating": 3.86, "revenue_generated": 11742.57, "revenue_per_online_hour": 494.42, "rides_per_online_hour": 1.684, "cancellation_rate": 9.62}], "cancel_reasons": [{"cancelled_by": "Rider", "reason": "High Fare", "total": 77}, {"cancelled_by": "Rider", "reason": "Changed Mind", "total": 59}, {"cancelled_by": "Rider", "reason": "Driver Delayed", "total": 50}, {"cancelled_by": "Rider", "reason": "Long ETA", "total": 49}, {"cancelled_by": "Rider", "reason": "Other", "total": 46}, {"cancelled_by": "Driver", "reason": "Low Fare", "total": 28}, {"cancelled_by": "Driver", "reason": "Traffic", "total": 26}, {"cancelled_by": "Driver", "reason": "Vehicle Issue", "total": 25}, {"cancelled_by": "Driver", "reason": "Too Far", "total": 24}, {"cancelled_by": "Driver", "reason": "Personal Reason", "total": 22}, {"cancelled_by": "Driver", "reason": "Other", "total": 18}], "cancel_hour": [{"hour_of_day": 0, "cancellations": 25}, {"hour_of_day": 1, "cancellations": 19}, {"hour_of_day": 2, "cancellations": 10}, {"hour_of_day": 3, "cancellations": 21}, {"hour_of_day": 4, "cancellations": 17}, {"hour_of_day": 5, "cancellations": 14}, {"hour_of_day": 6, "cancellations": 23}, {"hour_of_day": 7, "cancellations": 14}, {"hour_of_day": 8, "cancellations": 22}, {"hour_of_day": 9, "cancellations": 26}, {"hour_of_day": 10, "cancellations": 9}, {"hour_of_day": 11, "cancellations": 18}, {"hour_of_day": 12, "cancellations": 18}, {"hour_of_day": 13, "cancellations": 13}, {"hour_of_day": 14, "cancellations": 14}, {"hour_of_day": 15, "cancellations": 15}, {"hour_of_day": 16, "cancellations": 18}, {"hour_of_day": 17, "cancellations": 17}, {"hour_of_day": 18, "cancellations": 28}, {"hour_of_day": 19, "cancellations": 15}, {"hour_of_day": 20, "cancellations": 14}, {"hour_of_day": 21, "cancellations": 19}, {"hour_of_day": 22, "cancellations": 15}, {"hour_of_day": 23, "cancellations": 20}], "status_dist": [{"ride_status": "Completed", "n": 1425}, {"ride_status": "Rider_Cancelled", "n": 281}, {"ride_status": "Driver_Cancelled", "n": 143}, {"ride_status": "No_Driver_Available", "n": 95}, {"ride_status": "Accepted", "n": 36}, {"ride_status": "Requested", "n": 19}, {"ride_status": "Unknown", "n": 1}], "anomalies": [{"severity": "High", "n": 2}, {"severity": "Medium", "n": 18}, {"severity": "Low", "n": 29}], "anomaly_reasons": [{"reason": "Extremely short ride", "severity": "Low", "n": 15}, {"reason": "Isolation Forest unusual pattern (screening only)", "severity": "Medium", "n": 10}, {"reason": "Extremely long ride", "severity": "Low", "n": 7}, {"reason": "Extremely long duration", "severity": "Low", "n": 6}, {"reason": "Extremely long ride; Extremely long duration", "severity": "Medium", "n": 5}, {"reason": "Extremely high fare vs city distribution", "severity": "Medium", "n": 2}, {"reason": "Extremely high fare vs city distribution; Extremely long duration", "severity": "Medium", "n": 1}, {"reason": "Extremely high fare vs city distribution; Extremely long ride; Extremely long du", "severity": "High", "n": 1}, {"reason": "Extremely high fare vs city distribution; Extremely long ride", "severity": "High", "n": 1}, {"reason": "Unusual late-night high-value activity", "severity": "Low", "n": 1}], "supply": [{"demand_pressure_band": "Severe Demand Pressure", "buckets": 2479, "avg_ratio": 0.0}, {"demand_pressure_band": "Balanced", "buckets": 1, "avg_ratio": 1.0}], "monthly": [{"year": 2024, "month": 1, "month_name": "January", "total_rides": 96.0, "completed_rides": 60.0, "total_revenue": 27756.37, "average_fare": 480.85, "revenue_growth_mom": null}, {"year": 2024, "month": 2, "month_name": "February", "total_rides": 65.0, "completed_rides": 48.0, "total_revenue": 23658.47, "average_fare": 490.5, "revenue_growth_mom": -14.76}, {"year": 2024, "month": 3, "month_name": "March", "total_rides": 87.0, "completed_rides": 60.0, "total_revenue": 27086.02, "average_fare": 429.95, "revenue_growth_mom": 14.49}, {"year": 2024, "month": 4, "month_name": "April", "total_rides": 92.0, "completed_rides": 63.0, "total_revenue": 28018.39, "average_fare": 475.31, "revenue_growth_mom": 3.44}, {"year": 2024, "month": 5, "month_name": "May", "total_rides": 79.0, "completed_rides": 52.0, "total_revenue": 18176.59, "average_fare": 345.41, "revenue_growth_mom": -35.13}, {"year": 2024, "month": 6, "month_name": "June", "total_rides": 88.0, "completed_rides": 63.0, "total_revenue": 33175.01, "average_fare": 507.4, "revenue_growth_mom": 82.52}, {"year": 2024, "month": 7, "month_name": "July", "total_rides": 88.0, "completed_rides": 62.0, "total_revenue": 27134.65, "average_fare": 473.1, "revenue_growth_mom": -18.21}, {"year": 2024, "month": 8, "month_name": "August", "total_rides": 94.0, "completed_rides": 73.0, "total_revenue": 36240.84, "average_fare": 529.39, "revenue_growth_mom": 33.56}, {"year": 2024, "month": 9, "month_name": "September", "total_rides": 89.0, "completed_rides": 64.0, "total_revenue": 27359.47, "average_fare": 433.47, "revenue_growth_mom": -24.51}, {"year": 2024, "month": 10, "month_name": "October", "total_rides": 85.0, "completed_rides": 63.0, "total_revenue": 27345.33, "average_fare": 414.81, "revenue_growth_mom": -0.05}, {"year": 2024, "month": 11, "month_name": "November", "total_rides": 77.0, "completed_rides": 57.0, "total_revenue": 28066.86, "average_fare": 534.45, "revenue_growth_mom": 2.64}, {"year": 2024, "month": 12, "month_name": "December", "total_rides": 85.0, "completed_rides": 63.0, "total_revenue": 33977.35, "average_fare": 585.44, "revenue_growth_mom": 21.06}, {"year": 2025, "month": 1, "month_name": "January", "total_rides": 77.0, "completed_rides": 58.0, "total_revenue": 27655.39, "average_fare": 499.02, "revenue_growth_mom": -18.61}, {"year": 2025, "month": 2, "month_name": "February", "total_rides": 58.0, "completed_rides": 44.0, "total_revenue": 18673.14, "average_fare": 428.55, "revenue_growth_mom": -32.48}, {"year": 2025, "month": 3, "month_name": "March", "total_rides": 106.0, "completed_rides": 75.0, "total_revenue": 33918.43, "average_fare": 443.33, "revenue_growth_mom": 81.64}, {"year": 2025, "month": 4, "month_name": "April", "total_rides": 71.0, "completed_rides": 52.0, "total_revenue": 22529.03, "average_fare": 436.64, "revenue_growth_mom": -33.58}, {"year": 2025, "month": 5, "month_name": "May", "total_rides": 90.0, "completed_rides": 73.0, "total_revenue": 34761.16, "average_fare": 510.9, "revenue_growth_mom": 54.29}, {"year": 2025, "month": 6, "month_name": "June", "total_rides": 81.0, "completed_rides": 55.0, "total_revenue": 26451.71, "average_fare": 470.69, "revenue_growth_mom": -23.9}, {"year": 2025, "month": 7, "month_name": "July", "total_rides": 73.0, "completed_rides": 50.0, "total_revenue": 24212.81, "average_fare": 517.42, "revenue_growth_mom": -8.46}, {"year": 2025, "month": 8, "month_name": "August", "total_rides": 85.0, "completed_rides": 57.0, "total_revenue": 25226.5, "average_fare": 428.78, "revenue_growth_mom": 4.19}, {"year": 2025, "month": 9, "month_name": "September", "total_rides": 74.0, "completed_rides": 54.0, "total_revenue": 23423.7, "average_fare": 429.5, "revenue_growth_mom": -7.15}, {"year": 2025, "month": 10, "month_name": "October", "total_rides": 88.0, "completed_rides": 63.0, "total_revenue": 29409.14, "average_fare": 465.52, "revenue_growth_mom": 25.55}, {"year": 2025, "month": 11, "month_name": "November", "total_rides": 85.0, "completed_rides": 60.0, "total_revenue": 26377.96, "average_fare": 486.66, "revenue_growth_mom": -10.31}, {"year": 2025, "month": 12, "month_name": "December", "total_rides": 87.0, "completed_rides": 56.0, "total_revenue": 25137.92, "average_fare": 440.55, "revenue_growth_mom": -4.7}], "ratings": [{"rated_entity": "Driver", "rating_count": 1003, "average_rating": 4.08, "excellent": 448, "good": 312, "average": 145, "poor": 72, "very_poor": 26}, {"rated_entity": "User", "rating_count": 772, "average_rating": 4.19, "excellent": 374, "good": 246, "average": 92, "poor": 41, "very_poor": 19}]};
+/*__RIDEFLOW_DATA_END__*/
+
+  const palette = ["#0d7a62", "#c45c26", "#1d4e89", "#7a5c2e", "#5b4b8a", "#2f6f6a", "#a3442b", "#3d5a80"];
+  Chart.defaults.font.family = "'DM Sans', system-ui, sans-serif";
+  Chart.defaults.color = "#5c6b66";
+  Chart.defaults.borderColor = "#e4dfd2";
+  Chart.defaults.plugins.legend.labels.boxWidth = 12;
+
+  const fmt = {
+    int: (n) => Math.round(n).toLocaleString(),
+    money: (n) => Number(n || 0).toLocaleString(undefined, { maximumFractionDigits: 0 }) + " RFU",
+    pct: (n) => Number(n || 0).toFixed(1) + "%",
+    num: (n, d=1) => Number(n || 0).toFixed(d),
+  };
+
+  function kpiCard(label, value, hint, warm=false) {
+    return `<div class="kpi${warm ? " warm" : ""}"><div class="label">${label}</div><div class="value">${value}</div><div class="hint">${hint || ""}</div></div>`;
+  }
+
+  function tableHTML(headers, rows, aligns=[]) {
+    const th = headers.map((h,i) => `<th class="${aligns[i]==='r'?'num':''}">${h}</th>`).join("");
+    const tr = rows.map(r => `<tr>${r.map((c,i) => `<td class="${aligns[i]==='r'?'num':''}">${c}</td>`).join("")}</tr>`).join("");
+    return `<table class="data"><thead><tr>${th}</tr></thead><tbody>${tr}</tbody></table>`;
+  }
+
+  function destroyCharts() {
+    Object.keys(Chart.instances || {}).forEach(() => {});
+    document.querySelectorAll("canvas").forEach((c) => {
+      const ch = Chart.getChart(c);
+      if (ch) ch.destroy();
+    });
+  }
+
+  function lineDual(ctx, labels, a, b, aLabel, bLabel) {
+    return new Chart(ctx, {
+      type: "line",
+      data: {
+        labels,
+        datasets: [
+          { label: aLabel, data: a, borderColor: palette[0], backgroundColor: "rgba(13,122,98,.12)", fill: true, tension: .35, yAxisID: "y", pointRadius: 0, borderWidth: 2 },
+          { label: bLabel, data: b, borderColor: palette[1], backgroundColor: "transparent", tension: .35, yAxisID: "y1", pointRadius: 0, borderWidth: 2 },
+        ],
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        interaction: { mode: "index", intersect: false },
+        scales: {
+          y: { position: "left", title: { display: true, text: aLabel } },
+          y1: { position: "right", grid: { drawOnChartArea: false }, title: { display: true, text: bLabel } },
+          x: { ticks: { maxTicksLimit: 8 } },
+        },
+      },
+    });
+  }
+
+  function bar(ctx, labels, data, label, color=palette[0], horizontal=false) {
+    return new Chart(ctx, {
+      type: "bar",
+      data: { labels, datasets: [{ label, data, backgroundColor: color, borderRadius: 6, maxBarThickness: 28 }] },
+      options: {
+        indexAxis: horizontal ? "y" : "x",
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: { x: { title: { display: !horizontal, text: horizontal ? label : "" } }, y: { beginAtZero: true } },
+      },
+    });
+  }
+
+  function doughnut(ctx, labels, data) {
+    return new Chart(ctx, {
+      type: "doughnut",
+      data: { labels, datasets: [{ data, backgroundColor: palette, borderWidth: 0 }] },
+      options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: "bottom" } }, cutout: "62%" },
+    });
+  }
+
+  function render(data) {
+    if (!data) {
+      document.querySelector(".main").innerHTML = "<p style='padding:40px'>Dashboard data missing. Run: python scripts/export_dashboard_data.py</p>";
+      return;
+    }
+    const k = data.kpis;
+    document.getElementById("exec-kpis").innerHTML = [
+      kpiCard("Total rides", fmt.int(k.total_rides), "All ride requests"),
+      kpiCard("Completed", fmt.int(k.completed_rides), fmt.pct(k.completion_rate) + " completion"),
+      kpiCard("Total revenue", fmt.money(k.total_revenue), "Completed rides only", true),
+      kpiCard("Average fare", fmt.money(k.average_fare), fmt.num(k.average_distance) + " km avg distance"),
+      kpiCard("Active users", fmt.int(k.active_users), "With completed rides"),
+      kpiCard("Active drivers", fmt.int(k.active_drivers), "With completed rides"),
+      kpiCard("Cancellation rate", fmt.pct(k.cancellation_rate), fmt.int(k.cancelled_rides) + " cancelled", true),
+      kpiCard("Avg duration", fmt.num(k.average_duration) + " min", "Completed trips"),
+    ].join("");
+
+    document.getElementById("ride-kpis").innerHTML = [
+      kpiCard("Completed rides", fmt.int(k.completed_rides), "fact_rides.is_completed"),
+      kpiCard("Avg fare / km", fmt.money(k.total_revenue / Math.max(k.average_distance * k.completed_rides, 1) * k.average_distance), "Approx from totals"),
+      kpiCard("Avg distance", fmt.num(k.average_distance) + " km", "Completed"),
+      kpiCard("Avg duration", fmt.num(k.average_duration) + " min", "Completed"),
+    ].join("");
+
+    destroyCharts();
+
+    const daily = data.daily || [];
+    lineDual(
+      document.getElementById("chartRevenueTrend"),
+      daily.map(d => d.full_date),
+      daily.map(d => d.total_revenue),
+      daily.map(d => d.total_rides),
+      "Revenue (RFU)",
+      "Rides"
+    );
+
+    bar(document.getElementById("chartCityRevenue"), data.cities.map(c => c.city_name), data.cities.map(c => c.total_revenue), "Revenue (RFU)", palette[0], true);
+    doughnut(document.getElementById("chartStatus"), data.status_dist.map(s => s.ride_status), data.status_dist.map(s => s.n));
+    bar(document.getElementById("chartVehicle"), data.vehicles.map(v => v.vehicle_type), data.vehicles.map(v => v.completed_rides), "Completed rides", palette[2]);
+    bar(document.getElementById("chartHourly"), data.hourly.map(h => h.hour + ":00"), data.hourly.map(h => h.ride_requests), "Ride requests", palette[0]);
+
+    const monthly = data.monthly || [];
+    new Chart(document.getElementById("chartMonthly"), {
+      type: "bar",
+      data: {
+        labels: monthly.map(m => `${m.month_name?.trim?.() || m.month} ${m.year}`),
+        datasets: [
+          { type: "bar", label: "Rides", data: monthly.map(m => m.total_rides), backgroundColor: palette[0], borderRadius: 4, yAxisID: "y" },
+          { type: "line", label: "Revenue (RFU)", data: monthly.map(m => m.total_revenue), borderColor: palette[1], yAxisID: "y1", tension: .3, pointRadius: 2 },
+        ],
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        scales: {
+          y: { position: "left", title: { display: true, text: "Rides" } },
+          y1: { position: "right", grid: { drawOnChartArea: false }, title: { display: true, text: "Revenue (RFU)" } },
+        },
+      },
+    });
+    doughnut(document.getElementById("chartPayments"), data.payments.map(p => p.payment_method), data.payments.map(p => p.payment_count));
+    document.getElementById("payment-table").innerHTML = tableHTML(
+      ["Method", "Count", "Value", "Success %", "Failure %", "Share %"],
+      data.payments.map(p => [p.payment_method, fmt.int(p.payment_count), fmt.money(p.payment_value), fmt.pct(p.success_rate), fmt.pct(p.failure_rate), fmt.pct(p.method_share_pct)]),
+      ["l","r","r","r","r","r"]
+    );
+
+    bar(document.getElementById("chartSegments"), data.segments.map(s => s.customer_segment), data.segments.map(s => s.spend), "Spend (RFU)", palette[1], true);
+    document.getElementById("segment-table").innerHTML = tableHTML(
+      ["Segment", "Users", "Spend"],
+      data.segments.map(s => [s.customer_segment, fmt.int(s.users), fmt.money(s.spend)]),
+      ["l","r","r"]
+    );
+
+    const rating = (data.ratings || []).find(r => r.rated_entity === "Driver") || data.ratings?.[0];
+    if (rating) {
+      bar(document.getElementById("chartRatings"),
+        ["Excellent", "Good", "Average", "Poor", "Very Poor"],
+        [rating.excellent, rating.good, rating.average, rating.poor, rating.very_poor],
+        "Ratings", palette[0]);
+    }
+
+    bar(document.getElementById("chartDrivers"),
+      data.drivers.map(d => "D" + d.driver_id),
+      data.drivers.map(d => d.revenue_per_online_hour),
+      "RFU / online hour", palette[0], true);
+
+    document.getElementById("driver-table").innerHTML = tableHTML(
+      ["Driver", "Type", "Completed", "Rating", "Rev/hr", "Rides/hr", "Cancel %"],
+      data.drivers.map(d => [
+        d.driver_id, d.driver_type, fmt.int(d.completed_rides), fmt.num(d.average_rating, 2),
+        fmt.money(d.revenue_per_online_hour), fmt.num(d.rides_per_online_hour, 2), fmt.pct(d.cancellation_rate || 0)
+      ]),
+      ["l","l","r","r","r","r","r"]
+    );
+
+    bar(document.getElementById("chartCityCancel"), data.cities.map(c => c.city_name), data.cities.map(c => c.cancellation_rate), "Cancellation rate (%)", palette[1], true);
+    doughnut(document.getElementById("chartSupply"), data.supply.map(s => s.demand_pressure_band), data.supply.map(s => s.buckets));
+    document.getElementById("zone-table").innerHTML = tableHTML(
+      ["Zone", "Type", "Pickups", "Revenue", "Avg fare", "Cancel %"],
+      data.zones.map(z => [z.zone_name, z.zone_type, fmt.int(z.pickup_volume), fmt.money(z.revenue), fmt.money(z.average_fare), fmt.pct(z.cancellation_rate)]),
+      ["l","l","r","r","r","r"]
+    );
+
+    bar(document.getElementById("chartSurgeRev"), data.surge.map(s => s.surge_multiplier + "x"), data.surge.map(s => s.revenue), "Revenue (RFU)", palette[0]);
+    new Chart(document.getElementById("chartSurgeRates"), {
+      type: "line",
+      data: {
+        labels: data.surge.map(s => s.surge_multiplier + "x"),
+        datasets: [
+          { label: "Completion %", data: data.surge.map(s => s.completion_rate), borderColor: palette[0], tension: .3 },
+          { label: "Cancellation %", data: data.surge.map(s => s.cancellation_rate), borderColor: palette[1], tension: .3 },
+        ],
+      },
+      options: { responsive: true, maintainAspectRatio: false, scales: { y: { title: { display: true, text: "Rate (%)" } } } },
+    });
+    bar(document.getElementById("chartFareVehicle"), data.vehicles.map(v => v.vehicle_type), data.vehicles.map(v => v.average_fare), "Average fare (RFU)", palette[2]);
+
+    bar(document.getElementById("chartCancelHour"), data.cancel_hour.map(c => c.hour_of_day + ":00"), data.cancel_hour.map(c => c.cancellations), "Cancellations", palette[1]);
+    bar(document.getElementById("chartCancelReason"),
+      data.cancel_reasons.slice(0, 8).map(c => c.reason),
+      data.cancel_reasons.slice(0, 8).map(c => c.total),
+      "Count", palette[1], true);
+    document.getElementById("cancel-table").innerHTML = tableHTML(
+      ["Cancelled by", "Reason", "Count"],
+      data.cancel_reasons.map(c => [c.cancelled_by, c.reason, fmt.int(c.total)]),
+      ["l","l","r"]
+    );
+
+    doughnut(document.getElementById("chartAnomalySev"), data.anomalies.map(a => a.severity), data.anomalies.map(a => a.n));
+    const sevPill = (s) => {
+      const cls = s === "High" || s === "Critical" ? "bad" : s === "Medium" ? "warn" : "neutral";
+      return `<span class="pill ${cls}">${s}</span>`;
+    };
+    document.getElementById("anomaly-table").innerHTML = tableHTML(
+      ["Severity", "Reason", "Count"],
+      data.anomaly_reasons.map(a => [sevPill(a.severity), a.reason, fmt.int(a.n)]),
+      ["l","l","r"]
+    );
+
+    document.getElementById("dash-footer").textContent =
+      `${data.meta.company} · ${data.meta.source} · ${data.meta.note}`;
+  }
+
+  document.querySelectorAll(".nav button[data-page]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".nav button").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      document.querySelectorAll(".page").forEach(p => p.classList.remove("active"));
+      document.getElementById("page-" + btn.dataset.page).classList.add("active");
+    });
+  });
+
+  async function boot() {
+    let data = RIDEFLOW_DATA;
+    if (!data) {
+      try {
+        const res = await fetch("./rideflow_dashboard_data.json");
+        if (res.ok) data = await res.json();
+      } catch (_) {}
+    }
+    render(data);
+  }
+  boot();
+  </script>
+</body>
+</html>
