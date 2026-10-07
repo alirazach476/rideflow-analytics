@@ -63,3 +63,4 @@ dashboards/powerbi/*.pbix
 
 # Jupyter
 .ipynb_checkpoints/
+.vercel
