@@ -1,6 +1,13 @@
 # RideFlow — Ride-Hailing Analytics Platform
 
-**RideFlow** is a local, batch-oriented analytics platform that simulates a ride-hailing company (similar in concept to Uber/Careem) using **100% synthetic data**. It demonstrates end-to-end data engineering, dimensional modeling, analytics engineering, and BI preparation — without claiming cloud deployment, real-time streaming, or fraud detection.
+**RideFlow** is a local, batch-oriented analytics platform that simulates a ride-hailing company (similar in concept to Uber/Careem) using **100% synthetic data**. It demonstrates end-to-end data engineering, dimensional modeling, analytics engineering, and BI preparation — without claiming cloud deployment of the data pipeline, real-time streaming, or fraud detection.
+
+| Link | URL |
+|------|-----|
+| **GitHub** | https://github.com/alirazach476/rideflow-analytics |
+| **Live BI dashboard (Vercel)** | https://rideflow-analytics-eight.vercel.app |
+
+> Vercel hosts the **interactive BI dashboard** (`public/`). PostgreSQL, dbt, and Airflow still run locally / via Docker.
 
 ---
 
